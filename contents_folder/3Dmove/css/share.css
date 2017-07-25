@@ -1,0 +1,93 @@
+@media all and (orientation: landscape) {
+  #layer {
+    display: block;
+    background: #000000;
+  }
+}
+@media all and (orientation: portrait) {
+  #layer {
+    display: none;
+  }
+}
+body {
+  background: #ddd;
+  margin: 0;
+}
+body #layer {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+}
+body #layer .layer_img {
+  margin: 10vh auto;
+  width: 80vh;
+  height: 80vh;
+  background: url("../images/boxbg.jpg") no-repeat 0 0;
+  background-size: 100% 100%;
+}
+body #share {
+  height: 100vh;
+  background: url("../images/sharebg.jpg") no-repeat 0 0;
+  background-size: 100% 100%;
+}
+body #share header {
+  height: 12vh;
+}
+body #share header .head_portrait {
+  width: 12vh;
+  height: 12vh;
+  border-radius: 50%;
+  background-size: 100% 100%;
+  position: fixed;
+  top: 2vh;
+  left: 2vh;
+}
+body #share header nav {
+  width: 40%;
+  height: 100%;
+  margin: 0 auto;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  background: url("../images/ChickyRainbow.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+body #share article {
+  height: 64vh;
+  padding-top: 5vh;
+}
+body #share article section {
+  margin: 0 auto;
+  width: 80%;
+  height: 95%;
+  background: url("../images/dwl/img/layerPurple.png") no-repeat 0 0;
+  background-size: 100% 100%;
+}
+body #share article section .share_title {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-top: 10%;
+  width: 80%;
+  height: 20%;
+  font-size: 3rem;
+}
+body #share article section .share_content {
+  margin: 10% auto;
+  width: 70%;
+  height: 50%;
+  background: url("../images/dwl/gift/gift_0.png") no-repeat center;
+}
+body #share footer {
+  height: 18vh;
+}
+body #share footer .shareBtn {
+  margin: 0 auto 1vh;
+  width: 30vh;
+  height: 8vh;
+  line-height: 8vh;
+  background: url("../images/dwl/img/btnBgBlack.png") no-repeat 0 0;
+  background-size: 100% 100%;
+  border-radius: 2vh;
+  text-align: center;
+  font-size: 4rem;
+}

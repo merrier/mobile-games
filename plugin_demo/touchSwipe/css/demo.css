@@ -1,0 +1,255 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-perspective: 1200px;
+    -moz-perspective: 1200px;
+    perspective: 1200px;
+    text-align: center;
+}
+
+.container .page {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style:preserve-3d;
+    transform-style: preserve-3d;
+    z-index: 1;
+}
+
+.page_current{
+    visibility: visible!important;
+}
+
+.container .page h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.container .page0 {
+    background-color: blue;
+}
+
+.container .page1 {
+    background-color: #93F;
+}
+
+.container .page2 {
+    background-color: #F90;
+}
+
+.container .page3 {
+    background-color: green;
+}
+
+.container .page4 {
+    background-color: tomato;
+}
+
+.fa-angle-double-up{
+    position: fixed;
+    bottom: 20px;
+    left: 49%;
+    color: #FFF;
+    font-size: 22px;
+    animation: blink_up 1.2s infinite;
+    -moz-animation: blink_up 1.2s infinite;
+    -webkit-animation: blink_up 1.2s infinite;
+    -o-animation: blink_up 1.2s infinite;
+    z-index: 6;
+}
+
+.swipe_prompt{
+    position: fixed;
+    top:50%;
+    color: #fff;
+    font-size: 20px;
+    z-index: 2;
+    width: 60%;
+    left: 20%;
+    word-break:break-all;
+}
+
+
+@keyframes blink_up {
+    0%, 30% {
+        opacity: 0;
+        transform: translate(0,10px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0,-8px);
+    }
+}
+
+
+@-moz-keyframes blink_up {
+    0%, 30% {
+        -moz-opacity: 0;
+        -moz-transform: translate(0,10px);
+    }
+
+    60% {
+        -moz-opacity: 1;
+        -moz-transform: translate(0,0);
+    }
+    100% {
+        -moz-opacity: 0;
+        -moz-transform: translate(0,-8px);
+    }
+}
+
+@-webkit-keyframes blink_up {
+    0%, 30% {
+        -webkit-opacity: 0;
+        -webkit-transform: translate(0,10px);
+    }
+
+    60% {
+        -webkit-opacity: 1;
+        -webkit-transform: translate(0,0);
+    }
+    100% {
+        -webkit-opacity: 0;
+        -webkit-transform: translate(0,-8px);
+    }
+}
+
+@-o-keyframes blink_up {
+    0%, 30% {
+        -o-opacity: 0;
+        -o-transform: translate(0,10px);
+    }
+
+    60% {
+        -o-opacity: 1;
+        -o-transform: translate(0,0);
+    }
+    100% {
+        -o-opacity: 0;
+        -o-transform: translate(0,-8px);
+    }
+}
+
+/*翻页效果*/
+.pt-page-moveToTop {
+    -webkit-animation: moveToTop .6s ease both;
+    -moz-animation: moveToTop .6s ease both;
+    animation: moveToTop .6s ease both;
+    z-index: 1!important;
+}
+
+.pt-page-moveFromTop {
+    -webkit-animation: moveFromTop .6s ease both;
+    -moz-animation: moveFromTop .6s ease both;
+    animation: moveFromTop .6s ease both;
+    z-index: 2!important;
+}
+
+.pt-page-moveToBottom {
+    -webkit-animation: moveToBottom .6s ease both;
+    -moz-animation: moveToBottom .6s ease both;
+    animation: moveToBottom .6s ease both;
+    z-index: 1!important;
+}
+
+.pt-page-moveFromBottom {
+    -webkit-animation: moveFromBottom .6s ease both;
+    -moz-animation: moveFromBottom .6s ease both;
+    animation: moveFromBottom .6s ease both;
+    z-index: 2!important;
+}
+
+@-webkit-keyframes moveFromTop {
+    from {
+        -webkit-transform: translateY(-100%);
+    }
+}
+@-moz-keyframes moveFromTop {
+    from {
+        -moz-transform: translateY(-100%);
+    }
+}
+@keyframes moveFromTop {
+    from {
+        transform: translateY(-100%);
+    }
+}
+
+@-webkit-keyframes moveFromBottom {
+    from {
+        -webkit-transform: translateY(100%);
+    }
+}
+@-moz-keyframes moveFromBottom {
+    from {
+        -moz-transform: translateY(100%);
+    }
+}
+@keyframes moveFromBottom {
+    from {
+        transform: translateY(100%);
+    }
+}
+
+
+@-webkit-keyframes moveToTop {
+    to {
+        -webkit-transform: translateY(-20%) scale(0.8);
+    }
+}
+@-moz-keyframes moveToTop {
+    to {
+        -moz-transform: translateY(-20%) scale(0.8);
+    }
+}
+@keyframes moveToTop {
+    to {
+        transform: translateY(-20%) scale(0.8);
+    }
+}
+
+@-webkit-keyframes moveToBottom {
+    to {
+        -webkit-transform: translateY(20%) scale(0.8);
+    }
+}
+@-moz-keyframes moveToBottom {
+    to {
+        -moz-transform: translateY(20%) scale(0.8);
+    }
+}
+@keyframes moveToBottom {
+    to {
+        transform: translateY(20%) scale(0.8);
+    }
+}
+/*翻页效果*/

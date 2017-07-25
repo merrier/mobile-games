@@ -1,0 +1,370 @@
+/* less Euro_quiz */
+/* +--------------------------------------------------------------------------
+// | Author: Merrier <953075999@qq.com> <http://> <Date:2016/5/11 22:27>
+// +--------------------------------------------------------------------------*/
+
+//引入全局less变量
+@import "../../../common_folder/less/Game_library";
+
+
+.bgcolor_transparent{
+  background-color: rgba(83, 131, 8, 0.7);
+}
+
+.green_border{
+  border: 2px solid #345405;
+}
+
+
+
+
+html{
+
+  body{
+
+    .main{
+      .size(100%,100%);
+      color: #ffffff;
+      .background_percent100("../images/main_bg.png");
+
+      .logo_head{
+        .size(100%,60px);
+        margin-bottom: 10px;
+
+        .head_market_logo{
+          position: absolute;
+          top: 15px;
+          left: 5px;
+          .size(138px,30px);
+        }
+        .head_euro_logo{
+          position: absolute;
+          top: 5px;
+          right: 10px;
+          .size(40px,50px);
+        }
+      }
+
+      .common_box{
+        width:96%;
+        height:~"calc(100% - 105px)";
+        margin-bottom: 35px;
+        .clearfix;
+        .center_block;
+
+        h3{
+          color: #ffffff;
+          font-size: 20px;
+          text-align: center;
+          margin-bottom: 15px;
+        }
+        .common_battle{
+          width:100%;
+          height:~"calc(100% - 40px)";
+          overflow-y: auto;
+          .clearfix;
+
+
+            .battle_box{
+              position: relative;
+              .size(49%,85px);
+              margin-bottom: 10px;
+              padding: 2px 10px;
+              .green_border;
+              border-radius: 8px;
+              .bgcolor_transparent;
+
+              >img{
+                position: absolute;
+                right:2px;
+                top:2px;
+              }
+
+              h5{
+                font-size: 12px;
+                font-weight: normal;
+                text-align: center;
+                margin-bottom: 5px;
+              }
+              span{
+                position: absolute;
+                width:100%;
+                left:0;
+                top:33px;
+                text-align: center;
+                font-size: 12px;
+              }
+              .battle_result{
+                top:50px;
+              }
+              .battle_box_team{
+                width:50px;
+
+                img{
+                  display: block;
+                  .size(45px,40px);
+                  .center_block;
+                  margin-bottom: 2px;
+                }
+                p{
+                  width:100%;
+                  font-size: 10px;
+                  text-align: center;
+                }
+              }
+              .battle_box_hometeam{
+                float: left;
+              }
+              .battle_box_visitteam{
+                float: right;
+              }
+            }
+            .battle_box:nth-child(2n+1){
+              float: left;
+            }
+            .battle_box:nth-child(2n){
+              float: right;
+            }
+
+        }
+      }
+
+      .alert_battle_outdate{
+        position: fixed;
+        .size(16rem,7rem);
+        top: 50%;
+        left: 50%;
+        margin-top: -3.5rem;
+        margin-left: -8rem;
+        text-align: center;
+
+        .battle_outdate_content{
+          .size(100%,5.5rem);
+          padding: 0.8rem;
+          color: #000;
+          background-color: #ffffff;
+          .border-top-radius(10px);
+
+          h6{
+            color: #db0000;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+          }
+        }
+
+        .mask_close{
+          .size(100%,1.5rem);
+          color: #ffffff;
+          font-size: 1.1rem;
+          line-height: 1.5rem;
+          font-weight: bold;
+          background-color: #5ea301;
+          .border-bottom-radius(10px);
+        }
+      }
+
+      .common_btn_confirm{
+        display: block;
+        float: none;
+        .size(120px,30px);
+        .center_block;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 18px;
+        .word_space(20px);
+        color: #ffffff;
+        text-decoration: none;
+        .background_percent100("../images/reg_btn_register.png");
+        border-radius: 5px;
+        box-shadow: 0 0 25px 10px #afa587;
+      }
+
+      .common_foot_btn{
+        position: fixed;
+        left:0;
+        bottom: 0;
+        .size(100%,35px);
+        line-height: 35px;
+        text-align: center;
+        font-size: 18px;
+        color: #ffffff;
+        .word_space(2px);
+        text-decoration: none;
+        .background_percent100("../images/common_foot_btn.png");
+        box-shadow: 0 0 25px 10px #afa587;
+      }
+    }
+  }
+
+
+  body.index{
+
+    .main{
+
+      .index_main{
+        position: relative;
+        .size(100%,100%);
+        .background_percent100("../images/index_bg.png");
+
+        .index_begin{
+          position: absolute;
+          .size(172px,41px);
+          left: 50%;
+          bottom: 50px;
+          margin-left: -86px;
+          .background_percent100("../images/index_begin.png");
+        }
+        .btn_activity_des{
+          position: absolute;
+          bottom:25px;
+          width:100%;
+          text-align: center;
+          text-decoration: underline;
+          color: #ffffff;
+          .font_arial;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+
+  body.body_register{
+
+    .main{
+
+      .register{
+
+        h2{
+          font-size: 20px;
+          color:#ffffff;
+          .word_space(2px);
+          margin-bottom: 30px;
+        }
+        #regForm{
+
+          label{
+            display: none;
+          }
+
+          .reg_tips{
+            font-size: 12px;
+          }
+
+          #code_random{
+            display: none;
+          }
+
+          .reg_input{
+            position: relative;
+            height:40px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 14px;
+            color: #ffffff;
+            .bgcolor_transparent;
+            .green_border;
+            border-radius: 8px;
+
+            &::-webkit-input-placeholder{
+              opacity: 1;
+              color:#ffffff;
+            }
+            &::-moz-placeholder{
+              opacity: 1;
+              color:#ffffff;
+            }
+          }
+          .reg_box{
+            #reg_btn_getcode{
+              .size(100px,30px);
+              margin-top: 45px;
+              margin-bottom: 10px;
+              line-height: 30px;
+              color: #424242;
+              font-weight: bold;
+              font-size: 13px;
+              border-radius: 5px;
+              background-color: transparent;
+              .background_percent100("../images/reg_btn_getcode.png");
+            }
+            .reg_tips_yellow{
+              position: absolute;
+              width: 100%;
+              text-align: center;
+              margin-top: 15px;
+              font-size: 12px;
+              color: #fceb55;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  body.enter_score{
+
+    .common_box{
+
+      .enter_score_show{
+        position: relative;
+        .size(100%,200px);
+        padding: 20px;
+        .bgcolor_transparent;
+        .green_border;
+        .clearfix;
+        border-radius: 15px;
+
+        .score_show_box{
+          .size(100px,100%);
+
+          img{
+            .size(100%,100px);
+          }
+          p{
+            width: 100%;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 12px;
+          }
+          input{
+            display: block;
+            .size(60px,25px);
+            line-height: 25px;
+            .center_block;
+            color: #ffffff;
+            text-align: center;
+            border: 2px solid #ffffff;
+            border-radius: 3px;
+            background-color: transparent;
+          }
+        }
+        .score_show_hometeam{
+          float: left;
+        }
+        .score_show_visitteam{
+          float: right;
+        }
+        span{
+          position: absolute;
+          width:100%;
+          left: 0;
+          top: 60px;
+          text-align: center;
+          font-size: 20px;
+        }
+      }
+
+      .enter_score_tips{
+        display: none;
+        position: absolute;
+        color: #ff0000;
+        font-size: 12px;
+        margin-top: 5px;
+      }
+    }
+  }
+}

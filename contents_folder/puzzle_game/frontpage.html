@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <title>拼图大作战</title>
+
+    <link href="css/base.css" rel="stylesheet" />
+    <link href="css/frontpage.css" rel="stylesheet">
+
+</head>
+<body style="background-image: url(images/purple_background.png)">
+
+<img class="logo" src="images/dawanglu_logo.png"/>
+
+<audio id="music" controls="controls" loop="loop" class="music" style="display: none">
+    <!--<source src="/songs/song.ogg" type="audio/ogg">-->
+    <source src="songs/songs.mp3" type="audio/mpeg">
+</audio>
+<img id="music_btn" src="images/play.jpg" width="40px" height="40px"  onclick="playPause()";/>
+
+<img class="puzzle_word" src="images/puzzle.png"/>
+
+
+<!--<img class="gift_word" src=""/>-->
+
+<div class="vision">
+    <img class="vision1" src="images/vision4.jpeg"/>
+    <img class="vision2" src="images/vision2.jpg"/>
+</div>
+<div class="vision">
+<img class="vision3" src="images/vison3.jpg"/>
+<img class="vision4" src="images/vision1.jpg"/>
+</div>
+
+
+<a class="start"><img class="start_game" src="images/start_game.png"/></a>
+
+
+<a class="activity"><img class="activity_rules" src="images/activity_rules.png"/></a>
+
+<div class="mask_black"></div>
+<div class="mask-black"></div>
+
+<div class="rule-box">
+    <div class="rule_header">
+        <img src="images/head.png"/>
+    </div>
+    <div class="rule-content">
+        <p class="rule-text word">拼图游戏规则：</p>
+        <p class="rule-text word">1、微信用户均可参与本次活动。</p>
+        <p class="rule-text word">2、拼图活动以活动结束后排名排序为准，排名前3名可获得指定品牌鞋一双。</p>
+        <p class="rule-text word">3、参与活动的用户在游戏内寻找“暗号”凭暗号可至“新世界大望路店”官方微信中输入暗号获得抢鞋节50元购鞋礼券一张。</p>
+        <p class="rule-text word">4、用户凭微信界面或手机号即可至新世界大望路店进行购鞋礼券兑换。</p>
+        <p class="rule-text word">5、礼券兑换时间：11.19-11.21</p>
+        <p class="rule-text word">6、本券仅限新世界百货大望路店使用，特例商品及租赁商户均不可使用此券；（具体使用规则详见百货店内明示）</p>
+        <p class="rule-text word">上线时间：11.15-11.18</p>
+        <p class="rule-text word">核销时间：11.19-11.21</p>
+        <p class="rule-text word">使用时间：11.19-11.21</p>
+        <p class="rule-text word">核销地点：新世界百货彩旋店总服务台</p>
+    </div>
+</div>
+<div class="mask_black"></div>
+
+<!--<div class="rank_list">-->
+<!--<div class="list_rank">-->
+        <!--<img src="images/rank_list.png"/>-->
+
+    <!--<span class="photo">头像</span><span class="nick">昵称</span><span class="time">游戏用时</span>-->
+    <!--<div>-->
+        <!--<div class="img_photo"></div>-->
+        <!--<div class="rank">NO.1</div>-->
+        <!--<div class="name">放松自己</div>-->
+        <!--<div class="cost_time"><span class="number">10.55555</span>秒</div>-->
+    <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<div class="share"><img src="images/share.jpg" /></div>
+<div class="modal_block clearfix">
+    <img src="images/success.png" />
+    <!--<a class="close" ><img  src="images/close.png" /></a>-->
+    <div class="game_count">
+    <p class="word">您没有游戏次数了（ ＴДＴ)</p>
+    <p class="word">关注微信公众号获得购物券</p>
+    <P class="word">分享给好友可增加游戏次数</P>
+    <a class="click_wechat"><img src="images/click_wechat.png" /></a>
+    <a class="share_friends"><img src="images/share_friend.png" /></a>
+    </div>
+</div>
+
+<div class="refer_ranklist"><a>查看排行榜</a></div>
+<div class="rank_list">
+    <img class="close_button" src="images/close.png">
+    <div class="rank_header">
+        <span class="photo">头像</span><span class="nick">昵称</span><span class="time">游戏用时</span>
+    </div>
+
+    <div class="rank_content">
+        <div class="rank_item">
+            <img class="img_photo" src="images/head.png"/>
+            <div class="rank">NO.1</div>
+            <div class="name">放松自己</div>
+            <div class="cost_time"><span class="number">10.55</span>秒</div>
+        </div>
+        <div class="rank_item">
+            <img class="img_photo" src="images/head.png"/>
+            <div class="rank">NO.1</div>
+            <div class="name">放松自己</div>
+            <div class="cost_time"><span class="number">10.55</span>秒</div>
+        </div>
+        <div class="rank_item">
+            <img class="img_photo" src="images/head.png"/>
+            <div class="rank">NO.1</div>
+            <div class="name">放松自己</div>
+            <div class="cost_time"><span class="number">10.55</span>秒</div>
+        </div>
+        <div class="rank_item">
+            <img class="img_photo" src="images/head.png"/>
+            <div class="rank">NO.1</div>
+            <div class="name">放松自己</div>
+            <div class="cost_time"><span class="number">10.55</span>秒</div>
+        </div>
+        <div class="rank_item">
+            <img class="img_photo" src="images/head.png"/>
+            <div class="rank">NO.1</div>
+            <div class="name">放松自己</div>
+            <div class="cost_time"><span class="number">10.55</span>秒</div>
+        </div>
+        <div class="rank_item">
+            <img class="img_photo" src="images/head.png"/>
+            <div class="rank">NO.1</div>
+            <div class="name">放松自己</div>
+            <div class="cost_time"><span class="number">10.55</span>秒</div>
+        </div>
+        <div class="rank_item">
+            <img class="img_photo" src="images/head.png"/>
+            <div class="rank">NO.1</div>
+            <div class="name">放松自己</div>
+            <div class="cost_time"><span class="number">10.55</span>秒</div>
+        </div>
+    </div>
+
+</div>
+
+<!--<a class="rank_list"><img src="" class="list_rank"/></a>-->
+<p class="text" style="display: none">0</p>
+</body>
+
+<script src="javascript/jquery-1.11.3.min.js"></script>
+<script src="javascript/base.js"></script>
+<script src="javascript/frontpage.js"></script>
+<script src="javascript/jQueryRotate.js"></script>
+</html>

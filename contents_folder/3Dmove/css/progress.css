@@ -1,0 +1,20 @@
+/**
+ * Created by gaotianyang(13683265113@163.com) on 2017/3/14.
+ **/
+html body {
+  /*������*/
+}
+html body #progress {
+  position: fixed;
+  z-index: 900;
+  width: 100%;
+  height: 100vh;
+  background: #00aeef;
+}
+html body #progress .progress_img {
+  margin: 20vh auto;
+  width: 100%;
+  height: 100vw;
+  background: url("../images/octopus.gif") no-repeat 0 0;
+  background-size: 100% 100%;
+}

@@ -1,0 +1,279 @@
+/*开始游戏*/
+body{
+    background-color: #1e9457;
+}
+
+.start{
+    display: block;
+    position: relative;
+    width:100%;
+    height:100%;
+    background-position-y: -50px;
+    background-image:url(../images/index.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+}
+
+/*.bg_index{*/
+    /*width:100%;*/
+    /*height:100%;*/
+    /*background-image:url(../images/index.png);*/
+    /*background-repeat:no-repeat;*/
+    /*background-size:cover;*/
+    /*-moz-background-size:cover;*/
+    /*-webkit-background-size:cover;*/
+/*}*/
+
+/*.btn_begin{*/
+    /*position: absolute;*/
+    /*bottom: 28%;*/
+    /*left: 50%;*/
+    /*width: 140px;*/
+    /*height:45px;*/
+    /*margin-left: -70px;*/
+    /*background-image:url(../images/btn_begin.png);*/
+    /*background-repeat:no-repeat;*/
+    /*background-size:cover;*/
+    /*-moz-background-size:cover;*/
+    /*-webkit-background-size:cover;*/
+/*}*/
+
+/*首页文字循环滚动*/
+.start_marquee{
+    position: fixed;
+    top: 35px;
+    height:30px;
+}
+
+.start_marquee>marquee{
+    height:100%;
+    line-height: 30px;
+    font-size: 17px;
+    color:#fec6c7;
+}
+
+.begin_marquee span{
+    margin-left: 20px;
+    color:#fec6c7;
+}
+
+.marquee_phone{
+    font-style: normal;
+    color:#000;
+}
+
+.marquee_jifen{
+    font-style: normal;
+    color:#7aba31;
+}
+
+/*温馨提示*/
+.mask_reminder{
+    height:400px;
+    margin-top: -200px;
+    background-image:url(../images/reminder.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+}
+
+.box_reminder_content{
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    width: 240px;
+    height: 175px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 30px;
+    color:#1e9457;
+    font-weight: bold;
+}
+
+.gold_num{
+    color:#cd7f32;
+}
+
+.rank_num{
+    color:#cd7f32;
+}
+
+.need_num{
+    color:#cd7f32;
+}
+
+
+/*按钮*/
+.start_btn_box{
+    width:96%;
+    left: 2%;
+    position: fixed;
+    bottom:5%;
+    text-align: center;
+    height:50px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fe5377;
+}
+
+.start_btn_goldrank{
+    float:left;
+    width:150px;
+    height:50px;
+    letter-spacing: 2px;
+    background-image:url(../images/start_left_btn.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+}
+
+.start_btn_begin{
+    float:right;
+    width:150px;
+    height:50px;
+    text-indent: 16px;
+    letter-spacing: 16px;
+    background-image:url(../images/start_right_btn.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+}
+
+
+
+/*活动规则介绍*/
+
+.rule_div{
+    width: 100%;
+    text-align: right;
+    position: fixed;
+    top: 10px;
+}
+
+.rule{
+    font-size: 14px;
+    color: white;
+    margin-right: 20px;
+}
+
+.rule_box {
+    width: 80%;
+    position: fixed;
+    top: 5%;
+    left: 10%;
+    z-index: 9999;
+    display: none;
+}
+
+.img_responsive {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+}
+
+.rule_content {
+    background: #fff;
+    padding: 0 10px;
+    padding-top: 10px;
+    color: #af9c00;
+    margin-top: -10px;
+    font-size: 14px;
+    height: 320px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.rule_content_box{
+    margin-bottom: 20px;
+}
+
+.rule_title{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.rule_prize_des{
+    margin-bottom: 10px;
+}
+
+.rule_prize_tips{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.rule_prize_img{
+    width:100%;
+    height:auto;
+}
+
+/*金币排行榜*/
+.mask_goldrank{
+    width: 300px;
+    height:auto;
+    top: 50%;
+    left: 50%;
+    margin-top: -240px;
+    margin-left: -150px;
+}
+
+.img_goldrank{
+    width:100%;
+    height:145px;
+    background-image:url(../images/goldrank.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+}
+
+.mask_goldrank_content{
+    width: 298px;
+    margin: 0 auto;
+    height: 335px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #1e9457;
+    border-top: 0;
+    padding:10px 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.mask_goldrank_list{
+    height:20px;
+    width:210px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.mask_goldrank_item{
+    float: left;
+    font-size: 13px;
+    margin-right: 10px;
+    color: #1e9457;
+    font-weight: bold;
+}
+
+.goldrank_nickname{
+    width:66px;
+    text-align: center;
+}
+
+.btn_goldrank_more{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    color: #ff6363;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: underline;
+}

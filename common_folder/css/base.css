@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+/*通用*/
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+html{
+    height: 100%;
+}
+body{
+    font-family: "微软雅黑";
+    font-size: 14px;
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    width:100%;
+}
+
+/*音乐按钮*/
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 2.4em;
+    color: #FFF;
+}
+
+.music_button{
+    position: absolute;
+    right: 1rem;
+    top:1rem;
+    z-index: 2;
+    width: 2rem;
+    height: 2rem;
+}
+
+.play_button{
+    z-index: 2;
+    animation: rotate 1s linear infinite;
+    -webkit-animation: rotate 1s linear infinite;
+    display: block;
+}
+
+.pause_button{
+    display: none;
+    z-index: 2;
+}
+
+/*旋转动画*/
+@-webkit-keyframes rotate {
+    0%{
+        -webkit-transform: rotate(0deg);
+    }
+    50%{
+        -webkit-transform: rotate(180deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes rotate {
+    0%{
+        -moz-transform: rotate(0deg);
+    }
+    50%{
+        -moz-transform: rotate(180deg);
+    }
+    100%{
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes rotate {
+    0%{
+        -o-transform: rotate(0deg);
+    }
+    50%{
+        -o-transform: rotate(180deg);
+    }
+    100%{
+        -o-transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/*旋转动画*/
+/*音乐按钮*/
+

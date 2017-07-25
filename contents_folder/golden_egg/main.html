@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <title>golden egg</title>
+    <link href="../../plugin_folder/font-awesome/font-awesome.min.css" rel="stylesheet"/>
+    <link href="../../common_folder/css/base.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="main">
+
+    <!--音乐按钮开始-->
+    <div class="music_button">
+        <svg class="icon play_button" aria-hidden="true">
+            <use xlink:href="#icon-music1"></use>
+        </svg>
+        <svg class="icon pause_button" aria-hidden="true">
+            <use xlink:href="#icon-musicoff"></use>
+        </svg>
+    </div>
+
+    <!--<audio src="music/music.mp3" controls="controls" style="display: none;" autoplay="autoplay" class="background_music">-->
+    <!--Your browser does not support the audio element.-->
+    <!--</audio>-->
+    <!--音乐按钮结束-->
+
+    <div class="join_page">
+        <div class="ready_button">
+            准备好了
+        </div>
+
+        <div class="button rule_button">
+            活动规则
+        </div>
+
+        <div class="button rank_button">
+            排行榜
+        </div>
+    </div>
+
+    <div class="shake_page">
+        <!--<div class="message spent_time">-->
+            <!--时间：-->
+            <!--<span>0s</span>-->
+        <!--</div>-->
+        <!--<div class="message current_rank">-->
+            <!--排名：-->
+            <!--<span></span>-->
+        <!--</div>-->
+        <p class="shake_count">0</p>
+        <div class="button return_button">
+            <i class="fa fa-arrow-left"></i>
+        </div>
+        <div class="shake_prompt_button">
+
+        </div>
+    </div>
+
+    <!--活动详情弹框-->
+    <div class="mask_rule_detail">
+        <img src="images/rule.png" class="rule_img">
+        <img class="close_button" src="images/close.png">
+        <div class="rule_text_div">
+            <p class="rule_text">1.啊啊啊啊啊啊啊啊啊啊啊阿啊啊啊啊啊啊啊啊阿</p>
+            <p class="rule_text">1.啊啊啊啊啊啊啊啊啊啊啊阿啊啊啊啊啊啊啊啊阿</p>
+            <p class="rule_text">1.啊啊啊啊啊啊啊啊啊啊啊阿啊啊啊啊啊啊啊啊阿</p>
+            <p class="rule_text">1.啊啊啊啊啊啊啊啊啊啊啊阿啊啊啊啊啊啊啊啊阿</p>
+            <p class="rule_text">1.啊啊啊啊啊啊啊啊啊啊啊阿啊啊啊啊啊啊啊啊阿</p>
+            <p class="rule_text">1.啊啊啊啊啊啊啊啊啊啊啊阿啊啊啊啊啊啊啊啊阿</p>
+            <p class="rule_text">1.啊啊啊啊啊啊啊啊啊啊啊阿啊啊啊啊啊啊啊啊阿</p>
+            <p class="rule_text">1.啊啊啊啊啊啊啊啊啊啊啊阿啊啊啊啊啊啊啊啊阿</p>
+        </div>
+    </div>
+    <!--活动详情弹框-->
+
+    <div class="mask count_down_time">
+        <p>紧盯大屏幕</p>
+        <p>活动开始后请摇动您的手机</p>
+    </div>
+
+    <div class="mask game_result">
+        <img src="images/first.png">
+        <!--<p class="result_win">恭喜您获得本次抢金蛋</p>-->
+        <!--<p class="result_win">第 <span>1</span> 名</p>-->
+        <!--<p class="result_lose">再接再厉</p>-->
+    </div>
+
+
+    <div class="mask new_mask"></div>
+   <!--新加一个排行榜蒙版-->
+    <div class="rank_list">
+        <img class="close_button" src="images/close.png">
+        <div class="rank_header">
+            <span class="photo">头像</span><span class="nick">昵称</span><span class="time">摇动次数</span>
+        </div>
+
+        <div class="rank_content">
+            <div class="rank_item">
+                <img class="img_photo" src="images/head.png"/>
+                <div class="rank">NO.1</div>
+                <div class="name">放松自己</div>
+                <div class="cost_time"><span class="number">10.55</span>秒</div>
+            </div>
+            <div class="rank_item">
+                <img class="img_photo" src="images/head.png"/>
+                <div class="rank">NO.1</div>
+                <div class="name">放松自己</div>
+                <div class="cost_time"><span class="number">10.55</span>秒</div>
+            </div>
+            <div class="rank_item">
+                <img class="img_photo" src="images/head.png"/>
+                <div class="rank">NO.1</div>
+                <div class="name">放松自己</div>
+                <div class="cost_time"><span class="number">10.55</span>秒</div>
+            </div>
+            <div class="rank_item">
+                <img class="img_photo" src="images/head.png"/>
+                <div class="rank">NO.1</div>
+                <div class="name">放松自己</div>
+                <div class="cost_time"><span class="number">10.55</span>秒</div>
+            </div>
+            <div class="rank_item">
+                <img class="img_photo" src="images/head.png"/>
+                <div class="rank">NO.1</div>
+                <div class="name">放松自己</div>
+                <div class="cost_time"><span class="number">10.55</span>秒</div>
+            </div>
+            <div class="rank_item">
+                <img class="img_photo" src="images/head.png"/>
+                <div class="rank">NO.1</div>
+                <div class="name">放松自己</div>
+                <div class="cost_time"><span class="number">10.55</span>秒</div>
+            </div>
+            <div class="rank_item">
+                <img class="img_photo" src="images/head.png"/>
+                <div class="rank">NO.1</div>
+                <div class="name">放松自己</div>
+                <div class="cost_time"><span class="number">10.55</span>秒</div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="../../plugin_folder/jquery_v1.11.3/jquery-1.11.3.min.js"></script>
+<script src="../../common_folder/javascripts/base.js"></script>
+<script src="../../common_folder/javascripts/iconfont.js"></script>
+<script src="javascripts/shake.js"></script>
+<script src="javascripts/main.js"></script>
+</body>
+</html>

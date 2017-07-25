@@ -1,0 +1,72 @@
+.activity-lottery-winning{ 
+	background: url(../img/activity-lottery-bg2.jpg) #2a8a00;
+}
+.activity-lottery-winning .main{
+	background: url(../img/activity-lottery-bg.png) no-repeat top center;
+}
+#outer-cont {
+	position: relative;
+	width: 100%;
+	top: 45px;
+	margin-bottom: 30px;
+}
+#inner-cont {
+	position: absolute;
+	width: 100%;
+	top: 35%;
+}
+#outer {
+	width : 310px;
+	max-width: 310px;
+	height: 310px;
+	margin: 0 auto;
+}
+#inner {
+	width : 112px;
+	max-width: 112px;
+	height: 142px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+#outer img, #inner img {
+	display: block;
+	margin: 0 auto;
+}
+.content {
+	margin:0px 0 15px 0;
+	top:45px;
+}
+.main img {
+	max-width: 100%;
+	border: 0 none;
+}
+.boxcontent {
+	margin:1px 15px 15px 15px;
+	border-radius: 5px;
+	padding: 2px;
+	background-color: #FEF8B2;
+	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+	-o-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+.boxyellow{
+	background-color: #FEF8B2;
+}
+.box {
+	border-radius: 5px;
+	font-size:14px;
+	border: 1px dashed rgba(0, 0, 0, 0.3);
+}
+.box .title-green {
+	padding: 2px 5px 2px 10px;
+    font-size: 15px;
+	background:url(../img/title-bg-green.png) no-repeat 0 0;
+	border-radius: 3px 3px 3px 0;
+	color:#ffffff;
+	height:22px;
+	margin:-1px;
+}
+.box .Detail {
+	padding: 15px;
+}

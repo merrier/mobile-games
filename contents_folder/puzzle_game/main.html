@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <title>game_template</title>
+    <link href="../../plugin_folder/font-awesome/font-awesome.min.css" rel="stylesheet"/>
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+
+
+<div class="main_content">
+
+    <img class="logo" src="images/img_logo1.png"/>
+
+    <!--<img src="images/header.png" class="header_img"/>-->
+    <audio src="music/music.mp3" controls="controls" style="display: none;" autoplay="autoplay" class="background_music">
+        Your browser does not support the audio element.
+    </audio>
+
+    <i class="fa fa-volume-up music_switch"></i>
+
+    <a class="activity"><img class="activity_rules" src="images/activity_rules.png"/></a>
+
+    <p class="time_message">你还有<span>10</span>秒时间看原图哦!</p>
+
+    <div class="game_box">
+
+        <div class="img_Cell move_Img"></div>
+        <div class="img_Cell move_Img"></div>
+        <div class="img_Cell move_Img"></div>
+        <div class="img_Cell move_Img"></div>
+        <div class="img_Cell move_Img"></div>
+        <div class="img_Cell move_Img"></div>
+        <div class="img_Cell move_Img"></div>
+        <div class="img_Cell move_Img"></div>
+        <div class="img_Cell move_Img"></div>
+    </div>
+
+    <div class="game_box_mask">
+
+    </div>
+
+    <div class="restart">
+        <p class="last_chance">剩余次数：<span>0</span></p>
+        <img src="images/rechallenge.png" class="restart_button">
+        <p class="check_range">查看排行榜</p>
+    </div>
+
+</div>
+
+<div class="mask success_mask">
+    <img class="close_button" src="images/close.png">
+    <div class="success_message">
+        <p>你的手速超过了朋友圈</p>
+        <p><span>89%</span>的好友</p>
+        <p>过关啦</p>
+        <p>目前排在<span>100</span>位</p>
+        <p>离大奖很近了哦！</p>
+        <div class="click_wechat"></div>
+        <div class="share_friends"></div>
+    </div>
+    <div class="follow_wechat">
+        <img class="two_dimension_code" src="images/gift.png"/>
+        <p>寻找暗号</p>
+        <p>在官方微信中输入暗号可获得购鞋礼券一张</p>
+    </div>
+
+</div>
+
+
+<div class="mask mask_black"></div>
+
+<!--分享好友-->
+<div class="mask_share" style="display: none;">
+</div>
+
+<div class="start_game_word">Ready?</div>
+
+<div class="rule-box">
+    <img class="close_button" src="images/close.png">
+    <div class="rule_header">
+        <img src="images/head.png"/>
+    </div>
+    <div class="rule-content">
+        <p class="rule-text word">拼图游戏规则：</p>
+        <p class="rule-text word">1、微信用户均可参与本次活动。</p>
+        <p class="rule-text word">2、拼图活动以活动结束后排名排序为准，排名前3名可获得指定品牌鞋一双。</p>
+        <p class="rule-text word">3、参与活动的用户在游戏内寻找“暗号”凭暗号可至“新世界大望路店”官方微信中输入暗号获得抢鞋节50元购鞋礼券一张。</p>
+        <p class="rule-text word">4、用户凭微信界面或手机号即可至新世界大望路店进行购鞋礼券兑换。</p>
+        <p class="rule-text word">5、礼券兑换时间：11.19-11.21</p>
+        <p class="rule-text word">6、本券仅限新世界百货大望路店使用，特例商品及租赁商户均不可使用此券；（具体使用规则详见百货店内明示）</p>
+        <p class="rule-text word">上线时间：11.15-11.18</p>
+        <p class="rule-text word">核销时间：11.19-11.21</p>
+        <p class="rule-text word">使用时间：11.19-11.21</p>
+        <p class="rule-text word">核销地点：新世界百货彩旋店总服务台</p>
+    </div>
+</div>
+
+<div class="rank_list">
+    <img class="close_button" src="images/close.png">
+    <div class="rank_header">
+        <span class="photo">头像</span><span class="nick">昵称</span><span class="time">游戏用时</span>
+    </div>
+
+    <div class="rank_content">
+        <div class="rank_item">
+            <img class="img_photo" src="images/head.png"/>
+            <div class="rank">NO.1</div>
+            <div class="name">放松自己</div>
+            <div class="cost_time"><span class="number">10.55</span>秒</div>
+        </div>
+        <div class="rank_item">
+            <img class="img_photo" src="images/head.png"/>
+            <div class="rank">NO.1</div>
+            <div class="name">放松自己</div>
+            <div class="cost_time"><span class="number">10.55</span>秒</div>
+        </div>
+        <div class="rank_item">
+            <img class="img_photo" src="images/head.png"/>
+            <div class="rank">NO.1</div>
+            <div class="name">放松自己</div>
+            <div class="cost_time"><span class="number">10.55</span>秒</div>
+        </div>
+        <div class="rank_item">
+            <img class="img_photo" src="images/head.png"/>
+            <div class="rank">NO.1</div>
+            <div class="name">放松自己</div>
+            <div class="cost_time"><span class="number">10.55</span>秒</div>
+        </div>
+        <div class="rank_item">
+            <img class="img_photo" src="images/head.png"/>
+            <div class="rank">NO.1</div>
+            <div class="name">放松自己</div>
+            <div class="cost_time"><span class="number">10.55</span>秒</div>
+        </div>
+        <div class="rank_item">
+            <img class="img_photo" src="images/head.png"/>
+            <div class="rank">NO.1</div>
+            <div class="name">放松自己</div>
+            <div class="cost_time"><span class="number">10.55</span>秒</div>
+        </div>
+        <div class="rank_item">
+            <img class="img_photo" src="images/head.png"/>
+            <div class="rank">NO.1</div>
+            <div class="name">放松自己</div>
+            <div class="cost_time"><span class="number">10.55</span>秒</div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<script src="../../plugin_folder/jquery_v1.11.3/jquery-1.11.3.min.js"></script>
+<script src="javascript/base.js"></script>
+<script src="javascript/main.js"></script>
+</body>
+</html>

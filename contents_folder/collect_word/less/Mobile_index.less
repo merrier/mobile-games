@@ -1,0 +1,64 @@
+/* less Mobile_index */
+/* +--------------------------------------------------------------------------
+// | Author: Merrier <953075999@qq.com> <http://> <Date:2016/5/25 16:05>
+// +--------------------------------------------------------------------------*/
+
+//引入全局less变量
+@import "../../../common_folder/less/Game_library.less";
+@color_border_darker:#7f7f7f;
+
+html{
+
+  body{
+    font-family:hiragino sans gb,microsoft yahei,simsun;
+    -webkit-text-size-adjust:none;
+    background-color: #ffffff;
+
+    .ui-page{
+      background-color: #ffffff;
+    }
+
+    //内容开始
+    .page{
+      color: @color_black;
+      font-size: 0.75rem;
+      .font_arial;
+
+      .ui-input-text {
+        font-size: 0.6rem;
+        border: none;
+
+        input{
+          padding:.5rem;
+          border: 1px double #9f9f9f;
+          border-top-color:@color_border;
+        }
+      }
+
+      //主要内容开始
+      .main{
+        //width:100%;
+      }
+      //主要内容结束
+
+
+
+      //底部开始
+      .footer{
+        border:none;
+
+        .always_meezao_logo {
+          position: fixed;
+          bottom: 0.3rem;
+          width: 100%;
+          text-align: center;
+          .font_arial;
+          font-size: 0.6rem;
+          color: @color_border_darker;
+        }
+      }
+      //底部结束
+    }
+    //内容结束
+  }
+}

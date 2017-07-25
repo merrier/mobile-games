@@ -1,0 +1,378 @@
+@font-face {
+    font-family: "pop";
+    src:url("../fonts/pop.ttf");
+}
+.main_content{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 2rem;
+    position: relative;
+    text-align: center;
+    /*background-color: #ff808a;*/
+    background-image: url("../images/purple_background.png");
+    background-size: 100% 100%;
+    font-family: "pop";
+    overflow-y: hidden;
+
+}
+
+.music_switch{
+    position: absolute;
+    top: 0.8rem;
+    left: 11.4rem;
+    color: #FFF;
+    font-size: 1.4rem;
+}
+
+.logo{
+    width: 9rem;
+    padding-top: 0.7rem;
+    display: block;
+}
+
+.header_img{
+    width: 80%;
+    margin: auto;
+    height: 7rem;
+    margin-top: 0.4rem;
+}
+
+.game_box{
+    margin: auto;
+    width: 14.3rem;
+    height: 14.3rem;
+    background-color: #fff;
+    border-radius: 0.3rem;
+    position: relative;
+    text-align: center;
+    background-size: 100% 100%;
+    border: 3px solid #000;
+    margin-top: 3%;
+}
+
+.game_box_mask{
+    width: 100%;
+    height: 14.5rem;
+    background-color: transparent;
+    position: absolute;
+    top: 10.4rem;
+    z-index: 2;
+    display: none;
+}
+
+.time_message{
+    text-align: center;
+    font-size: 1.2rem;
+    height: 2rem;
+    line-height: 2rem;
+    font-family: "pop";
+    color:#FFF;
+    margin-top: 2%;
+}
+
+.time_message span{
+    color: #F2E600;
+}
+
+.img_Cell{
+    width: 4.4rem;
+    height: 4.4rem;
+    margin: 0.1rem;
+    border-radius: 0.4rem;
+    position: absolute;
+    border: 1px solid #aaaaaf;
+    box-shadow: 0.15rem 0.15rem 0.1rem #aaaaaf;
+    display: none;
+}
+
+.btn_submit{
+    width: 6rem;
+    height: 2rem;
+    color: #5BE837;
+    font-size: 1rem;
+    line-height: 2rem;
+    background-color: #ffff00;
+    border-radius: 0.5rem;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.current{
+    border: 1px solid rgba(36, 255, 31, 0.7);
+    box-shadow: 0.15rem 0.15rem 0.1rem rgba(36, 255, 31, 0.7);
+}
+
+.img_all{
+    width: 100%;
+    height: 14rem;
+    border-radius: 0.3rem;
+    /*display: none;*/
+}
+
+.activity{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 0.4rem;
+    right: 1rem;
+}
+
+.activity_rules{
+    width: 100%;
+    height: 100%;
+}
+
+.rule-box{
+    background-color: #ffffff;
+    display: none;
+    position: absolute;
+    top:calc(50% - 8rem);
+    left: 15%;
+    width: 11rem;
+    border-radius: 17px;
+    z-index: 999999;
+    font-family: "pop";
+}
+.rule_header{
+    width: 100%;
+    height: 4rem;
+    background-color: rgb(130, 52, 143);
+    border-top-left-radius:17px ;
+    border-top-right-radius: 17px;
+    text-align: center;
+}
+.rule_header img{
+    width: 80%;
+    height: 100%;
+}
+.mid-center{
+    text-align: center;
+}
+.rule-content{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 12rem;
+    text-align: left;
+    font-size: 0.8rem;
+    padding: 0.8rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.word{
+    margin: 0.5rem;
+}
+
+.start_game_word{
+    position: absolute;
+    top:11rem;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #FD746C;
+    z-index: 10000;
+    display: none;
+    width: 100%;
+}
+
+.restart{
+    width: 100%;
+    color: #FFF;
+    text-align: center;
+    padding-top: 1rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.last_chance{
+    font-size: 0.9rem;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+}
+
+.restart_button{
+    width: 3.6rem;
+    height: 3.6rem;
+    display: none;
+}
+
+.check_range{
+    font-size: 0.9rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    text-decoration: underline;
+
+}
+
+.success_mask{
+    width: 80%;
+    height: 14rem;
+    background-image: url("../images/success.png");
+    background-size: 100% 100%;
+    margin: auto;
+    position: fixed;
+    top:7rem;
+    z-index: 10001;
+    left: 10%;
+    padding: 2.4rem 1.2rem;
+    text-align: center;
+    display: none;
+}
+
+.success_mask p{
+    font-family: "pop";
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
+
+.success_mask span{
+    color: #FF4136;
+    font-weight: bold;
+}
+
+.success_message{
+    width: 100%;
+    height: 100%;
+}
+
+.click_wechat{
+    margin-top: 0.5rem;
+    width: 5rem;
+    height: 1.8rem;
+    float: left;
+    background-image: url("../images/click_wechat.png");
+    background-size: 100% 100%;
+}
+
+.share_friends{
+    margin-top: 0.5rem;
+    width: 5rem;
+    height: 1.8rem;
+    float: right;
+    background-image: url("../images/share_friend.png");
+    background-size: 100% 100%;
+}
+
+.mask_share{
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    position: fixed;
+    top:0;
+    z-index: 1000;
+    background-image: url("../images/share.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.follow_wechat{
+    display: none;
+    text-align: center;
+    font-family: "pop";
+}
+
+.two_dimension_code{
+    width: 5rem;
+    height: 5rem;
+}
+
+.follow_wechat p{
+    font-size: 0.8rem;
+}
+
+.rank_list{
+    display: none;
+    width: 90%;
+    height: 17rem;
+    /*overflow-y: auto;*/
+    background-image: url("../images/rank_list.png");
+    background-size: 100% 100%;
+    margin: auto;
+    position: fixed;
+    top: 4rem;
+    left: 5%;
+    padding: 1.2rem;
+    text-align: center;
+    font-family: "pop";
+    z-index: 9999999;
+    font-size: 0.6rem;
+}
+
+.close_button{
+    position: absolute;
+    top: -0.2rem;
+    right: -0.4rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    z-index: 10000000;
+}
+
+.rank_header{
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    position: relative;
+    font-size: 0.8rem;
+}
+
+.rank_content{
+    width: 100%;
+    height: 82%;
+    overflow-y: auto;
+}
+
+.photo{
+    position: absolute;
+    left: 0.5rem;
+}
+
+.nick{
+    position: absolute;
+    left: 3rem;
+}
+
+.time{
+    position: absolute;
+    right: 1rem;
+}
+
+.rank_item{
+    width: 100%;
+    height: 2.6rem;
+    border: 2px solid #000;
+    border-radius: 1.5rem;
+    position: relative;
+    margin-bottom: 0.4rem;
+}
+.img_photo{
+    position: absolute;
+    left: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    top:0.2rem;
+    border-radius: 1rem;
+}
+
+.rank{
+    position: absolute;
+    left: 3rem;
+    top:0.3rem;
+    color: #FF4136;
+}
+
+.name{
+    position: absolute;
+    left: 3rem;
+    top:1.3rem;
+}
+
+.cost_time{
+    position: absolute;
+    right: 1rem;
+    top: 0.8rem;
+}
+
+.ovf_hidden{
+    overflow-y: hidden;
+}

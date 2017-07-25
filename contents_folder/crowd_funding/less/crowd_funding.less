@@ -1,0 +1,361 @@
+/* less crowd_funding */
+/* +--------------------------------------------------------------------------
+// | Author: Merrier <953075999@qq.com> <http://> <Date:2016/5/11 22:27>
+// +--------------------------------------------------------------------------*/
+//引入全局less变量
+@import "../../../common_folder/less/Game_library";
+
+html {
+  height: 100%;
+
+  //通用开始
+  body {
+    .font_yahei;
+    background-color: #e13e3d;
+
+    .main {
+
+      .head_market_logo {
+        position: absolute;
+        width: 8rem;
+        margin-left: ~"calc(50% - 4rem)";
+      }
+      .sign_logo {
+        width: 100%;
+        margin-top: 3rem;
+      }
+      .forward {
+        .background_contain("../images/forward.png");
+      }
+      .rule_header {
+        background-color: #e13e3d;
+      }
+      .help_btn_box{
+        .size(100%,2rem);
+        line-height: 2rem;
+
+        .help_btn{
+          display: block;
+          .size(7rem,100%);
+          color: #ffffff;
+          text-decoration: none;
+          .background_percent100("../images/btn_bg_big.png");
+        }
+        .btn_friends_help,.btn_share{
+          float: left;
+        }
+        .btn_goplay,.btn_return_sign{
+          float: right;
+        }
+      }
+    }
+  }
+  //通用结束
+
+  //首页开始
+  body.index {
+    height: 100%;
+    background-image: url("../images/index_bg.png");
+    background-position: 0 1rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    .main {
+
+      .index_marquee {
+        position: fixed;
+        bottom: 23%;
+        background-color: #ffffff;
+        height: 2rem;
+        line-height: 2rem;
+        .font_hei;
+        color: #e74a84;
+        font-size: 0.7rem;
+      }
+
+      .index_begin {
+        position: fixed;
+        bottom: 10%;
+        .size(7rem, 2rem);
+        left: ~"calc(50% - 3.5rem)";
+        .background_percent100("../images/btn_bg_big.png");
+        line-height: 2rem;
+        text-align: center;
+        color: #ffffff;
+        font-size: 0.7rem;
+        font-weight: 400;
+        text-decoration: none;
+      }
+      .btn_activity_des {
+        position: fixed;
+        bottom: 3%;
+        width: 3rem;
+        left: ~"calc(50% - 1.5rem)";
+        color: #ffffff;
+        font-size: 0.6rem;
+        font-weight: 400;
+        text-decoration: underline;
+        text-align: center;
+      }
+
+    }
+  }
+  //首页结束
+
+  //注册页面开始
+  body.body_register {
+
+    .main {
+
+      .register {
+
+        .reg_img_short {
+          width: 4rem;
+          margin-bottom: -0.2rem;
+        }
+        label {
+          .font_hei;
+          font-size: 0.75rem;
+          color: #ffffff;
+          font-weight: 400;
+        }
+        .reg_btn {
+          color: #ffffff;
+          background-color: #00bfd7;
+        }
+        .reg_img_long {
+          float: right;
+          width: 5.5rem;
+          padding-left: 6rem;
+          margin-top: 0.5rem;
+        }
+        #code_random{
+          display: none;
+        }
+      }
+    }
+  }
+  //注册页面结束
+
+  //签到页面开始
+  body.sign {
+    height: 100%;
+
+    .main {
+      height: 100%;
+
+      .sign_main {
+        position:relative;
+
+        .sign_head_content {
+          height: 2.5rem;
+          padding: 0.1rem 0.5rem 0.1rem 1.5rem;
+          margin-bottom: 0.25rem;
+          line-height: 2.5rem;
+          background-color: #ffffff;
+
+          .sign_headimg {
+            float: left;
+            height: 100%;
+            margin-right: 0.8rem;
+          }
+
+          .sign_phone {
+            float: left;
+            color: #e74a84;
+            font-size: 0.65rem;
+            margin-right: 0.5rem;
+          }
+          .sign_money {
+            float: left;
+            color: #e74a84;
+            font-size: 0.9rem;
+            font-weight: bold;
+          }
+          .btn_sign {
+            float: right;
+            .size(3.5rem, 1.5rem);
+            margin-top: 0.5rem;
+            line-height: 1.5rem;
+            text-align: center;
+            background-color: #e13e3d;
+            color: #ffffff;
+            font-size: 0.6rem;
+            text-decoration: none;
+            border-radius: 0.3rem;
+          }
+          .btn_sign.btn_sign_disable{
+            background-color: #afafaf;
+            color: #EEE;
+          }
+        }
+
+        .btn_activity_des {
+          position: absolute;
+          top: 3rem;
+          width: 3rem;
+          right: 0.5rem;
+          color: #ffffff;
+          font-size: 0.6rem;
+          font-weight: 400;
+          text-decoration: underline;
+          text-align: center;
+          z-index:2;
+        }
+
+        .sign_prize_show {
+          position: relative;
+          .size(80%, 8.8rem);
+          .center_block;
+          margin-bottom: 0.25rem;
+
+          .prize_show_left {
+            position: absolute;
+            height: 1.4rem;
+            top: 50%;
+            left: 0;
+            margin-top: -0.7rem;
+          }
+
+          .prize_show_right {
+            position: absolute;
+            height: 1.4rem;
+            top: 50%;
+            right: 0;
+            margin-top: -0.7rem;
+          }
+          .prize_show_now {
+            position: relative;
+            .size(70%, 100%);
+            .center_block;
+            overflow: hidden;
+
+            .prize_show_main {
+              position: absolute;
+              .size(600%, 100%);
+
+              .prize_show_item {
+                float: left;
+                .size(16.666666666667%, 100%);
+
+                >img{
+                  .size(100%,100%);
+                }
+              }
+            }
+          }
+        }
+
+        .sign_btn_launch {
+          display: block;
+          .size(8rem, 2.5rem);
+          .center_block;
+          margin-bottom: 0.5rem;
+          line-height: 2.5rem;
+          text-align: center;
+          color: #ffffff;
+          font-size: 0.75rem;
+          font-weight: 500;
+          text-decoration: none;
+          .background_percent100("../images/btn_bg_big.png");
+        }
+
+      }
+    }
+  }
+  //签到页面结束
+
+  //主页面开始
+  body.main {
+    .main_content {
+      width: 90%;
+      .center_block;
+      color: #ffffff;
+      font-size: 0.7rem;
+      text-align: center;
+
+      .main_prize_name {
+        margin: 0.5rem 0;
+      }
+      .main_prize_progress {
+        position: relative;
+        height: 0.8rem;
+        padding: 0.1rem 0.2rem;
+        margin-bottom: 0.8rem;
+        background-color: #ffffff;
+        border-radius: 0.3rem;
+        box-shadow: inset 2px 3px 5px #aaa;
+
+        .prize_progress_tips{
+          position: absolute;
+          top: 0;
+          right: 0.2rem;
+          line-height: 1rem;
+          font-size: 0.5rem;
+          color: rgba(0,0,0,.7);
+          text-align: right;
+          z-index: 2;
+        }
+
+        .prize_progress_box{
+          position: relative;
+          .size(100%,100%);
+
+          .prize_progress_bar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 45%;
+            border-radius: 0.3rem;
+            background: -moz-linear-gradient(top, rgba(250, 181, 67, 0) 0%, rgba(250, 177, 63, 0) 7%, rgba(250, 175, 61, 0.08) 10%, rgba(250, 173, 59, 0.64) 14%, rgba(250, 172, 57, 0.98) 17%, rgba(249, 170, 55, 1) 21%, rgba(247, 149, 30, 1) 48%, rgba(243, 118, 16, 1) 79%, rgba(243, 115, 15, 0.98) 83%, rgba(243, 113, 14, 0.65) 86%, rgba(242, 110, 13, 0.09) 90%, rgba(242, 108, 12, 0) 93%, rgba(241, 104, 11, 0) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, rgba(250, 181, 67, 0) 0%, rgba(250, 177, 63, 0) 7%, rgba(250, 175, 61, 0.08) 10%, rgba(250, 173, 59, 0.64) 14%, rgba(250, 172, 57, 0.98) 17%, rgba(249, 170, 55, 1) 21%, rgba(247, 149, 30, 1) 48%, rgba(243, 118, 16, 1) 79%, rgba(243, 115, 15, 0.98) 83%, rgba(243, 113, 14, 0.65) 86%, rgba(242, 110, 13, 0.09) 90%, rgba(242, 108, 12, 0) 93%, rgba(241, 104, 11, 0) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, rgba(250, 181, 67, 0) 0%, rgba(250, 177, 63, 0) 7%, rgba(250, 175, 61, 0.08) 10%, rgba(250, 173, 59, 0.64) 14%, rgba(250, 172, 57, 0.98) 17%, rgba(249, 170, 55, 1) 21%, rgba(247, 149, 30, 1) 48%, rgba(243, 118, 16, 1) 79%, rgba(243, 115, 15, 0.98) 83%, rgba(243, 113, 14, 0.65) 86%, rgba(242, 110, 13, 0.09) 90%, rgba(242, 108, 12, 0) 93%, rgba(241, 104, 11, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          }
+        }
+      }
+      .main_prize_already{
+        margin-bottom: 0.8rem;
+      }
+      .main_records{
+        height: 17rem;
+        margin: 0.5rem 0;
+        margin-top: 0.8rem;
+        padding: 0.6rem;
+        .background_percent100("../images/records_bg.png");
+
+        .main_records_title{
+          .size(7rem,1.8rem);
+          .center_block;
+          line-height: 1.8rem;
+          text-align: center;
+          color: #e13e3d;
+          font-size: 1rem;
+          font-weight: 500;
+          background-color: #ffffff;
+        }
+        .main_records_content{
+          margin-top: 0.6rem;
+          line-height: 1.2rem;
+
+          .main_records_friends{
+            max-height:13.5rem;
+            overflow-x: hidden;
+            overflow-y: auto;
+
+            .records_friends_new{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  //主页面结束
+
+  //助力页面开始
+  body.help{
+
+  }
+  //助力页面结束
+}

@@ -1,0 +1,89 @@
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative
+}
+html,body {
+  height: 100%
+}
+body {
+  border: 1px solid transparent;
+  font: 300 1em "Source Sans Pro", sans-serif;
+}
+p {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+#cn-wrapper {
+  width: 17em;
+  height: 17em;
+  bottom: 0;
+  margin:0 auto;
+  pointer-events: none;
+  border: 1px solid #7C5089;
+  border-top-left-radius: 50%; 
+  border-top-right-radius: 50%; 
+  border-bottom-right-radius: 50%; 
+  border-bottom-left-radius: 50%; 
+  overflow: hidden; 
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease
+}
+#cn-wrapper:after {
+  display: block;
+  height: 8px;
+  width: 8px;
+  background-color: maroon;
+  position: absolute;
+  margin-top: -4px;
+  margin-left: -4px;
+  border-radius: 50%;
+  z-index: 11;
+}
+#cn-wrapper li {
+  position: absolute;
+  font-size: 1.215em;
+  width: 7em;
+  height: 7em;
+  overflow:hidden;
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  color: #aaa;
+  left: 35%;
+  margin-left: -5em; 
+}
+#cn-wrapper li a {
+  display: block;
+  font-size: 1.2em;
+  height: 13.5em;
+  width: 13.5em;
+  position: absolute;
+  bottom: -6.75em;
+  right: -6.75em;
+  color: white;
+  -webkit-transition: background-color .3s ease, -webkit-transform .8s ease;
+  transition: background-color .3s ease, -webkit-transform .8s ease;
+  transition: background-color .3s ease, transform .8s ease;
+  background-color: #E47000;
+  text-decoration: none;
+  -webkit-transform: skew(-30deg) rotate(-60deg) scale(1);  /*修改圆心角的偏移和中心字的偏移*/
+  border-top-left-radius: 50%; 
+  border-top-right-radius: 50%; 
+  border-bottom-right-radius: 50%; 
+  border-bottom-left-radius: 50%; 
+  text-align: center; 
+  padding-top: 2em;
+}
+span{
+}
+em {
+  font-size: .8em;
+  color: #888
+}

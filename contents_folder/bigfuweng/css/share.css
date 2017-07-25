@@ -1,0 +1,78 @@
+/*主页面*/
+body{
+    background-color: #1e9457;
+}
+
+.share{
+    display: block;
+    position: relative;
+    width:100%;
+    height:100%;
+    background-position-y: -50px;
+    background-image:url(../images/share.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+}
+
+
+/*按钮*/
+.share_foot{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 23%;
+}
+
+.share_btn_box{
+    width:96%;
+    margin: 0 auto;
+    text-align: center;
+    height:50px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fe5377;
+}
+
+.share_btn_cheer{
+    float:left;
+    width:150px;
+    height:50px;
+    letter-spacing: 2px;
+    background-image:url(../images/start_left_btn.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+}
+
+.share_btn_become{
+    float:right;
+    width:150px;
+    height:50px;
+    letter-spacing: 2px;
+    background-image:url(../images/start_right_btn.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+}
+
+.share_btn_show{
+    margin: 0 auto;
+    margin-top: 25px;
+    width:65%;
+    overflow: hidden;
+    color:#fff;
+    font-size: 15px;
+}
+
+.btn_show_sharer{
+    float: left;
+}
+
+.btn_show_activity{
+    float: right;
+}

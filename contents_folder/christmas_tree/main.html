@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <title>christmasTree</title>
+    <link href="css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="main">
+    <img src="images/photo.jpeg" class="head_img">
+
+    <!--<i class="fa fa-play-circle play_button"></i>-->
+    <div class="music_button">
+        <svg class="icon play_button" aria-hidden="true">
+            <use xlink:href="#icon-music1"></use>
+        </svg>
+        <svg class="icon pause_button" aria-hidden="true">
+            <use xlink:href="#icon-musicoff"></use>
+        </svg>
+    </div>
+
+    <!--<audio src="songs/songs.mp3" controls="controls" style="display: none;" autoplay="autoplay" class="background_music">-->
+        <!--Your browser does not support the audio element.-->
+    <!--</audio>-->
+
+    <!--<img src="images/merry-christmas.png" alt="" class="merry_text">-->
+    <!--<img src="images/start.png" class="start_game">-->
+    <div class="start_game">立即参与</div>
+
+    <img class="gift gift_first move" src="images/gift1.png" />
+    <img class="gift gift_second move" src="images/gift2.png" />
+    <img class="gift gift_third move" src="images/gift3.png" />
+    <img class="gift gift_third move" src="images/gift4.png" />
+    <img class="gift gift_third move" src="images/gift5.png" />
+    <img class="gift gift_third move" src="images/gift6.png" />
+    <img class="gift gift_third move" src="images/gift7.png" />
+
+    <div class="christmas_tree">
+    </div>
+
+    <!--<img src="images/boxgroup.png" alt="" class="box_group">-->
+
+    <div class="mask_black"></div>
+    <div class="mask_shake">
+        <p class="shake_prompt">摇一摇，抢礼物！</p>
+        <img src="images/shaking.png" class="mask_shake_img">
+    </div>
+
+    <div class="rule_button">
+        活动规则
+    </div>
+
+    <div class="rule_div">
+        <div class="rule-box">
+            <img class="close_button" src="images/close.png">
+            <div class="rule_header">
+                <img src="images/head.png"/>
+            </div>
+            <div class="rule-content">
+                <p class="rule-text word">拼图游戏规则：</p>
+                <p class="rule-text word">1、微信用户均可参与本次活动。</p>
+                <p class="rule-text word">2、拼图活动以活动结束后排名排序为准，排名前3名可获得指定品牌鞋一双。</p>
+                <p class="rule-text word">3、参与活动的用户在游戏内寻找“暗号”凭暗号可至“新世界大望路店”官方微信中输入暗号获得抢鞋节50元购鞋礼券一张。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="prize_button"></div>
+
+    <div class="prize_div prize_list">
+        <div class="prize_box">
+            <img class="close_button" src="images/close.png">
+            <div class="gift_groups">
+                <!--<div class="gift_item">-->
+                    <!--<img src="images/photo.jpeg" class="prize_img">-->
+                    <!--<img src="images/finish.png" class="prize_img prize_finish">-->
+                    <!--<span class="share_times">0/5</span>-->
+                    <!--<p class="prize_name">Kindle</p>-->
+                    <!--<div class="clear_button">解锁</div>-->
+                <!--</div>-->
+                <!--<div class="gift_item">-->
+                    <!--<img src="images/photo.jpeg" class="prize_img">-->
+                    <!--<p class="prize_name">Kindle</p>-->
+                    <!--<div class="clear_button">解锁</div>-->
+                <!--</div>-->
+                <!--<div class="gift_item">-->
+                    <!--<img src="images/photo.jpeg" class="prize_img">-->
+                    <!--<span class="share_times">0/5</span>-->
+                    <!--<p class="prize_name">Kindle</p>-->
+                    <!--<div class="clear_button">解锁</div>-->
+                <!--</div>-->
+                <!--<div class="gift_item">-->
+                    <!--<img src="images/photo.jpeg" class="prize_img">-->
+                    <!--<p class="prize_name">Kindle</p>-->
+                    <!--<div class="clear_button">解锁</div>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+
+    <div class="prize_div prize_show">
+        <div class="prize_box">
+            <img class="close_button" src="images/close.png">
+            <img src="images/photo.jpeg" class="prize_img_show">
+            <p class="prize_name_show">感谢您的参与，请您去注册一下吧</p>
+        </div>
+    </div>
+
+
+</div>
+
+<script src="../../plugin_folder/jquery_v1.11.3/jquery-1.11.3.min.js"></script>
+<script src="js/iconfont.js"></script>
+<script src="js/base.js"></script>
+<script src="js/shake.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

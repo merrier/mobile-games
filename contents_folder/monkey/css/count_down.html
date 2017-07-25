@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>count down</title>
+</head>
+
+<body>
+<script type="text/javascript">
+    var seconds = 59;
+    var speed = 1000;
+    var span = document.createElement('span');
+    document.body.appendChild(span);
+    function countDown(seconds,speed){
+        var txt = "00 : " + ((seconds < 10) ? "0" + seconds : seconds) + " : 00";
+        span.innerHTML = txt;
+        var timeId = setTimeout("countDown(seconds--,speed)",speed);
+        if(seconds == 0){
+            clearTimeout(timeId);
+        };
+    }
+
+    countDown(seconds,speed);
+</script>
+</body>
+</html>

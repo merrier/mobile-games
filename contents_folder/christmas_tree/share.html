@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <title>摇一摇圣诞树</title>
+
+    <link href="css/base.css" rel="stylesheet" />
+    <link href="css/share.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+</head>
+<body>
+<img src="images/photo.jpeg" class="photo"/>
+<!--<audio id="music" controls="controls" loop="loop" class="music" style="display: none">-->
+    <!--<source src="songs/songs.mp3" type="audio/mpeg">-->
+<!--</audio>-->
+<!--<i class="fa fa-play-circle fa-3x" id="music_btn"></i>-->
+<!--<i class="fa fa-pause-circle fa-3x pause" style="display: none"></i>-->
+<div class="music_button">
+    <svg class="icon play_button" aria-hidden="true">
+        <use xlink:href="#icon-music1"></use>
+    </svg>
+    <svg class="icon pause_button" aria-hidden="true">
+        <use xlink:href="#icon-musicoff"></use>
+    </svg>
+</div>
+
+<audio src="songs/songs.mp3" controls="controls" style="display: none;" autoplay="autoplay" class="background_music">
+    Your browser does not support the audio element.
+</audio>
+
+<img src="images/frame.png" class="frame"/>
+<div class="gift_group">
+    <!--<div class="gift clearfix">-->
+        <!--<img src="images/photo.jpeg" class="gift_photo" />-->
+        <!--<img src="images/finish.png" class="finish_photo" style="display: none"/>-->
+        <!--<div class="gift_info">-->
+            <!--<p class="gift_name">kindle</p>-->
+            <!--<p class="gift_description">电子阅读器</p>-->
+            <!--<a class="btn_gift">解锁</a>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="gift clearfix">-->
+        <!--<img src="images/photo.jpeg" class="gift_photo" />-->
+        <!--<img src="images/finish.png" class="finish_photo" style="display: none"/>-->
+        <!--<div class="gift_info">-->
+            <!--<p class="gift_name">kindle</p>-->
+            <!--<p class="gift_description">电子阅读器</p>-->
+            <!--<a class="btn_gift">解锁</a>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="gift clearfix">-->
+        <!--<img src="images/photo.jpeg" class="gift_photo" />-->
+        <!--<img src="images/finish.png" class="finish_photo" style="display: none"/>-->
+        <!--<div class="gift_info">-->
+            <!--<p class="gift_name">kindle</p>-->
+            <!--<p class="gift_description">电子阅读器</p>-->
+            <!--<a class="btn_gift">解锁</a>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="gift clearfix">-->
+        <!--<img src="images/photo.jpeg" class="gift_photo" />-->
+        <!--<img src="images/finish.png" class="finish_photo" style="display: none"/>-->
+        <!--<div class="gift_info">-->
+            <!--<p class="gift_name">kindle</p>-->
+            <!--<p class="gift_description">电子阅读器</p>-->
+            <!--<a class="btn_gift">解锁</a>-->
+        <!--</div>-->
+    <!--</div>-->
+</div>
+<a class="btn_join">我也参与</a>
+<a class="share_rules">助力规则</a>
+<div class="mask_black"></div>
+
+<div class="rule-box">
+    <div class="rule_header">
+        <img src="images/header.png"/>
+    </div>
+    <div class="rule-content">
+        <p class="rule-text word">拼图游戏规则：</p>
+        <p class="rule-text word">1、微信用户均可参与本次活动。</p>
+        <p class="rule-text word">2、拼图活动以活动结束后排名排序为准，排名前3名可获得指定品牌鞋一双。</p>
+        <p class="rule-text word">3、参与活动的用户在游戏内寻找“暗号”凭暗号可至“新世界大望路店”官方微信中输入暗号获得抢鞋节50元购鞋礼券一张。</p>
+        <p class="rule-text word">4、用户凭微信界面或手机号即可至新世界大望路店进行购鞋礼券兑换。</p>
+        <p class="rule-text word">5、礼券兑换时间：11.19-11.21</p>
+        <p class="rule-text word">6、本券仅限新世界百货大望路店使用，特例商品及租赁商户均不可使用此券；（具体使用规则详见百货店内明示）</p>
+        <p class="rule-text word">上线时间：11.15-11.18</p>
+        <p class="rule-text word">核销时间：11.19-11.21</p>
+        <p class="rule-text word">使用时间：11.19-11.21</p>
+        <p class="rule-text word">核销地点：新世界百货彩旋店总服务台</p>
+    </div>
+    <div class="close">关闭</div>
+</div>
+<p style="display: none" id="text">[2,3,4,5]</p>
+</body>
+<script src="../../common_folder/javascripts/jquery-1.11.3.min.js"></script>
+<script src="js/iconfont.js"></script>
+<script src="js/base.js"></script>
+<script src="js/share.js"></script>
+</html>

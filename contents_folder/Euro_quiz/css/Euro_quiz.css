@@ -1,0 +1,570 @@
+/* less Euro_quiz */
+/* +--------------------------------------------------------------------------
+// | Author: Merrier <953075999@qq.com> <http://> <Date:2016/5/11 22:27>
+// +--------------------------------------------------------------------------*/
+/* less Game_library */
+/* +--------------------------------------------------------------------------
+// | Author: Merrier <953075999@qq.com> <http://> <Date:2016/5/11 22:27>
+// +--------------------------------------------------------------------------*/
+.font_yahei {
+  font-family: 'Microsoft Yahei', '微软雅黑';
+}
+.font_arial {
+  font-family: 'Arial';
+}
+.font_sitka {
+  font-family: 'Sitka';
+}
+.font_hei {
+  font-family: '黑体';
+}
+.center_block {
+  margin-left: auto;
+  margin-right: auto;
+}
+.content_box {
+  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.caret {
+  border-top-width: 8px;
+  border-right-width: 8px;
+  border-left-width: 8px;
+}
+html body {
+  /*注册页面*/
+  /*转发好友*/
+  /*统计数字提示信息开始*/
+}
+html body .img_responsive {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+}
+html body .mask_white {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .75;
+  background-color: #fff;
+  z-index: 9998;
+  display: none;
+}
+html body .mask_black {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .75;
+  background-color: #000;
+  z-index: 9998;
+  display: none;
+}
+html body .mask_black_noclick {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .75;
+  background-color: #000;
+  z-index: 9998;
+  display: none;
+}
+html body .mask_common {
+  position: fixed;
+  z-index: 10000;
+}
+html body .mask_box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+html body .register {
+  position: fixed;
+  top: 15%;
+  left: 5%;
+  width: 90%;
+  z-index: 9999;
+  display: block;
+  padding: 0.8rem 0;
+  font-size: 1rem;
+}
+html body .register label {
+  display: block;
+  margin: 0.2rem 0;
+  clear: both;
+}
+html body .register .reg_input {
+  display: block;
+  width: 100%;
+  height: 2rem;
+  padding-left: 0.5rem;
+  line-height: 2rem;
+  font-size: 0.7rem;
+  border: 1px solid #f09091;
+}
+html body .register .reg_box {
+  position: relative;
+  overflow: hidden;
+}
+html body .register .reg_btn {
+  float: right;
+  width: 5rem;
+  height: 1.5rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  line-height: 1.5rem;
+  text-decoration: none;
+  font-size: 0.7rem;
+}
+html body .register .reg_btn_gray {
+  background-color: #afafaf !important;
+  color: #EEE !important;
+}
+html body .register .reg_tips {
+  position: absolute;
+  font-size: 9px;
+  color: #f7d54e;
+}
+html body .register .reg_btn_mask {
+  display: none;
+  position: absolute;
+  width: 7.5rem;
+  height: 2.4rem;
+  right: 0;
+  bottom: 0;
+}
+html body .register #reg_btn_register {
+  text-indent: 1rem;
+  letter-spacing: 1rem;
+}
+html body .rule_box {
+  width: 14rem;
+  height: 80%;
+  top: 10%;
+  left: calc(50% - 7rem);
+}
+html body .rule_box .rule_header {
+  width: 100%;
+  height: 7.5rem;
+}
+html body .rule_box .rule_header > img {
+  width: 100%;
+  height: 100%;
+}
+html body .rule_box .rule_content {
+  height: calc(100% - 7.5rem);
+  background-color: #fff;
+  padding: 0 0.4rem;
+  padding-top: 0.4rem;
+  color: #af9c00;
+  font-size: 0.7rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+html body .rule_box .rule_content .rule_content_box {
+  margin-bottom: 0.6rem;
+  line-height: 1rem;
+}
+html body .rule_box .rule_content .rule_content_box .rule_title {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+html body .rule_box .rule_content .rule_content_box .rule_prize_des {
+  margin-bottom: 10px;
+}
+html body .rule_box .rule_content .rule_content_box .rule_prize_tips {
+  font-weight: 400;
+  font-size: 0.6rem;
+}
+html body .rule_box .rule_content .rule_content_box .rule_prize_img {
+  width: 100%;
+  height: auto;
+}
+html body .forward {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+html body .input_num_box {
+  position: absolute;
+  color: #1c1c1c;
+}
+.bgcolor_transparent {
+  background-color: rgba(83, 131, 8, 0.7);
+}
+.green_border {
+  border: 2px solid #345405;
+}
+html body .main {
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  background-image: url("../images/main_bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+}
+html body .main .logo_head {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 10px;
+}
+html body .main .logo_head .head_market_logo {
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  width: 138px;
+  height: 30px;
+}
+html body .main .logo_head .head_euro_logo {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 40px;
+  height: 50px;
+}
+html body .main .common_box {
+  width: 96%;
+  height: calc(100% - 105px);
+  margin-bottom: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+html body .main .common_box:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+html body .main .common_box h3 {
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+html body .main .common_box .common_battle {
+  width: 100%;
+  height: calc(100% - 40px);
+  overflow-y: auto;
+}
+html body .main .common_box .common_battle:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+html body .main .common_box .common_battle .battle_box {
+  position: relative;
+  width: 49%;
+  height: 85px;
+  margin-bottom: 10px;
+  padding: 2px 10px;
+  border: 2px solid #345405;
+  border-radius: 8px;
+  background-color: rgba(83, 131, 8, 0.7);
+}
+html body .main .common_box .common_battle .battle_box > img {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+}
+html body .main .common_box .common_battle .battle_box h5 {
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 5px;
+}
+html body .main .common_box .common_battle .battle_box span {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 33px;
+  text-align: center;
+  font-size: 12px;
+}
+html body .main .common_box .common_battle .battle_box .battle_result {
+  top: 50px;
+}
+html body .main .common_box .common_battle .battle_box .battle_box_team {
+  width: 50px;
+}
+html body .main .common_box .common_battle .battle_box .battle_box_team img {
+  display: block;
+  width: 45px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2px;
+}
+html body .main .common_box .common_battle .battle_box .battle_box_team p {
+  width: 100%;
+  font-size: 10px;
+  text-align: center;
+}
+html body .main .common_box .common_battle .battle_box .battle_box_hometeam {
+  float: left;
+}
+html body .main .common_box .common_battle .battle_box .battle_box_visitteam {
+  float: right;
+}
+html body .main .common_box .common_battle .battle_box:nth-child(2n+1) {
+  float: left;
+}
+html body .main .common_box .common_battle .battle_box:nth-child(2n) {
+  float: right;
+}
+html body .main .alert_battle_outdate {
+  position: fixed;
+  width: 16rem;
+  height: 7rem;
+  top: 50%;
+  left: 50%;
+  margin-top: -3.5rem;
+  margin-left: -8rem;
+  text-align: center;
+}
+html body .main .alert_battle_outdate .battle_outdate_content {
+  width: 100%;
+  height: 5.5rem;
+  padding: 0.8rem;
+  color: #000;
+  background-color: #ffffff;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+html body .main .alert_battle_outdate .battle_outdate_content h6 {
+  color: #db0000;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+html body .main .alert_battle_outdate .mask_close {
+  width: 100%;
+  height: 1.5rem;
+  color: #ffffff;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  font-weight: bold;
+  background-color: #5ea301;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+html body .main .common_btn_confirm {
+  display: block;
+  float: none;
+  width: 120px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 18px;
+  text-indent: 20px;
+  letter-spacing: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  background-image: url("../images/reg_btn_register.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  border-radius: 5px;
+  box-shadow: 0 0 25px 10px #afa587;
+}
+html body .main .common_foot_btn {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 18px;
+  color: #ffffff;
+  text-indent: 2px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background-image: url("../images/common_foot_btn.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  box-shadow: 0 0 25px 10px #afa587;
+}
+html body.index .main .index_main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/index_bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+}
+html body.index .main .index_main .index_begin {
+  position: absolute;
+  width: 172px;
+  height: 41px;
+  left: 50%;
+  bottom: 50px;
+  margin-left: -86px;
+  background-image: url("../images/index_begin.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+}
+html body.index .main .index_main .btn_activity_des {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+  color: #ffffff;
+  font-family: 'Arial';
+  font-size: 12px;
+}
+html body.body_register .main .register h2 {
+  font-size: 20px;
+  color: #ffffff;
+  text-indent: 2px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+html body.body_register .main .register #regForm label {
+  display: none;
+}
+html body.body_register .main .register #regForm .reg_tips {
+  font-size: 12px;
+}
+html body.body_register .main .register #regForm #code_random {
+  display: none;
+}
+html body.body_register .main .register #regForm .reg_input {
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: rgba(83, 131, 8, 0.7);
+  border: 2px solid #345405;
+  border-radius: 8px;
+}
+html body.body_register .main .register #regForm .reg_input::-webkit-input-placeholder {
+  opacity: 1;
+  color: #ffffff;
+}
+html body.body_register .main .register #regForm .reg_input::-moz-placeholder {
+  opacity: 1;
+  color: #ffffff;
+}
+html body.body_register .main .register #regForm .reg_box #reg_btn_getcode {
+  width: 100px;
+  height: 30px;
+  margin-top: 45px;
+  margin-bottom: 10px;
+  line-height: 30px;
+  color: #424242;
+  font-weight: bold;
+  font-size: 13px;
+  border-radius: 5px;
+  background-color: transparent;
+  background-image: url("../images/reg_btn_getcode.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+}
+html body.body_register .main .register #regForm .reg_box .reg_tips_yellow {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 12px;
+  color: #fceb55;
+}
+html body.enter_score .common_box .enter_score_show {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  background-color: rgba(83, 131, 8, 0.7);
+  border: 2px solid #345405;
+  border-radius: 15px;
+}
+html body.enter_score .common_box .enter_score_show:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+html body.enter_score .common_box .enter_score_show .score_show_box {
+  width: 100px;
+  height: 100%;
+}
+html body.enter_score .common_box .enter_score_show .score_show_box img {
+  width: 100%;
+  height: 100px;
+}
+html body.enter_score .common_box .enter_score_show .score_show_box p {
+  width: 100%;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 12px;
+}
+html body.enter_score .common_box .enter_score_show .score_show_box input {
+  display: block;
+  width: 60px;
+  height: 25px;
+  line-height: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+  text-align: center;
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+  background-color: transparent;
+}
+html body.enter_score .common_box .enter_score_show .score_show_hometeam {
+  float: left;
+}
+html body.enter_score .common_box .enter_score_show .score_show_visitteam {
+  float: right;
+}
+html body.enter_score .common_box .enter_score_show span {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 60px;
+  text-align: center;
+  font-size: 20px;
+}
+html body.enter_score .common_box .enter_score_tips {
+  display: none;
+  position: absolute;
+  color: #ff0000;
+  font-size: 12px;
+  margin-top: 5px;
+}

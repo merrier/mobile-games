@@ -1,0 +1,505 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background-image: url('../images/background.jpg');
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+.join_page,.shake_page{
+    width: 100%;
+    height: 100%;
+}
+
+.message{
+    position: absolute;
+    top: 1rem;
+    font-size: 0.8rem;
+ }
+
+.spent_time{
+    left: 1rem;
+}
+
+.current_rank{
+    left: 6rem;
+}
+
+.ready_button{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+    background: rgb(250,57,66);
+    color: #fff;
+    margin: 0 auto;
+    position: relative;
+    top: 70%;
+    font-size: 0.8rem;
+    box-shadow: 0 0 15px 5px rgb(247,194,152);
+    padding: 0.8rem 1rem;
+}
+
+.button{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    position: absolute;
+    top: 72%;
+    font-size: 0.6rem;
+    padding: 0.6rem 0.7rem;
+}
+
+.rule_button{
+    left: 10%;
+    box-shadow: 0 0 15px 5px #fff;
+    background: rgb(255,236,119);
+    color: rgb(250,57,66);
+}
+
+.rank_button{
+    right: 10%;
+    padding: 0;
+    line-height: 3rem;
+    box-shadow: 0 0 15px 5px #fff;
+    background: rgb(255,236,119);
+    color: rgb(250,57,66);
+}
+
+.mask{
+    background: rgba(0,0,0,0.8);
+    color: #FFF;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.count_down_time{
+    z-index: 2;
+}
+
+.count_down_time p{
+    font-size: 1rem;
+    position: relative;
+    top: 30%;
+}
+
+.count_down_time .left_time{
+    margin-top: 2rem;
+    color: #F00;
+    font-size: 2rem;
+}
+
+/*活动详情弹框*/
+.mask_rule_detail {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    display: none;
+    overflow: hidden;
+    animation: fade-in 1.5s;
+    -webkit-animation: fade-in 1.5s;
+    /*opacity: 0;*/
+}
+
+.fade_in{
+    -webkit-animation: fade-in 1s;
+    -moz-animation: fade-in 1s;
+    -o-animation: fade-in 1s;
+    animation: fade-in 1s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fade-in {/*针对webkit内核*/
+    0% {
+        -webkit-opacity: 0;
+    }
+    40% {
+        -webkit-opacity: 0;
+    }
+    100% {
+        -webkit-opacity: 1;
+    }
+}
+
+@-moz-keyframes fade-in {/*针对webkit内核*/
+    0% {
+        -moz-opacity: 0;
+    }
+    40% {
+        -moz-opacity: 0;
+    }
+    100% {
+        -moz-opacity: 1;
+    }
+}
+
+@-o-keyframes fade-in {/*针对webkit内核*/
+    0% {
+        -o-opacity: 0;
+    }
+    40% {
+        -o-opacity: 0;
+    }
+    100% {
+        -o-opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }/*初始状态 透明度为0*/
+    40% {
+        opacity: 0;
+    }/*过渡状态 透明度为0*/
+    100% {
+        opacity: 1;
+    }/*结束状态 透明度为1*/
+}
+
+.fade_out{
+    -webkit-animation: fade-out 1s;
+    -moz-animation: fade-out 1s;
+    -o-animation: fade-out 1s;
+    animation: fade-out 1s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fade-out {/*针对webkit内核*/
+    0% {
+        -webkit-opacity: 1;
+    }
+    40% {
+        -webkit-opacity: 1;
+    }
+    100% {
+        -webkit-opacity: 0;
+    }
+}
+
+@-moz-keyframes fade-out {/*针对webkit内核*/
+    0% {
+        -moz-opacity: 1;
+    }
+    40% {
+        -moz-opacity: 1;
+    }
+    100% {
+        -moz-opacity: 0;
+    }
+}
+
+@-o-keyframes fade-out {/*针对webkit内核*/
+    0% {
+        -o-opacity: 1;
+    }
+    40% {
+        -o-opacity: 1;
+    }
+    100% {
+        -o-opacity: 0;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }/*初始状态 透明度为0*/
+    40% {
+        opacity: 1;
+    }/*过渡状态 透明度为0*/
+    100% {
+        opacity: 0;
+    }/*结束状态 透明度为1*/
+}
+
+.rule_img {
+    position: absolute;
+    left: calc(50% - 6.5rem);
+    top: 20%;
+    width: 13rem;
+    height: 16rem;
+}
+
+.rule_text_div {
+    position: absolute;
+    left: 0;
+    top: 35%;
+    color: black;
+    width: 100%;
+    height: 40%;
+    overflow-y: auto;
+    padding: 0 16%;
+}
+
+.rule_text {
+    text-align: left;
+}
+
+.mask_rule_detail .close_button {
+    position: absolute;
+    top: 18%;
+    right: 6%;
+    width: 1.6rem;
+    height: 1.6rem;
+    z-index: 6;
+}
+/*活动详情弹框*/
+
+.shake_count{
+    position: absolute;
+    top: 36%;
+    width: 40%;
+    left: 30%;
+    font-size: 3rem;
+}
+
+.shake_count_last{
+    position: absolute;
+    top: 36%;
+    left: 44%;
+    font-size: 3rem;
+}
+
+.return_button{
+    left: 10%;
+    box-shadow: 0 0 15px 5px #fff;
+    background: rgb(255,236,119);
+    color: rgb(250,57,66);
+}
+
+.shake_prompt_button{
+    width: 3rem;
+    height: 3rem;
+    color: #FFF;
+    position: absolute;
+    top:72%;
+    right: 10%;
+    padding: 0;
+    line-height: 3rem;
+    background-image: url("../images/shake1.png");
+    background-size: 100% 100%;
+    -webkit-animation: rotate 0.5s linear infinite;
+    -moz-animation: rotate 0.5s linear infinite;
+    -o-animation: rotate 0.5s linear infinite;
+    animation: rotate 0.5s linear infinite;
+}
+
+@-webkit-keyframes rotate {
+    0%{
+        -webkit-transform: rotate(0deg);
+    }
+    25%{
+        -webkit-transform: rotate(20deg);
+    }
+    50%{
+        -webkit-transform: rotate(0deg);
+    }
+    75%{
+        -webkit-transform: rotate(-20deg);
+    }
+    100%{
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+@-moz-keyframes rotate {
+    0%{
+        -moz-transform: rotate(0deg);
+    }
+    25%{
+        -moz-transform: rotate(20deg);
+    }
+    50%{
+        -moz-transform: rotate(0deg);
+    }
+    75%{
+        -moz-transform: rotate(-20deg);
+    }
+    100%{
+        -moz-transform: rotate(0deg);
+    }
+}
+
+@-o-keyframes rotate {
+    0%{
+        -o-transform: rotate(0deg);
+    }
+    25%{
+        -o-transform: rotate(20deg);
+    }
+    50%{
+        -o-transform: rotate(0deg);
+    }
+    75%{
+        -o-transform: rotate(-20deg);
+    }
+    100%{
+        -o-transform: rotate(0deg);
+    }
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(20deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-20deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.fa-arrow-left{
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.game_result{
+    z-index: 2;
+}
+
+.game_result img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.game_result p{
+    font-size: 1rem;
+    margin: 20px;
+}
+
+.game_result span{
+    color: #FF0000;
+    font-weight: bold;
+}
+
+.rank_list{
+    display: none;
+    width: 90%;
+    height: 17rem;
+    background-image: url("../images/rank_list.png");
+    background-size: 100% 100%;
+    margin: auto;
+    position: fixed;
+    top: 4rem;
+    left: 5%;
+    padding: 1.2rem;
+    text-align: center;
+    z-index: 9999999;
+    font-size: 0.6rem;
+    color: #000;
+}
+
+.rank_list .close_button{
+    position: absolute;
+    top: -0.2rem;
+    right: -0.4rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    z-index: 10000000;
+}
+
+.rank_header{
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    position: relative;
+    font-size: 0.8rem;
+}
+
+.rank_content{
+    margin-top: 1rem;
+    width: 100%;
+    height: 82%;
+    overflow-y: auto;
+}
+
+.photo{
+    position: absolute;
+    top:1rem;
+    left: 0.5rem;
+}
+
+.nick{
+    position: absolute;
+    top:1rem;
+    left: 3rem;
+}
+
+.time{
+    position: absolute;
+    top:1rem;
+    right: 1rem;
+}
+
+.rank_item{
+    width: 100%;
+    height: 2.6rem;
+    border: 2px solid #000;
+    border-radius: 1.5rem;
+    position: relative;
+    margin-bottom: 0.4rem;
+}
+.img_photo{
+    position: absolute;
+    left: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    top:0.2rem;
+    border-radius: 1rem;
+}
+
+.rank{
+    position: absolute;
+    left: 3rem;
+    top:0.3rem;
+    color: #FF4136;
+}
+
+.name{
+    position: absolute;
+    left: 3rem;
+    top:1.3rem;
+}
+
+.cost_time{
+    position: absolute;
+    right: 1rem;
+    top: 0.8rem;
+}
+
+.ovf_hidden{
+    overflow-y: hidden;
+}
+

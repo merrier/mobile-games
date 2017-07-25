@@ -1,0 +1,140 @@
+body{
+    background-image: url("../images/background_gift.png");
+    font-family: "Microsoft Yahei", "微软雅黑";
+    text-align: center;
+    font-size: 1rem;
+    background-size: 100% 100%;
+}
+.empty{
+    height: 2rem;
+}
+.gift_name{
+    color: #fff33b;
+    margin-top: -1rem;
+}
+.img_photo{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-left: -11rem;
+
+}
+.gift_packet{
+    margin-top: 1rem;
+    width: 10rem;
+    z-index: 1;
+    margin-left: 0.5rem;
+}
+.light{
+    position: absolute;
+    display: block;
+    top: 5rem;
+    width: 16rem;
+
+}
+.sign{
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+    width: 8rem;
+    display: block;
+    z-index: 2;
+    animation: move 1s;
+    -moz-animation: move 1s;	/* Firefox */
+    -webkit-animation: move 1s;	/* Safari 和 Chrome */
+    -o-animation: move 1s;
+}
+@keyframes move
+{
+    0%   {}
+
+    100% {transform: translate(1rem,1rem)}
+}
+
+@-moz-keyframes move /* Firefox */
+{
+    0%   {}
+
+    100% {transform: translate(1rem,1rem)}
+}
+
+@-webkit-keyframes move /* Safari 和 Chrome */
+{
+    0%   {}
+
+    100% {transform: translate(1rem,1rem)}
+}
+
+@-o-keyframes move /* Opera */
+{
+    0%   {}
+
+    100% {transform: translate(1rem,1rem)}
+}
+.progress_bar{
+    margin-top: 2.5rem;
+    background-color: #fff;
+    width: 15rem;
+    height: 0.3rem;
+    z-index: 9;
+    margin-left: calc(50% - 7.5rem);
+    border-radius: 1rem;
+}
+.bar{
+    background-color: #fff33b;
+    width: 70%;
+    height: 0.3rem;
+    z-index: 10;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+.help_him{
+    background-color: #fff33b;
+    width: 7rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    text-align: center;
+    float: left;
+    font-size: 0.8rem;
+    line-height: 2rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+
+}
+.join_in{
+    background-color: #fff33b;
+    width: 7rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    text-align: center;
+    float: right;
+    font-size: 0.8rem;
+    line-height: 2rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-right: 0.5rem;
+}
+.click{
+    position: absolute;
+    top: 17.5rem;
+    left: 3rem;
+    display: none;
+}
+.gift_description{
+    display: none;
+    width: 14rem;
+    position: fixed;
+    top: 6rem;
+    z-index: 9999;
+    left: calc(50% - 7rem);
+}
+.word_description{
+    z-index: 99999;
+    position: absolute;
+    display: none;
+    top: 9rem;
+    left: 3rem;
+    font-size: 0.8rem;
+    width: 10rem;
+}

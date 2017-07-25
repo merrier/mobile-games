@@ -1,0 +1,699 @@
+@font-face {
+    font-family: "happy";
+    src:url("../fonts/happy.ttf");
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.ovfHiden {
+    overflow: hidden;
+    height: 100%;
+}
+
+.main {
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*text-align: center;*/
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-perspective: 1200px;
+    -moz-perspective: 1200px;
+    perspective: 1200px;
+    text-align: center;
+}
+
+.page {
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*position: relative;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*overflow: hidden;*/
+    /*text-align: center;*/
+    font-size: 0.8rem;
+    font-family: 'Microsoft Yahei';
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.page_current{
+    visibility: visible!important;
+    z-index: 1;
+}
+
+/*首页*/
+.page0 {
+    background-image: url('../images/background.png');
+    background-size: 100% 100%;
+}
+
+/*闪光动画*/
+.light {
+    width: 100%;
+    height: 10rem;
+    position: absolute;
+    top: 35.6%;
+    left: 0;
+    animation: twinkling 1s infinite ease-in-out alternate;
+    -webkit-animation: twinkling 1s infinite ease-in-out alternate;
+    -moz-animation: twinkling 1s infinite ease-in-out alternate;
+    -o-animation: twinkling 1s infinite ease-in-out alternate;
+}
+
+@keyframes twinkling { /*透明度由0到1*/
+    0% {
+        opacity: 0.1; /*透明度为0*/
+    }
+    100% {
+        opacity: 1; /*透明度为1*/
+    }
+}
+
+@-webkit-keyframes twinkling { /*透明度由0到1*/
+    0% {
+        -webkit-opacity: 0.1; /*透明度为0*/
+    }
+    100% {
+        -webkit-opacity: 1; /*透明度为1*/
+    }
+}
+
+@-moz-keyframes twinkling { /*透明度由0到1*/
+    0% {
+        -moz-opacity: 0.1; /*透明度为0*/
+    }
+    100% {
+        -moz-opacity: 1; /*透明度为1*/
+    }
+}
+
+@-o-keyframes twinkling { /*透明度由0到1*/
+    0% {
+        -o-opacity: 0.1; /*透明度为0*/
+    }
+    100% {
+        -o-opacity: 1; /*透明度为1*/
+    }
+}
+
+/*闪光动画*/
+
+/*活动详情*/
+.button {
+    color: #5c3604;
+    background-color: #fff33b;
+    font-size: 0.8rem;
+    width: 6rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    border-radius: 0.6rem;
+    margin: auto;
+    position: relative;
+    top: 70%;
+}
+
+/*活动详情*/
+
+/*音乐按钮*/
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 2.4em;
+    color: #FFF;
+}
+
+.music_button {
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    z-index: 2;
+    width: 2rem;
+    height: 2rem;
+}
+
+.play_button {
+    z-index: 2;
+    animation: rotate 1s linear infinite;
+    -webkit-animation: rotate 1s linear infinite;
+    display: block;
+}
+
+.pause_button {
+    display: none;
+    z-index: 2;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes rotate {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    50% {
+        -moz-transform: rotate(180deg);
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes rotate {
+    0% {
+        -o-transform: rotate(0deg);
+    }
+    50% {
+        -o-transform: rotate(180deg);
+    }
+    100% {
+        -o-transform: rotate(360deg);
+    }
+}
+
+/*音乐按钮*/
+
+/*下拉指示箭头*/
+.fa-angle-double-up {
+    position: fixed;
+    bottom: 1rem;
+    left: 47%;
+    color: #FFF;
+    font-size: 1.4rem;
+    animation: blink_up 1.2s infinite;
+    -moz-animation: blink_up 1.2s infinite;
+    -webkit-animation: blink_up 1.2s infinite;
+    -o-animation: blink_up 1.2s infinite;
+    z-index: 5;
+}
+
+@keyframes blink_up {
+    0%, 30% {
+        opacity: 0;
+        transform: translate(0, 10px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0, -8px);
+    }
+}
+
+@-webkit-keyframes blink_up {
+    0%, 30% {
+        -webkit-opacity: 0;
+        -webkit-transform: translate(0, 10px);
+    }
+
+    60% {
+        -webkit-opacity: 1;
+        -webkit-transform: translate(0, 0);
+    }
+    100% {
+        -webkit-opacity: 0;
+        -webkit-transform: translate(0, -8px);
+    }
+}
+
+@-moz-keyframes blink_up {
+    0%, 30% {
+        -moz-opacity: 0;
+        -moz-transform: translate(0, 10px);
+    }
+
+    60% {
+        -moz-opacity: 1;
+        -moz-transform: translate(0, 0);
+    }
+    100% {
+        -moz-opacity: 0;
+        -moz-transform: translate(0, -8px);
+    }
+}
+
+@-o-keyframes blink_up {
+    0%, 30% {
+        -o-opacity: 0;
+        -o-transform: translate(0, 10px);
+    }
+
+    60% {
+        -o-opacity: 1;
+        -o-transform: translate(0, 0);
+    }
+    100% {
+        -o-opacity: 0;
+        -o-transform: translate(0, -8px);
+    }
+}
+
+/*下拉指示箭头*/
+
+/*活动详情弹框*/
+.mask_rule_detail {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    display: none;
+    overflow: hidden;
+    animation: fade-in 1.5s;
+    -webkit-animation: fade-in 1.5s;
+    opacity: 0;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }/*初始状态 透明度为0*/
+    40% {
+        opacity: 0;
+    }/*过渡状态 透明度为0*/
+    100% {
+        opacity: 1;
+    }/*结束状态 透明度为1*/
+}
+@-webkit-keyframes fade-in {/*针对webkit内核*/
+    0% {
+        -webkit-opacity: 0;
+    }
+    40% {
+        -webkit-opacity: 0;
+    }
+    100% {
+        -webkit-opacity: 1;
+    }
+}
+
+@-moz-keyframes fade-in {/*针对webkit内核*/
+    0% {
+        -moz-opacity: 0;
+    }
+    40% {
+        -moz-opacity: 0;
+    }
+    100% {
+        -moz-opacity: 1;
+    }
+}
+
+@-o-keyframes fade-in {/*针对webkit内核*/
+    0% {
+        -o-opacity: 0;
+    }
+    40% {
+        -o-opacity: 0;
+    }
+    100% {
+        -o-opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }/*初始状态 透明度为0*/
+    40% {
+        opacity: 1;
+    }/*过渡状态 透明度为0*/
+    100% {
+        opacity: 0;
+    }/*结束状态 透明度为1*/
+}
+@-webkit-keyframes fade-out {/*针对webkit内核*/
+    0% {
+        -webkit-opacity: 1;
+    }
+    40% {
+        -webkit-opacity: 1;
+    }
+    100% {
+        -webkit-opacity: 0;
+    }
+}
+
+@-moz-keyframes fade-out {/*针对webkit内核*/
+    0% {
+        -moz-opacity: 1;
+    }
+    40% {
+        -moz-opacity: 1;
+    }
+    100% {
+        -moz-opacity: 0;
+    }
+}
+
+@-o-keyframes fade-out {/*针对webkit内核*/
+    0% {
+        -o-opacity: 1;
+    }
+    40% {
+        -o-opacity: 1;
+    }
+    100% {
+        -o-opacity: 0;
+    }
+}
+
+.rule_img {
+    position: absolute;
+    left: 0;
+    top: 20%;
+    width: 100%;
+    height: 70%;
+}
+
+.rule_text_div {
+    position: absolute;
+    left: 0;
+    top: 35%;
+    width: 100%;
+    height: 40%;
+    overflow-y: auto;
+    padding: 0 16%;
+    /*background-image: url('../images/rule.png');*/
+    /*background-size: 100% 100%;*/
+    /*padding: 20% 16%;*/
+}
+
+.rule_text {
+    text-align: left;
+}
+
+.close_button {
+    position: absolute;
+    top: 18%;
+    right: 6%;
+    width: 1.6rem;
+    height: 1.6rem;
+    z-index: 6;
+}
+/*活动详情弹框*/
+/*首页*/
+
+/*福袋页面*/
+.page1,.page2,.page3,.page4{
+    background-image: url('../images/background_gift.png');
+    background-size: 100% 100%;
+    /*display: none;*/
+}
+
+.page_get,.page_got{
+    width: 100%;
+    height: 100%;
+}
+
+.head_img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    position: absolute;
+    left: 1rem;
+    top:1rem;
+    z-index:2;
+}
+
+.bag_title{
+    color: #fff33b;
+    font-size: 1rem;
+    position: relative;
+    top: 14%;
+}
+
+.gift_bag{
+    position: absolute;
+    top: 24%;
+    left: 0;
+    width: 100%;
+    height: 34%;
+    z-index: 2;
+}
+
+.shine_circle{
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 62%;
+}
+
+.progress{
+    width: 10rem;
+    margin: auto;
+    position: relative;
+    top:62%;
+    height: 0.4rem;
+    background-color: #fff;
+    border-radius: 0.3rem;
+    display: none;
+}
+
+.progressbar{
+    width: 0%;
+    height: 100%;
+    background-color: #fff33b;
+    border-radius: 0.3rem 0 0 0.3rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.bag_text{
+    position: relative;
+    top: 65%;
+    color: #fff;
+    font-size: 0.6rem;
+}
+
+.bag_number{
+    margin-right: 0.8rem;
+}
+
+.number_circle{
+    width: 2rem;
+    height: 2rem;
+    color: #5c3604;
+    border-radius: 1rem;
+    position: absolute;
+    background-color: #fff33b;
+    top:24%;
+    right: 20%;
+    z-index: 3;
+    padding: 0.3rem 0.1rem;
+}
+
+.number_circle span{
+    font-size: 0.5rem;
+    display: block;
+    font-weight: bold;
+}
+
+.number_circle .limit_number{
+    margin-top: 0.2rem;
+}
+/*福袋页面*/
+
+/*分享弹框*/
+.mask_share{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-image: url("../images/share.png");
+    background-size: 100% 100%;
+    z-index: 5;
+    display: none;
+}
+
+.share_text{
+    color: #fff;
+    font-size: 1rem;
+    top: 46%;
+    padding: 0 1rem;
+    display: block;
+    font-family: "happy";
+}
+/*分享弹框*/
+
+/*福袋领取页面*/
+.page_got{
+    display: none;
+}
+
+.page_got .gift_bag{
+    position: absolute;
+    top: 24%;
+    left: 0;
+    width: 50%;
+    margin-left: 25%;
+    height: 34%;
+    z-index: 2;
+}
+.gift_description{
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 0 1rem;
+    top: 60%;
+}
+/*福袋领取页面*/
+
+/*翻页效果*/
+@keyframes turning{ /*透明度由0到1*/
+    0% {
+        opacity: 0.1; /*透明度为0*/
+    }
+    100% {
+        opacity: 1; /*透明度为1*/
+    }
+}
+
+@-webkit-keyframes turning{ /*透明度由0到1*/
+    0% {
+        -webkit-opacity: 0.1; /*透明度为0*/
+    }
+    100% {
+        -webkit-opacity: 1; /*透明度为1*/
+    }
+}
+
+@-moz-keyframes turning{ /*透明度由0到1*/
+    0% {
+        -moz-opacity: 0.1; /*透明度为0*/
+    }
+    100% {
+        -moz-opacity: 1; /*透明度为1*/
+    }
+}
+
+@-o-keyframes turning{ /*透明度由0到1*/
+    0% {
+        -o-opacity: 0.1; /*透明度为0*/
+    }
+    100% {
+        -o-opacity: 1; /*透明度为1*/
+    }
+}
+
+.pt-page-moveToTop {
+    -webkit-animation: moveToTop .6s ease both;
+    -moz-animation: moveToTop .6s ease both;
+    animation: moveToTop .6s ease both;
+}
+
+.pt-page-moveFromTop {
+    -webkit-animation: moveFromTop .6s ease both;
+    -moz-animation: moveFromTop .6s ease both;
+    animation: moveFromTop .6s ease both;
+}
+
+.pt-page-moveToBottom {
+    -webkit-animation: moveToBottom .6s ease both;
+    -moz-animation: moveToBottom .6s ease both;
+    animation: moveToBottom .6s ease both;
+}
+
+.pt-page-moveFromBottom {
+    -webkit-animation: moveFromBottom .6s ease both;
+    -moz-animation: moveFromBottom .6s ease both;
+    animation: moveFromBottom .6s ease both;
+}
+
+@-webkit-keyframes moveToTop {
+    to { -webkit-transform: translateY(-100%); }
+}
+@-moz-keyframes moveToTop {
+    to { -moz-transform: translateY(-100%); }
+}
+@keyframes moveToTop {
+    to { transform: translateY(-100%); }
+}
+
+@-webkit-keyframes moveFromTop {
+    from { -webkit-transform: translateY(-100%); }
+}
+@-moz-keyframes moveFromTop {
+    from { -moz-transform: translateY(-100%); }
+}
+@keyframes moveFromTop {
+    from { transform: translateY(-100%); }
+}
+
+@-webkit-keyframes moveToBottom {
+    to { -webkit-transform: translateY(100%); }
+}
+@-moz-keyframes moveToBottom {
+    to { -moz-transform: translateY(100%); }
+}
+@keyframes moveToBottom {
+    to { transform: translateY(100%); }
+}
+
+@-webkit-keyframes moveFromBottom {
+    from { -webkit-transform: translateY(100%); }
+}
+@-moz-keyframes moveFromBottom {
+    from { -moz-transform: translateY(100%); }
+}
+@keyframes moveFromBottom {
+    from { transform: translateY(100%); }
+}
+
+/*翻页效果*/

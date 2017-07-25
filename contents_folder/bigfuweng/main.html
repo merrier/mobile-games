@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>女神PK大富翁</title>
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <link href="css/base.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <link href="css/font-awesome.min.css" rel="stylesheet"/>
+    <script src="js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+
+    <!--通用蒙版-->
+    <div class="mask_white" style="display: none"></div>
+
+
+    <!--通用蒙版-->
+    <div class="mask_black" style="display: none"></div>
+
+    <!--转发好友-->
+    <div class="h_f_box" style="display: none;">
+        <img src="images/forward.png" class="img_responsive">
+    </div>
+
+    <!--助力榜-->
+    <div class="helplist" style="display: none;">
+        <div class="helplist_btn_box">
+            <div class="btn_return"></div>
+            <div class="btn_share"></div>
+        </div>
+
+        <div class="helplist_progress">
+            <div class="progress_bar"></div>
+            <span class="progress_num">72%</span>
+        </div>
+
+        <p class="progress_tips">已有<span class="progress_already_num">0</span>人为您助力，您距离下次机会还差<span class="progress_need_num">1</span>次助力</p>
+            <div class="helplist_main" style="display: block">
+                <div class="img_helplist_head"></div>
+                <div class="helplist_content">
+                    <ul class="helplist_content_list">
+                        <li class="helplist_content_item helplist_headimg">
+                            <img src="images/diamond_blue.png">
+                        </li>
+                        <li class="helplist_content_item helplist_nickname">张三dsafsadf</li>
+                        <li class="helplist_content_item helplist_spa">为您助力一次</li>
+                    </ul>
+
+                    <ul class="helplist_content_list">
+                        <li class="helplist_content_item helplist_headimg">
+                            <img src="images/diamond_blue.png">
+                        </li>
+                        <li class="helplist_content_item helplist_nickname">张三</li>
+                        <li class="helplist_content_item helplist_spa">为您助力一次</li>
+                    </ul>
+
+                    <ul class="helplist_content_list">
+                        <li class="helplist_content_item helplist_headimg">
+                            <img src="images/diamond_blue.png">
+                        </li>
+                        <li class="helplist_content_item helplist_nickname">张三</li>
+                        <li class="helplist_content_item helplist_spa">为您助力一次</li>
+                    </ul>
+
+                    <ul class="helplist_content_list">
+                        <li class="helplist_content_item helplist_headimg">
+                            <img src="images/diamond_blue.png">
+                        </li>
+                        <li class="helplist_content_item helplist_nickname">张三</li>
+                        <li class="helplist_content_item helplist_spa">为您助力一次</li>
+                    </ul>
+
+                    <ul class="helplist_content_list">
+                        <li class="helplist_content_item helplist_headimg">
+                            <img src="images/diamond_blue.png">
+                        </li>
+                        <li class="helplist_content_item helplist_nickname">张三</li>
+                        <li class="helplist_content_item helplist_spa">为您助力一次</li>
+                    </ul>
+
+                    <ul class="helplist_content_list">
+                        <li class="helplist_content_item helplist_headimg">
+                            <img src="images/diamond_blue.png">
+                        </li>
+                        <li class="helplist_content_item helplist_nickname">张三</li>
+                        <li class="helplist_content_item helplist_spa">为您助力一次</li>
+                    </ul>
+
+                    <ul class="helplist_content_list">
+                        <li class="helplist_content_item helplist_headimg">
+                            <img src="images/diamond_blue.png">
+                        </li>
+                        <li class="helplist_content_item helplist_nickname">张三</li>
+                        <li class="helplist_content_item helplist_spa">为您助力一次</li>
+                    </ul>
+
+                    <ul class="helplist_content_list">
+                        <li class="helplist_content_item helplist_headimg">
+                            <img src="images/diamond_blue.png">
+                        </li>
+                        <li class="helplist_content_item helplist_nickname">张三</li>
+                        <li class="helplist_content_item helplist_spa">为您助力一次</li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="helplist_more">查看更多</div>
+        </div>
+    </div>
+
+
+    <!--剩余机会-->
+    <div class="mask_common mask_game_times" style="display: none">
+        <div class="mask_box box_game_times" style="display: block">
+            <i class="fa fa-times btn_mask_close"></i>
+            <span class="game_times">2</span>
+            <div class="btn_share_circle"></div>
+        </div>
+    </div>
+
+
+    <!--骰子-->
+    <div class="dice_box">
+        <div class="dice">
+            <div class="dice_mask"></div>
+        </div>
+    </div>
+
+    <!--大转盘-->
+    <div class="dial" style="display: none">
+        <div id="outercont">
+            <div id="middle-cont">
+                <div id="middle"></div>
+            </div>
+            <div id="outer-cont">
+                <div id="cn-wrapper" style="transform: rotate(40deg);">
+                    <img src="images/dial.png">
+                </div>
+            </div>
+            <div id="inner-cont">
+                <div id="inner">
+                    <img class="inner_img" src="images/btn_chou.png">
+                    <div class="chou_mask"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--主视觉-->
+    <div class="main" style="display: block">
+        <div class="main_head">
+            <div class="main_head_logo">
+
+            </div>
+            <div class="main_head_content">
+                <p class="gold_history">历史最高：<span class="gold_history_max">3000</span>金币</p>
+                <p class="gold_current">本局收获：<span class="gold_current_max">0</span>金币</p>
+            </div>
+        </div>
+
+
+        <div class="main_foot_btn">
+            <div class="main_btn_helplist"></div>
+            <div class="main_btn_roll"></div>
+        </div>
+
+        <audio id="audio_gold" src="js/audio_gold.mp3" hidden="true" preload="auto" >
+        </audio>
+
+        <div class="main_step_box step_box_first step_num_1" data-num="1" data-value="0">
+            <div class="step_box_img">
+                <img class="img_coin" src="images/gold_coin.png">
+                <img class="img_piece" src="images/piece.png">
+            </div>
+        </div>
+
+        <div class="main_step_box step_box_100 step_num_2 main_step_gold" data-num="2" data-value="100">
+            <div class="step_box_img">
+                <img class="img_coin" src="images/gold_coin.png">
+                <img class="img_piece" src="images/piece.png">
+            </div>
+        </div>
+
+        <div class="main_step_box step_box_200 step_num_3 main_step_gold" data-num="3" data-value="200">
+            <div class="step_box_img">
+                <img class="img_coin" src="images/gold_coin.png">
+                <img class="img_piece" src="images/piece.png">
+            </div>
+        </div>
+
+        <div class="main_step_box step_box_ahead3 step_num_4" data-num="4" data-value="0">
+            <div class="step_box_img">
+                <img class="img_coin" src="images/gold_coin.png">
+                <img class="img_piece" src="images/piece.png">
+            </div>
+        </div>
+
+        <div class="main_step_box step_box_back2 step_num_5" data-num="5" data-value="0">
+            <div class="step_box_img">
+                <img class="img_coin" src="images/gold_coin.png">
+                <img class="img_piece" src="images/piece.png">
+            </div>
+        </div>
+
+        <div class="main_step_box step_box_500 step_num_6 main_step_gold" data-num="6" data-value="500">
+            <div class="step_box_img">
+                <img class="img_coin" src="images/gold_coin.png">
+                <img class="img_piece" src="images/piece.png">
+            </div>
+        </div>
+
+        <div class="main_step_box step_box_100 step_num_7 main_step_gold" data-num="7" data-value="100">
+            <div class="step_box_img">
+                <img class="img_coin" src="images/gold_coin.png">
+                <img class="img_piece" src="images/piece.png">
+            </div>
+        </div>
+
+        <div class="main_step_box step_box_ahead3 step_num_8" data-num="8" data-value="0">
+            <div class="step_box_img">
+                <img class="img_coin" src="images/gold_coin.png">
+                <img class="img_piece" src="images/piece.png">
+            </div>
+        </div>
+
+        <div class="main_step_box step_box_double step_num_9" data-num="9" data-value="0">
+            <div class="step_box_img">
+                <img class="img_coin" src="images/img_smileface.png">
+                <img class="img_piece" src="images/piece.png">
+            </div>
+        </div>
+
+        <div class="main_step_box step_box_zhuan step_num_10" data-num="10" data-value="0">
+            <div class="step_box_img">
+                <img class="img_coin" src="images/gold_coin.png">
+                <img class="img_piece" src="images/piece.png">
+            </div>
+        </div>
+
+        <div class="main_step_box step_box_200 step_num_11 main_step_gold" data-num="11" data-value="200">
+            <div class="step_box_img">
+                <img class="img_coin" src="images/gold_coin.png">
+                <img class="img_piece" src="images/piece.png">
+            </div>
+        </div>
+
+        <div class="main_step_box step_box_500 step_num_12 main_step_gold" data-num="12" data-value="500">
+            <div class="step_box_img">
+                <img class="img_coin" src="images/gold_coin.png">
+                <img class="img_piece" src="images/piece.png">
+            </div>
+        </div>
+
+        <div class="main_step_box step_box_100 step_num_13 main_step_gold" data-num="13" data-value="100">
+            <div class="step_box_img">
+                <img class="img_coin" src="images/gold_coin.png">
+                <img class="img_piece" src="images/piece.png">
+            </div>
+        </div>
+
+        <div class="main_step_box step_box_100 step_num_14 main_step_gold" data-num="14" data-value="100">
+            <div class="step_box_img">
+                <img class="img_coin" src="images/gold_coin.png">
+                <img class="img_piece" src="images/piece.png">
+            </div>
+        </div>
+
+        <div class="main_step_box step_box_500 step_num_15 main_step_gold" data-num="15" data-value="500">
+            <div class="step_box_img">
+                <img class="img_coin" src="images/gold_coin.png">
+                <img class="img_piece" src="images/piece.png">
+            </div>
+        </div>
+
+        <div class="main_step_box step_box_500 step_num_16 main_step_gold" data-num="16" data-value="500">
+            <div class="step_box_img">
+                <img class="img_coin" src="images/gold_coin.png">
+                <img class="img_piece" src="images/piece.png">
+            </div>
+        </div>
+
+        <div class="main_step_box step_box_fight step_num_17" data-num="17" data-value="0">
+            <div class="step_box_img">
+                <div class="fight_back_num"></div>
+                <img class="img_coin" src="images/gold_coin.png">
+                <img class="img_piece" src="images/piece.png">
+            </div>
+        </div>
+
+        <div class="main_step_box step_box_half step_num_18" data-num="18" data-value="0">
+            <div class="step_box_img">
+                <img class="img_coin" src="images/img_cryface.png">
+                <img class="img_piece" src="images/piece.png">
+            </div>
+        </div>
+
+        <div class="main_step_box step_box_100 step_num_19 main_step_gold" data-num="19" data-value="100">
+            <div class="step_box_img">
+                <img class="img_coin" src="images/gold_coin.png">
+                <img class="img_piece" src="images/piece.png">
+            </div>
+        </div>
+
+        <div class="main_step_box step_box_200 step_num_20 main_step_gold" data-num="20" data-value="200">
+            <div class="step_box_img">
+                <img class="img_coin" src="images/gold_coin.png">
+                <img class="img_piece" src="images/piece.png">
+            </div>
+        </div>
+
+        <div class="main_step_box step_box_100 step_num_21 main_step_gold" data-num="21" data-value="100">
+            <div class="step_box_img">
+                <img class="img_coin" src="images/gold_coin.png">
+                <img class="img_piece" src="images/piece.png">
+            </div>
+        </div>
+
+        <div class="main_step_box step_box_200 step_num_22 main_step_gold" data-num="22" data-value="200">
+            <div class="step_box_img">
+                <img class="img_coin" src="images/gold_coin.png">
+                <img class="img_piece" src="images/piece.png">
+            </div>
+        </div>
+
+        <div class="main_step_box step_box_fight step_num_23" data-num="23" data-value="500">
+            <div class="step_box_img">
+                <div class="fight_back_num"></div>
+                <img class="img_coin" src="images/gold_coin.png">
+                <img class="img_piece" src="images/piece.png">
+            </div>
+        </div>
+
+        <div class="main_step_box step_box_300 step_num_24 main_step_gold" data-num="24" data-value="300">
+            <div class="step_box_img">
+                <img class="img_coin" src="images/gold_coin.png">
+                <img class="img_piece" src="images/piece.png">
+            </div>
+        </div>
+
+        <div class="main_step_box step_box_last step_num_25" data-num="25" data-value="0">
+            <div class="step_box_img">
+                <img class="img_coin" src="images/gold_coin.png">
+                <img class="img_piece" src="images/piece.png">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="js/base.js"></script>
+<script src="js/main.js"></script>
+</html>

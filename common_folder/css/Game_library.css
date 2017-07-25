@@ -1,0 +1,203 @@
+/* less Game_library */
+/* +--------------------------------------------------------------------------
+// | Author: Merrier <953075999@qq.com> <http://> <Date:2016/5/11 22:27>
+// +--------------------------------------------------------------------------*/
+.font_yahei {
+  font-family: 'Microsoft Yahei', '微软雅黑';
+}
+.font_arial {
+  font-family: 'Arial';
+}
+.font_sitka {
+  font-family: 'Sitka';
+}
+.font_hei {
+  font-family: '黑体';
+}
+.center_block {
+  margin-left: auto;
+  margin-right: auto;
+}
+.content_box {
+  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.caret {
+  border-top-width: 8px;
+  border-right-width: 8px;
+  border-left-width: 8px;
+}
+html body {
+  /*注册页面*/
+  /*转发好友*/
+  /*统计数字提示信息开始*/
+}
+html body .img_responsive {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+}
+html body .mask_white {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .75;
+  background-color: #fff;
+  z-index: 9998;
+  display: none;
+}
+html body .mask_black {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .75;
+  background-color: #000;
+  z-index: 9998;
+  display: none;
+}
+html body .mask_black_noclick {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .75;
+  background-color: #000;
+  z-index: 9998;
+  display: none;
+}
+html body .mask_common {
+  position: fixed;
+  z-index: 10000;
+}
+html body .mask_box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+html body .register {
+  position: fixed;
+  top: 15%;
+  left: 5%;
+  width: 90%;
+  z-index: 9999;
+  display: block;
+  padding: 0.8rem 0;
+  font-size: 1rem;
+}
+html body .register label {
+  display: block;
+  margin: 0.2rem 0;
+  clear: both;
+}
+html body .register .reg_input {
+  display: block;
+  width: 100%;
+  height: 2rem;
+  padding-left: 0.5rem;
+  line-height: 2rem;
+  font-size: 0.7rem;
+  border: 1px solid #f09091;
+}
+html body .register .reg_box {
+  position: relative;
+  overflow: hidden;
+}
+html body .register .reg_btn {
+  float: right;
+  width: 5rem;
+  height: 1.5rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  line-height: 1.5rem;
+  text-decoration: none;
+  font-size: 0.7rem;
+}
+html body .register .reg_btn_gray {
+  background-color: #afafaf !important;
+  color: #EEE !important;
+}
+html body .register .reg_tips {
+  position: absolute;
+  font-size: 9px;
+  color: #f7d54e;
+}
+html body .register .reg_btn_mask {
+  display: none;
+  position: absolute;
+  width: 7.5rem;
+  height: 2.4rem;
+  right: 0;
+  bottom: 0;
+}
+html body .register #reg_btn_register {
+  text-indent: 1rem;
+  letter-spacing: 1rem;
+}
+html body .rule_box {
+  width: 14rem;
+  height: 80%;
+  top: 10%;
+  left: calc(50% - 7rem);
+}
+html body .rule_box .rule_header {
+  width: 100%;
+  height: 7.5rem;
+}
+html body .rule_box .rule_header > img {
+  width: 100%;
+  height: 100%;
+}
+html body .rule_box .rule_content {
+  height: calc(100% - 7.5rem);
+  background-color: #fff;
+  padding: 0 0.4rem;
+  padding-top: 0.4rem;
+  color: #af9c00;
+  font-size: 0.7rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+html body .rule_box .rule_content .rule_content_box {
+  margin-bottom: 0.6rem;
+  line-height: 1rem;
+}
+html body .rule_box .rule_content .rule_content_box .rule_title {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+html body .rule_box .rule_content .rule_content_box .rule_prize_des {
+  margin-bottom: 10px;
+}
+html body .rule_box .rule_content .rule_content_box .rule_prize_tips {
+  font-weight: 400;
+  font-size: 0.6rem;
+}
+html body .rule_box .rule_content .rule_content_box .rule_prize_img {
+  width: 100%;
+  height: auto;
+}
+html body .forward {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+html body .input_num_box {
+  position: absolute;
+  color: #1c1c1c;
+}
