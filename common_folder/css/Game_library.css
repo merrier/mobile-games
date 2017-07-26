@@ -35,7 +35,13 @@
   border-right-width: 8px;
   border-left-width: 8px;
 }
+html {
+  height: 100%;
+}
 html body {
+  font-family: "微软雅黑";
+  height: 100%;
+  width: 100%;
   /*注册页面*/
   /*转发好友*/
   /*统计数字提示信息开始*/

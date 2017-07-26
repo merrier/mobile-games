@@ -17,13 +17,6 @@
 })(window);
 
 
-//------------------回车事件------------------------
-function keyEnter(dataname) {
-    if (event.keyCode == 13)  //回车键的键值为13
-        $(dataname).click(); //调用元素的点击事件
-}
-
-
 //----------------省略字数--------------------
 //设置class为displayPart，
 //设置自定义属性，displayLength可显示长度（不包含...），双字节字符，长度 *2，
@@ -70,14 +63,6 @@ function getObjectURL(file) {
 }
 
 
-//------------------字数统计-------------------
-$(".input_word_limit").keyup(function () {
-    var len = $(this).val().length;
-    var numbox = $(this).siblings(".input_num_box");
-    numbox.children(".input_num").text(len);
-});
-
-
 //------------------正则表达式验证-----------------
 function regularExpression(type,val){
     var test_type = type;
@@ -97,20 +82,32 @@ function regularExpression(type,val){
     return result;
 }
 
-//--------------------音乐播放控制------------------------------------------------
-$(".music_button").click(function(){
-    var play=$(".play_button");
-    var pause=$(".pause_button");
-    if(play.css("display")=="block"){
-        play.hide();
-        pause.css("display","block");
-        document.getElementsByClassName("background_music")[0].pause();      //音乐暂停
-    }else{
-        play.css("display","block");
-        pause.hide();
-        document.getElementsByClassName("background_music")[0].play();           //音乐播放
-    }
+$(function () {
+
+    //--------------------音乐播放控制------------------------------------------------
+    $(".music_button").click(function(){
+        var play=$(".play_button");
+        var pause=$(".pause_button");
+        if(play.css("display")=="block"){
+            play.hide();
+            pause.css("display","block");
+            document.getElementsByClassName("background_music")[0].pause();      //音乐暂停
+        }else{
+            play.css("display","block");
+            pause.hide();
+            document.getElementsByClassName("background_music")[0].play();           //音乐播放
+        }
+    });
+
+    //----------------------关闭蒙版--------------------
+    $(".mask_black").click(function(){
+        $(".mask_black").hide();
+        $(".mask_common").hide();
+    });
+
+    //----------------------关闭转发朋友圈蒙版--------------------
+    $(".h_f_box,.forward").click(function(){
+        $(".mask_black").hide();
+        $(".h_f_box,.forward").hide();
+    });
 });
-//--------------------音乐播放控制------------------------------------------------
-
-
