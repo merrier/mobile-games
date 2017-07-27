@@ -41,4 +41,14 @@
 * [助力页](http://merrier.github.io/Mobile-games/contents_folder/collect_word/share.html)
 ![]()
 
+#### 签到众筹有礼品
+> 这是一个增加用户粘性的游戏，用户每天都可以签到获得随机数量的"金钱"，然后用户可以选择某件商品进行众筹，通过转发好友助力可以获得更多金钱，如果在活动时间内众筹到了指定数量的"金钱"，玩家就可以获得该奖品，运气和人缘的双重考验！
 
+* [首页](http://merrier.github.io/Mobile-games/contents_folder/crowd_funding/index.html)
+![]()
+* [主页面](http://merrier.github.io/Mobile-games/contents_folder/crowd_funding/main.html)
+![]()
+* [签到页](http://merrier.github.io/Mobile-games/contents_folder/crowd_funding/sign.html)
+![]()
+* [助力页](http://merrier.github.io/Mobile-games/contents_folder/crowd_funding/help.html)
+![]()

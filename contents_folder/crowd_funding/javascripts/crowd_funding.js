@@ -80,8 +80,6 @@ $(function () {
 
     //---------------------帮TA筹集按钮---------------------
     $(".btn_friends_help").click(function () {
-
-        //recordsUpdate("王聪",23.6);
         $.ajax({
             dataType: "json",
             url: "hahahahahah.html",
