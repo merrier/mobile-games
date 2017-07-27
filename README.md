@@ -52,3 +52,15 @@
 ![]()
 * [助力页](http://merrier.github.io/Mobile-games/contents_folder/crowd_funding/help.html)
 ![]()
+
+#### 欧洲杯竞猜
+> 这是一个定制游戏，用于在欧洲杯期间让玩家竞猜比赛得分，玩家竞猜的结果越接近就越有机会获得奖品。
+
+* [首页](http://merrier.github.io/Mobile-games/contents_folder/Euro_quiz/index.html)
+![]()
+* [赛程展示](http://merrier.github.io/Mobile-games/contents_folder/Euro_quiz/battle_show.html)
+![]()
+* [输入比分](http://merrier.github.io/Mobile-games/contents_folder/Euro_quiz/enter_score.html)
+![]()
+* [结果展示](http://merrier.github.io/Mobile-games/contents_folder/Euro_quiz/has_guessed.html)
+![]()

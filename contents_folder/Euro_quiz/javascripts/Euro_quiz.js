@@ -50,6 +50,7 @@ $(function(){
         });
         if(state == true){
             alert("提交成功");
+            location.href='./has_guessed.html';
         }
     });
 
