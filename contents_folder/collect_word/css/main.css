@@ -31,15 +31,15 @@
 
 .bottom_button{
     width: 100%;
-    height: 4rem;
+    height: 3rem;
     position: relative;
 }
 
 .check_prizes{
-    width: 2.5rem;
-    padding: 0.5rem;
-    line-height: 1.6rem;
-    font-size: 1.3rem;
+    width: 1.5rem;
+    padding: 0.3rem;
+    line-height: 1rem;
+    font-size: 0.8rem;
     text-align: center;
     background-color: #feffa7;
     border-top-right-radius: 0.5rem;
@@ -48,19 +48,19 @@
     box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
     position: fixed;
     left: 0;
-    top: 12rem;
+    top: 10rem;
     display: block;
     text-decoration: none;
 }
 
 .share_friends{
-    width: 7rem;
-    height: 2.5rem;
-    line-height: 2.5rem;
-    font-size: 1.2rem;
+    width: 4.8rem;
+    height: 1.7rem;
+    line-height: 1.7rem;
+    font-size: 0.8rem;
     text-align: center;
     background-color: #feffa7;
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
     color: #FD746C;
     margin-top: 0.8rem;
     margin-right: 10%;
@@ -70,13 +70,13 @@
 }
 
 .start_game{
-    width: 7rem;
-    height: 2.5rem;
-    line-height: 2.5rem;
-    font-size: 1.2rem;
+    width: 4.8rem;
+    height: 1.7rem;
+    line-height: 1.7rem;
+    font-size: 0.8rem;
     text-align: center;
     background-color: #feffa7;
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
     color: #FD746C;
     margin-top: 0.8rem;
     margin-left: 10%;
@@ -91,7 +91,7 @@
 
 .assistance_ranking_list{
     width: 100%;
-    height: 15rem;
+    height: 10.2rem;
     text-align: center;
     border-radius: 0.5rem;
     padding: 0 10%;
@@ -110,15 +110,15 @@
     position: absolute;
     height: 80%;
     z-index: 2;
-    top:1rem;
+    top:0.5rem;
     padding: 0 10%;
     overflow: auto;
 }
 
 .ranking_list_div ul li{
     width: 100%;
-    height: 3rem;
-    font-size: 1rem;
+    height: 2rem;
+    font-size: 0.7rem;
     color: #111;
     line-height: 1rem;
     position: relative;
@@ -127,19 +127,18 @@
 }
 
 .ranking_list_div ul li img{
-    width: 2rem;
-    height: 2rem;
+    width: 1.4rem;
+    height: 1.4rem;
     position: relative;
-    top:0.5rem;
+    top:0.3rem;
     border-radius: 1rem;
     margin-right: 0.5rem;
 }
 
 .ranking_list_head{
-    width: 12rem;
-    height: 3rem;
+    width: 8.2rem;
+    height: 2.2rem;
     margin: 0.5rem auto;
-    font-size: 1rem;
     color:#FFF;
     text-align: center;
     position: relative;
@@ -149,11 +148,11 @@
 }
 
 .ranking_list_head span{
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 .opportunity{
-    margin-left: 3.5rem;
-    font-size: 1.1rem;
+    margin-left: 2rem;
+    font-size: 0.8rem;
 }
 .assistance_ranking_list p{
     font-size: 1.3rem;
@@ -166,7 +165,7 @@
     position: fixed;
     top:0;
     z-index: 1000;
-    background-image: url("../images/share.jpg");
+    background-image: url("../../../common_folder/images/share.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }

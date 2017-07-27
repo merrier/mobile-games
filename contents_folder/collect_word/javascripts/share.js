@@ -3,19 +3,14 @@
  */
 $(function () {
     $(".btn-help").click(function () {
-        $(".mask-black").show();
+        $(".mask_black").show();
         $(".mask-common").show();
-
-    })
+    });
     $(".btn_give").click(function () {
-        $(".mask-black").hide();
+        $(".mask_black").hide();
         $(".mask-common").hide();
-
     })
-
-
-
-})
+});
 
 var random_class = document.getElementsByClassName('word_give')[0];
 var random_word = random_class.lastChild;

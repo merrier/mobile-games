@@ -29,4 +29,16 @@
 * [助力页](http://merrier.github.io/Mobile-games/contents_folder/christmas_tree/share.html)
 ![]()
 
+#### 集字赢好礼
+> 这是一个纯靠运气的游戏，玩家随机获得一张文字卡片，然后集齐一套包含指定文字的卡片，就可以兑换奖品，主要用到了random方法
+
+* [首页](http://merrier.github.io/Mobile-games/contents_folder/collect_word/frontpage.html)
+![]()
+* [主页面](http://merrier.github.io/Mobile-games/contents_folder/collect_word/main.html)
+![]()
+* [我的奖品页](http://merrier.github.io/Mobile-games/contents_folder/collect_word/minepage.html)
+![]()
+* [助力页](http://merrier.github.io/Mobile-games/contents_folder/collect_word/share.html)
+![]()
+
 

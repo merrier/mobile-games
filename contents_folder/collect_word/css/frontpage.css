@@ -4,28 +4,20 @@ body {
     padding: 0 0;
 
 }
-.portrait{
-    width: 4rem;
-    height: 4rem;
-}
 .primary-vision{
-    height: 12rem;
-    margin: 0 auto;
-    display: block;
-    width: 17rem;
-    padding-top: 2rem;
+    width: 100%;
+    padding-top: 1rem;
 
 }
 .join-in{
-    position: absolute;
-    top:18rem;
-    font-size: 0.8rem;
+    margin-top:2rem;
+    font-size: 0.6rem;
     line-height: 1rem;
 
 }
 .back_home{
-    line-height: 4rem;
-    padding-left: 1rem;
+    line-height: 2.8rem;
+    padding-left: 0.7rem;
 }
 .btn-join-in{
     font-size: 0.8rem;
@@ -39,7 +31,7 @@ body {
     text-align: center;
     display: block;
     text-decoration: none;
-    margin-top: 14rem;
+    margin-top: 4rem;
     left: 25%;
 }
 .game-rules{
@@ -61,7 +53,7 @@ body {
     display: none;
 }
 .rule_box {
-    position: absolute;
+    position: fixed;
     width: 14rem;
     height: 64%;
     top: 10%;
@@ -96,38 +88,38 @@ body {
     background-color: #feffa7;
     color: #FD746C;
     width: 34%;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     border: 1px solid #feffa7;
-    border-radius: 6px;
+    border-radius: 8px;
     text-align: center;
     display: block;
-    margin-top:8rem;
+    margin-top: 3rem;
     text-decoration: none;
     float: left;
-    margin-left: 2rem;
+    margin-left: 1.2rem;
 }
 .btn-join{
     font-size: 0.8rem;
     background-color: #feffa7;
     color: #FD746C;
     width: 34%;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     border: 1px solid #feffa7;
-    border-radius: 6px;
+    border-radius: 8px;
     text-align: center;
     display: block;
-    margin-top:8rem;
+    margin-top: 3rem;
     text-decoration: none;
     float: right;
-    margin-right: 2rem;
+    margin-right: 1.2rem;
 }
 .customer-info{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
     border-bottom: 1px dotted #8B0000;
-    height: 6rem;
+    height: 4rem;
     position: relative;
 }
 .clearfix:after {
@@ -139,22 +131,21 @@ body {
 }
 .portrait{
     float: left;
-    width: 4rem;
-    height: 4rem;
+    height: 2.8rem;
     border-radius: 50%;
-    margin-left: 3rem;
+    margin-left: 2rem;
 }
 .empty-block{
-    width: 3rem;
-    height: 4rem;
+    width: 2rem;
+    height: 2.8rem;
     border-left: 1px solid #8B0000;
     float: left;
-    margin-left: 1rem;
+    margin-left: 0.7rem;
 }
 .phone-number{
     float: left;
     color: #000000;
-    padding-top: 1.5rem;
+    padding-top: 1rem;
 }
 .go_back{
     width: 2.5rem;
@@ -165,34 +156,33 @@ body {
 .prize-list{
     overflow-x: hidden;
     overflow-y: auto;
-    height: calc(100% - 10rem);
+    height: calc(100% - 6.8rem);
 }
 .prize_word{
     display: inline;
+    margin:0 2px;
 }
 .prize-info{
     border-left: 1px solid #8B0000;
     border-right: 1px solid #8B0000;
     border-top: 1px solid #8B0000;
     border-bottom: 1px dotted #8B0000;
-    margin: 1rem;
-border-top-left-radius: 0.5rem;
+    margin: 0.7rem;
+    border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
 }
 .goods{
-    width: 5rem;
-    height: 6rem;
+    width: 3.4rem;
     float: left;
     padding: 0.2rem;
 }
 .text-info{
     float: left;
-    padding: 1rem;
-    margin-top: 0.5rem;
+    padding: 0.7rem;
 }
 .not-ticket{
     color: #ffffff;
-    padding-top: 1rem;
+    padding-top: 0.7rem;
 }
 .right-icon{
 
@@ -203,11 +193,11 @@ border-top-left-radius: 0.5rem;
     border-bottom: 1px solid #8B0000;
     border-left: 1px solid #8B0000;
     border-right: 1px solid #8B0000;
-    margin-left: 1rem;
-    margin-top: -1rem;
-    margin-right: 1rem;
-    padding: 0.8rem;
-    font-size: 1rem;
+    margin-left: 0.7rem;
+    margin-top: -0.7rem;
+    margin-right: 0.7rem;
+    padding: 0.5rem;
+    font-size: 0.7rem;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
 }
@@ -215,23 +205,44 @@ border-top-left-radius: 0.5rem;
     border-radius: 50%;
     background-color: #ffffff;
     color: #00a81c;
-    font-size: 1.5rem;
-    padding: 0.6rem;
+    font-size: 1rem;
+    padding: 0.2rem;
 }
-.prize-goods{
-    width: 9rem;
-}
-.mask-black {
-    position: fixed;
-    top: 0;
-    left: 0;
+.mask-box {
+    position: relative;
     width: 100%;
     height: 100%;
-    opacity: .75;
-    background-color: #000;
-    z-index: 9998;
-    display: none;
 }
+
+.word_block{
+    position: absolute;
+    left: calc(110px - 3.6rem);
+    padding: 0.7rem;
+    background-color: rgb(255,75,43);
+
+}
+.word_give{
+    display: block;
+    width: 6.2rem;
+    line-height: 6.2rem;
+    background-color: rgb(211,210,192);
+    color: black;
+    text-align: center;
+    font-size: 2.8rem;
+}
+.btn_give{
+    position: absolute;
+    top: 9rem;
+    left: calc(110px - 3rem);
+    display: block;
+    background-color: #00a81c;
+    color: #FFFFFF;
+    width: 6rem;
+    line-height: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
 .mask-common {
     position: fixed;
     width: 220px;
@@ -240,47 +251,6 @@ border-top-left-radius: 0.5rem;
     left: 50%;
     margin-left: -110px;
     margin-top: -130px;
-    z-index: 10000;
+    z-index: 2;
     display: none;
 }
-.mask-box {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-}
-
-.word_block{
-    position: absolute;
-    /* top: 1rem; */
-    left: calc(110px - 5.5rem);
-    /* width: 5rem; */
-    padding: 1rem;
-    background-color: rgb(255,75,43);
-
-}
-.word_give{
-
-    display: block;
-    width: 9rem;
-    line-height: 9rem;
-    background-color: rgb(211,210,192);
-    color: black;
-    text-align: center;
-    font-size: 4rem;
-
-
-}
-.btn_give{
-    position: absolute;
-    top: 13rem;
-    left: calc(110px - 4.5rem);
-    display: block;
-    background-color: #00a81c;
-    color: #FFFFFF;
-    width: 9rem;
-    line-height: 2.2rem;
-    border-radius: 7px;
-    text-align: center;
-}
-

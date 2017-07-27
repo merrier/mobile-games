@@ -59,7 +59,7 @@ html body .mask_white {
   height: 100%;
   opacity: .75;
   background-color: #fff;
-  z-index: 9998;
+  z-index: 1;
   display: none;
 }
 html body .mask_black {
@@ -70,7 +70,7 @@ html body .mask_black {
   height: 100%;
   opacity: .75;
   background-color: #000;
-  z-index: 9998;
+  z-index: 1;
   display: none;
 }
 html body .mask_black_noclick {
@@ -81,12 +81,12 @@ html body .mask_black_noclick {
   height: 100%;
   opacity: .75;
   background-color: #000;
-  z-index: 9998;
+  z-index: 1;
   display: none;
 }
 html body .mask_common {
   position: fixed;
-  z-index: 10000;
+  z-index: 2;
 }
 html body .mask_box {
   position: relative;
@@ -98,7 +98,7 @@ html body .register {
   top: 15%;
   left: 5%;
   width: 90%;
-  z-index: 9999;
+  z-index: 2;
   display: block;
   padding: 0.8rem 0;
   font-size: 1rem;
@@ -157,6 +157,7 @@ html body .rule_box {
   height: 80%;
   top: 10%;
   left: calc(50% - 7rem);
+  z-index: 2;
 }
 html body .rule_box .rule_header {
   width: 100%;
@@ -201,7 +202,7 @@ html body .forward {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 9999;
+  z-index: 2;
 }
 html body .input_num_box {
   position: absolute;
