@@ -21,5 +21,12 @@
 * [助力页](http://merrier.github.io/Mobile-games/contents_folder/monopoly/share.html)
 ![]()
 
+#### 圣诞树
+> 这是一个摇一摇游戏，用到了HTML5提供的重力感应API，玩家通过摇一摇可以获取一个卡片，集齐一套卡片就可以兑换奖品，同时转发让好友助力可以获得额外摇一摇次数
+
+* [主页面](http://merrier.github.io/Mobile-games/contents_folder/christmas_tree/main.html)
+![]()
+* [助力页](http://merrier.github.io/Mobile-games/contents_folder/christmas_tree/share.html)
+![]()
 
 
