@@ -35,6 +35,77 @@
   border-right-width: 8px;
   border-left-width: 8px;
 }
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+q:before,
+q:after {
+  content: '';
+}
+abbr,
+acronym {
+  border: 0;
+}
 html {
   height: 100%;
 }
@@ -42,8 +113,11 @@ html body {
   font-family: "微软雅黑";
   height: 100%;
   width: 100%;
+  /*预加载*/
   /*注册页面*/
   /*转发好友*/
+  /*获得奖品蒙版*/
+  /*助力成功*/
   /*统计数字提示信息开始*/
 }
 html body .img_responsive {
@@ -92,6 +166,22 @@ html body .mask_box {
   position: relative;
   width: 100%;
   height: 100%;
+}
+html body .fakeloader {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 50%;
+  margin-top: -30px;
+}
+html body .fl {
+  margin: 0 auto;
+}
+html body .fakeloader_percent {
+  margin: 10px;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
 }
 html body .register {
   position: fixed;
@@ -203,6 +293,62 @@ html body .forward {
   width: 100%;
   height: 100%;
   z-index: 2;
+}
+html body .mask_prize {
+  height: 334px;
+  margin-top: -167px;
+}
+html body .mask_prize_head {
+  width: 100%;
+  margin-bottom: 15px;
+}
+html body .mask_prize_title {
+  position: absolute;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  top: 0;
+  text-align: center;
+  font-size: 20px;
+}
+html body .mask_prize_crown {
+  width: 90px;
+  margin: 0 auto;
+}
+html body .mask_prize_box {
+  width: 210px;
+  margin: 0 auto;
+  margin-top: -25px;
+}
+html body .mask_prize_content {
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+}
+html body .mask_help_details {
+  text-align: center;
+  margin-top: 15px;
+}
+html body .mask_help_main {
+  height: 45px;
+  width: 100%;
+  padding: 0 25px;
+  margin-top: 10px;
+  line-height: 50px;
+}
+html body .mask_help_headimg {
+  width: 45px;
+  height: 45px;
+  float: left;
+  margin-right: 5px;
+}
+html body .mask_help_nickname {
+  float: left;
+  width: 115px;
+  text-align: center;
+  font-size: 12px;
 }
 html body .input_num_box {
   position: absolute;

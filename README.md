@@ -65,6 +65,12 @@
 * [结果展示](http://merrier.github.io/Mobile-games/contents_folder/Euro_quiz/has_guessed.html)
 ![]()
 
+#### 幸运刮刮卡
+> 刮刮卡这种游戏在我们的童年时代就出现了，玩家通过刮卡有几率获得奖品，同时通过好友助力可以获得额外机会，简单粗暴的玩法，但是满满的童年回忆~
+
+* [主页面](http://merrier.github.io/Mobile-games/contents_folder/Euro_quiz/index.html)
+![]()
+
 #### 全民闹元宵
 > 这是一个节日相关的游戏，游戏整体设计风格欢快喜庆，玩家通过抢红包的方式可以获得奖励，同时还可以让好友助力棒抢，很适合节日期间推广！
 

@@ -10,7 +10,7 @@ body{
 }
 
 .main_content{
-    width:90%;
+    width:95%;
     margin: 10px auto;
 }
 
@@ -18,7 +18,7 @@ body{
     float: right;
     text-decoration: underline;
     color: #ffffff;
-    font-size: 12px;
+    font-size: 0.6rem;
     margin-bottom: 10px;
 }
 
@@ -26,7 +26,7 @@ body{
     position: relative;
     width:100%;
     height:80px;
-    margin-bottom: 15px;
+    margin-bottom: 0.6rem;
     padding: 5px;
     background-color: #ffffff;
     border-radius: 5px;
@@ -37,7 +37,8 @@ body{
 }
 
 .main_times{
-    margin-bottom: 15px;
+    margin-bottom: 0.6rem;
+    font-size: 0.65rem;
     overflow: hidden;
 }
 
@@ -87,6 +88,7 @@ body{
 
 .main_foot_title{
     position: relative;
+    font-size: 14px;
     overflow: hidden;
     height:30px;
 }
@@ -112,7 +114,7 @@ body{
 
 .foot_title_btnnow{
     background-color: #ffc501;
-    z-index: 2;
+    z-index: 0;
 }
 
 .foot_title_btnr{
@@ -124,7 +126,8 @@ body{
     width:98%;
     line-height: 20px;
     margin: 0 auto;
-    padding-left: 25px;
+    padding-left: 20px;
+    font-size: 14px;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;

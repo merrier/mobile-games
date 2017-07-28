@@ -5,25 +5,11 @@
     <title>幸运刮刮卡</title>
     <meta http-equiv="X-UA-COMPATIBLE" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <link href="../../plugin_folder/font-awesome/font-awesome.min.css" rel="stylesheet"/>
     <link href="css/fakeLoader.css" rel="stylesheet">
-    <link href="css/base.css" rel="stylesheet">
+    <link href="../../common_folder/css/Game_library.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet"/>
-    <link href="css/font-awesome.min.css" rel="stylesheet"/>
-    <script src="js/jquery-1.11.1.min.js"></script>
-    <script src="js/jquery.imgpreload.min.js"></script>
-    <script src="js/fakeLoader.min.js"></script>
-    <script src="js/flop.js"></script>
-    <script src="js/jquery.eraser.js"></script>
-    <script src="js/register.js"></script>
-    <script>
-        $(document).ready(function(){
-            $(".bg_flop").fakeLoader({
-//                timeToHide:1200,
-                bgColor:"#ca1946",
-                spinner:"spinner6"
-            });
-        });
-    </script>
+
 </head>
 <body>
 
@@ -137,6 +123,20 @@
         </div>
     </div>
 </body>
-<script src="js/base.js"></script>
+<script src="../../plugin_folder/jquery_v1.11.3/jquery-1.11.3.min.js"></script>
+<script src="../../plugin_folder/jquery.imgpreload_v1.6.2/jquery.imgpreload.min.js"></script>
+<script src="../../plugin_folder/jquery.eraser_v0.4.2/jquery.eraser.js"></script>
+<script src="../../common_folder/javascripts/base.js"></script>
+<script src="js/fakeLoader.min.js"></script>
+<script src="js/flop.js"></script>
 <script src="js/main.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".bg_flop").fakeLoader({
+//                timeToHide:1200,
+            bgColor:"#ca1946",
+            spinner:"spinner6"
+        });
+    });
+</script>
 </html>
