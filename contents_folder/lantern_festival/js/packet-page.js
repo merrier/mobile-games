@@ -1,7 +1,4 @@
-
-
-
-$('#rules').click(function() {
+$('#rules').click(function () {
 
         var div = $("#rule-box");
         if (div.css("display") === "none") {
@@ -9,4 +6,4 @@ $('#rules').click(function() {
 
         }
     }
-)
+);

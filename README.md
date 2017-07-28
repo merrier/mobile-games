@@ -64,3 +64,15 @@
 ![]()
 * [结果展示](http://merrier.github.io/Mobile-games/contents_folder/Euro_quiz/has_guessed.html)
 ![]()
+
+#### 全民闹元宵
+> 这是一个节日相关的游戏，游戏整体设计风格欢快喜庆，玩家通过抢红包的方式可以获得奖励，同时还可以让好友助力棒抢，很适合节日期间推广！
+
+* [首页](http://merrier.github.io/Mobile-games/contents_folder/lantern_festival/index.html)
+![]()
+* [主页面](http://merrier.github.io/Mobile-games/contents_folder/lantern_festival/main.html)
+![]()
+* [红包页](http://merrier.github.io/Mobile-games/contents_folder/lantern_festival/packet.html)
+![]()
+* [助力页](http://merrier.github.io/Mobile-games/contents_folder/lantern_festival/help.html)
+![]()

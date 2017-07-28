@@ -7,16 +7,16 @@ var divn = $(".click-new");
 var dive = $(".RankList");
 var divw = $(".img-group");
 var divh = $("#rule-box");
-if(index == 1 ){
+if (index == 1) {
     divn.css("display", "block");
-    $('#coin').click(function(e) {
+    $('#coin').click(function (e) {
             e.stopPropagation();
             if (divnew.css("display") === "none") {
                 divnew.show();
 
             }
 
-            document.onclick=function () {
+            document.onclick = function () {
                 divnew.css("display", "none");
                 divn.css("display", "none");
                 dive.css("display", "");
@@ -26,20 +26,20 @@ if(index == 1 ){
         }
     )
     var divc = $("#packet-sexchange");
-    $('#red-packet').click(function(e) {
+    $('#red-packet').click(function (e) {
             e.stopPropagation();
 
             if (divc.css("display") === "none") {
                 divc.show();
 
             }
-            document.onclick=function () {
-                divc.css("display","none");
+            document.onclick = function () {
+                divc.css("display", "none");
             }
         }
     )
     var divb = $("#packet-exchange");
-    $('#join_in').click(function(e) {
+    $('#join_in').click(function (e) {
 
             e.stopPropagation();
 
@@ -47,43 +47,40 @@ if(index == 1 ){
                 divb.show();
 
             }
-            document.onclick=function () {
-                divb.css("display","none");
+            document.onclick = function () {
+                divb.css("display", "none");
             }
 
         }
     )
-    $('#rules').click(function() {
-
-
+    $('#rules').click(function () {
             if (divh.css("display") === "none") {
-                divh .show();
-
+                divh.show();
             }
-            document.onclick=function () {
-                divb.css("display","none");
+            document.onclick = function () {
+                divb.css("display", "none");
+
             }
         }
     )
 
-}else{
+} else {
     dive.css("display", "block");
     divw.css("display", "block");
     var divc = $("#packet-sexchange");
-    $('#red-packet').click(function(e) {
+    $('#red-packet').click(function (e) {
             e.stopPropagation();
 
             if (divc.css("display") === "none") {
                 divc.show();
-
             }
-            document.onclick=function () {
-                divc.css("display","none");
+            document.onclick = function () {
+                divc.css("display", "none");
             }
         }
     )
     var divb = $("#packet-exchange");
-    $('#join_in').click(function(e) {
+    $('#join_in').click(function (e) {
 
             e.stopPropagation();
 
@@ -91,21 +88,19 @@ if(index == 1 ){
                 divb.show();
 
             }
-            document.onclick=function () {
-                divb.css("display","none");
+            document.onclick = function () {
+                divb.css("display", "none");
             }
 
         }
     )
-    $('#rules').click(function() {
-
+    $('#rules').click(function () {
 
             if (divh.css("display") === "none") {
-                divh .show();
-
+                divh.show();
             }
-            document.onclick=function () {
-                divb.css("display","none");
+            document.onclick = function () {
+                divb.css("display", "none");
             }
         }
     )
