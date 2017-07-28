@@ -76,3 +76,11 @@
 ![]()
 * [助力页](http://merrier.github.io/Mobile-games/contents_folder/lantern_festival/help.html)
 ![]()
+
+#### 砸金蛋，赢大奖
+> 又是一个摇一摇游戏，玩家在指定时间内摇的次数越多，获得的砸金蛋的次数越多，越有可能获得大奖，同时该游戏分为移动端和PC端，PC端用来提示用户游戏的开始时间和公示奖励。
+
+* [移动端](http://merrier.github.io/Mobile-games/contents_folder/golden_egg/mobile.html)
+![]()
+* [PC端](http://merrier.github.io/Mobile-games/contents_folder/golden_egg/pc.html)
+![]()
