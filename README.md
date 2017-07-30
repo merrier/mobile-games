@@ -11,18 +11,8 @@
 ### 小游戏介绍
 > 下面所列的所有小游戏都可以通过扫描二维码或点击链接在手机上预览
 
-#### 大富翁
-> 很经典的"大富翁"游戏，玩家通过掷骰子向前行进，通过转发的方式可获得更多的掷骰子机会，到达特定步数会获得相应奖励
-
-* [首页](http://merrier.github.io/Mobile-games/contents_folder/monopoly/start.html)
-![]()
-* [主页面](http://merrier.github.io/Mobile-games/contents_folder/monopoly/main.html)
-![]()
-* [助力页](http://merrier.github.io/Mobile-games/contents_folder/monopoly/share.html)
-![]()
-
 #### 圣诞树
-> 这是一个摇一摇游戏，用到了HTML5提供的重力感应API，玩家通过摇一摇可以获取一个卡片，集齐一套卡片就可以兑换奖品，同时转发让好友助力可以获得额外摇一摇次数
+> 这是一个节日期间的摇一摇游戏，用到了HTML5提供的重力感应API，玩家通过摇一摇可以获取一个卡片，集齐一套卡片就可以兑换奖品，同时转发让好友助力可以获得额外摇一摇次数
 
 * [主页面](http://merrier.github.io/Mobile-games/contents_folder/christmas_tree/main.html)
 ![]()
@@ -65,6 +55,14 @@
 * [结果展示](http://merrier.github.io/Mobile-games/contents_folder/Euro_quiz/has_guessed.html)
 ![]()
 
+#### 砸金蛋，赢大奖
+> 又是一个摇一摇游戏，玩家在指定时间内摇的次数越多，获得的砸金蛋的次数越多，越有可能获得大奖，同时该游戏分为移动端和PC端，PC端用来提示用户游戏的开始时间和公示奖励。
+
+* [移动端](http://merrier.github.io/Mobile-games/contents_folder/golden_egg/mobile.html)
+![]()
+* [PC端](http://merrier.github.io/Mobile-games/contents_folder/golden_egg/pc.html)
+![]()
+
 #### 幸运刮刮卡
 > 刮刮卡这种游戏在我们的童年时代就出现了，玩家通过刮卡有几率获得奖品，同时通过好友助力可以获得额外机会，简单粗暴的玩法，但是满满的童年回忆~
 
@@ -92,10 +90,19 @@
 * [助力页](http://merrier.github.io/Mobile-games/contents_folder/lucky_bag/share.html)
 ![]()
 
-#### 砸金蛋，赢大奖
-> 又是一个摇一摇游戏，玩家在指定时间内摇的次数越多，获得的砸金蛋的次数越多，越有可能获得大奖，同时该游戏分为移动端和PC端，PC端用来提示用户游戏的开始时间和公示奖励。
-
-* [移动端](http://merrier.github.io/Mobile-games/contents_folder/golden_egg/mobile.html)
+#### 贪婪的猴子
+> 这是这个工程里难度最大的一个游戏，在规定时间内，玩家通过发射香蕉击中屏幕上方不同道具获得积分和其他类型的奖励，同时道具是随机出现的，有可能出现炸弹，如果玩家击中炸弹，游戏将直接结束
+* [首页](http://merrier.github.io/Mobile-games/contents_folder/monkey/index.html)
 ![]()
-* [PC端](http://merrier.github.io/Mobile-games/contents_folder/golden_egg/pc.html)
+* [主页面](http://merrier.github.io/Mobile-games/contents_folder/monkey/main.html)
+![]()
+
+#### 大富翁
+> 很经典的"大富翁"游戏，玩家通过掷骰子向前行进，通过转发的方式可获得更多的掷骰子机会，到达特定步数会获得相应奖励
+
+* [首页](http://merrier.github.io/Mobile-games/contents_folder/monopoly/start.html)
+![]()
+* [主页面](http://merrier.github.io/Mobile-games/contents_folder/monopoly/main.html)
+![]()
+* [助力页](http://merrier.github.io/Mobile-games/contents_folder/monopoly/share.html)
 ![]()
