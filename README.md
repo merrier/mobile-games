@@ -85,6 +85,13 @@
 * [助力页](http://merrier.github.io/Mobile-games/contents_folder/lantern_festival/help.html)
 ![]()
 
+#### 幸运福袋
+> 这是一个拆福袋的游戏，每位玩家都可以领取一个福袋，但需要好友助力才能拆开，从而获得其中的奖品，这个游戏的设计风格很好，而且用到了全屏翻页和手势的一些技术点。
+* [主页面](http://merrier.github.io/Mobile-games/contents_folder/lucky_bag/main.html)
+![]()
+* [助力页](http://merrier.github.io/Mobile-games/contents_folder/lucky_bag/share.html)
+![]()
+
 #### 砸金蛋，赢大奖
 > 又是一个摇一摇游戏，玩家在指定时间内摇的次数越多，获得的砸金蛋的次数越多，越有可能获得大奖，同时该游戏分为移动端和PC端，PC端用来提示用户游戏的开始时间和公示奖励。
 

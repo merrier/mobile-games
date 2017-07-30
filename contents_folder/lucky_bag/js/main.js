@@ -99,12 +99,12 @@ $(document).ready(function() {
     $(".music_button").click(function(){
         var play=$(".play_button");
         var pause=$(".pause_button");
-        if(play.css("display")=="block"){
+        if(play.is(":visible")){
             play.hide();
-            pause.css("display","block");
+            pause.show();
             document.getElementsByClassName("background_music")[0].pause();      //音乐暂停
         }else{
-            play.css("display","block");
+            play.show();
             pause.hide();
             document.getElementsByClassName("background_music")[0].play();           //音乐播放
         }

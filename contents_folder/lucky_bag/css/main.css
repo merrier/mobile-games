@@ -422,14 +422,11 @@ html, body {
 .rule_text_div {
     position: absolute;
     left: 0;
-    top: 35%;
-    width: 100%;
-    height: 40%;
+    top: 30%;
+    width: 70%;
+    height: 49%;
     overflow-y: auto;
     padding: 0 16%;
-    /*background-image: url('../images/rule.png');*/
-    /*background-size: 100% 100%;*/
-    /*padding: 20% 16%;*/
 }
 
 .rule_text {
@@ -530,19 +527,19 @@ html, body {
     width: 2rem;
     height: 2rem;
     color: #5c3604;
-    border-radius: 1rem;
+    border-radius: 50%;
     position: absolute;
     background-color: #fff33b;
     top:24%;
     right: 20%;
-    z-index: 3;
-    padding: 0.3rem 0.1rem;
+    z-index: 1;
 }
 
 .number_circle span{
     font-size: 0.5rem;
     display: block;
     font-weight: bold;
+    margin-top: 0.2rem;
 }
 
 .number_circle .limit_number{
@@ -588,6 +585,7 @@ html, body {
     z-index: 2;
 }
 .gift_description{
+    position: absolute;
     color: #fff;
     font-size: 0.8rem;
     padding: 0 1rem;

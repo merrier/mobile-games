@@ -20,6 +20,7 @@ body{
 
 }
 .gift_packet{
+    position: relative;
     margin-top: 1rem;
     width: 10rem;
     z-index: 1;
@@ -90,7 +91,7 @@ body{
 }
 .help_him{
     background-color: #fff33b;
-    width: 7rem;
+    width: 5rem;
     padding-left: 0.8rem;
     padding-right: 0.8rem;
     text-align: center;
@@ -100,11 +101,12 @@ body{
     border-radius: 1rem;
     margin-top: 2rem;
     margin-left: 0.5rem;
-
+    color:#000;
+    text-decoration: none;
 }
 .join_in{
     background-color: #fff33b;
-    width: 7rem;
+    width: 5rem;
     padding-left: 0.8rem;
     padding-right: 0.8rem;
     text-align: center;
@@ -114,6 +116,8 @@ body{
     border-radius: 1rem;
     margin-top: 2rem;
     margin-right: 0.5rem;
+    color:#000;
+    text-decoration: none;
 }
 .click{
     position: absolute;
