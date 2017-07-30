@@ -116,6 +116,7 @@ html body {
   /*预加载*/
   /*注册页面*/
   /*转发好友*/
+  /*我的奖品蒙版*/
   /*获得奖品蒙版*/
   /*助力成功*/
   /*统计数字提示信息开始*/
@@ -166,6 +167,20 @@ html body .mask_box {
   position: relative;
   width: 100%;
   height: 100%;
+}
+html body .mask_close {
+  display: block;
+  width: 80px;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #fe6c64;
+  border-radius: 5px;
+  letter-spacing: 10px;
+  text-indent: 10px;
 }
 html body .fakeloader {
   position: absolute;
@@ -294,6 +309,31 @@ html body .forward {
   height: 100%;
   z-index: 2;
 }
+html body .mask_myprize {
+  width: 200px;
+  margin-left: -100px;
+}
+html body .mask_head_img {
+  display: block;
+  width: 80px;
+  height: auto;
+  margin: 0 auto;
+}
+html body .mask_content {
+  background-color: #ffffff;
+  border: 2px solid #fe6c64;
+  border-radius: 5px;
+  height: 180px;
+  margin-top: -4px;
+  color: #fe6c64;
+}
+html body .myprize_con_main {
+  width: 100%;
+  height: 110px;
+  line-height: 140px;
+  font-size: 20px;
+  text-align: center;
+}
 html body .mask_prize {
   height: 334px;
   margin-top: -167px;
@@ -330,6 +370,7 @@ html body .mask_prize_content {
 html body .mask_help_details {
   text-align: center;
   margin-top: 15px;
+  font-size: 14px;
 }
 html body .mask_help_main {
   height: 45px;

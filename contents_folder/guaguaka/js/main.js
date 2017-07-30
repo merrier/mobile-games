@@ -9,7 +9,10 @@
         $(".main_foot_content").eq(index).show().siblings(".main_foot_content").hide();
     });
 
-    //----------------------我要刮奖按钮------------------
+    //--------------------我要刮奖按钮------------------
+    $(".btn_goplay").click(function(){
+        window.location.href = './main.html';
+    });
 
     //------------------中奖概率设置-------------------
     var type;
