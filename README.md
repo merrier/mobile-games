@@ -16,8 +16,8 @@
 
 | 页面(Page) |                                           链接(Link)                                          |                                  二维码(QR Code)                                  |
 |:----------:|:---------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------:|
-|   主页面   |  [main.html](http://merrier.github.io/Mobile-games/contents_folder/christmas_tree/main.html)  |  ![](http://merrier.github.io/Mobile-games/qrcode_folder/christmas_tree/main.png) |
-|   助力页   | [share.html](http://merrier.github.io/Mobile-games/contents_folder/christmas_tree/share.html) | ![](http://merrier.github.io/Mobile-games/qrcode_folder/christmas_tree/share.png) |
+|   主页面   |  [main.html](http://merrier.github.io/Mobile-games/contents_folder/christmas_tree/main.html)  |  ![](./qrcode_folder/christmas_tree/main.png) |
+|   助力页   | [share.html](http://merrier.github.io/Mobile-games/contents_folder/christmas_tree/share.html) | ![](./qrcode_folder/christmas_tree/share.png) |
 
 * [主页面](http://merrier.github.io/Mobile-games/contents_folder/christmas_tree/main.html)
 ![]()
