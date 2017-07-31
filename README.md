@@ -14,6 +14,11 @@
 #### 圣诞树
 > 这是一个节日期间的摇一摇游戏，用到了HTML5提供的重力感应API，玩家通过摇一摇可以获取一个卡片，集齐一套卡片就可以兑换奖品，同时转发让好友助力可以获得额外摇一摇次数
 
+| 页面(Page) |                                           链接(Link)                                          |                                  二维码(QR Code)                                  |
+|:----------:|:---------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------:|
+|   主页面   |  [main.html](http://merrier.github.io/Mobile-games/contents_folder/christmas_tree/main.html)  |  ![](http://merrier.github.io/Mobile-games/qrcode_folder/christmas_tree/main.png) |
+|   助力页   | [share.html](http://merrier.github.io/Mobile-games/contents_folder/christmas_tree/share.html) | ![](http://merrier.github.io/Mobile-games/qrcode_folder/christmas_tree/share.png) |
+
 * [主页面](http://merrier.github.io/Mobile-games/contents_folder/christmas_tree/main.html)
 ![]()
 * [助力页](http://merrier.github.io/Mobile-games/contents_folder/christmas_tree/share.html)
