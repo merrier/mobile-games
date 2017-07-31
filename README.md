@@ -106,3 +106,11 @@
 ![]()
 * [助力页](http://merrier.github.io/Mobile-games/contents_folder/monopoly/share.html)
 ![]()
+
+#### 无敌大转盘
+> 我们在商场门口也会经常见到这种转盘类的游戏，不同于线下的是，线上的转盘游戏可以人为的控制中奖概率，所以更容易做营销和推广。
+
+* [主页面](http://merrier.github.io/Mobile-games/contents_folder/zhuanpan/main.html)
+![]()
+* [助力页](http://merrier.github.io/Mobile-games/contents_folder/zhuanpan/share.html)
+![]()

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
     <title>拼图大作战</title>
 
-    <link href="css/base.css" rel="stylesheet" />
+    <link href="css/base.css" rel="stylesheet"/>
     <link href="css/frontpage.css" rel="stylesheet">
 
 </head>
@@ -15,23 +15,19 @@
 <img class="logo" src="images/dawanglu_logo.png"/>
 
 <audio id="music" controls="controls" loop="loop" class="music" style="display: none">
-    <!--<source src="/songs/song.ogg" type="audio/ogg">-->
-    <source src="songs/songs.mp3" type="audio/mpeg">
+    <source src="../../common_folder/audio/always_with_me.mp3" type="audio/mpeg">
 </audio>
-<img id="music_btn" src="images/play.jpg" width="40px" height="40px"  onclick="playPause()";/>
+<img id="music_btn" src="images/play.jpg" width="40" height="40" onclick="playPause()" ;/>
 
 <img class="puzzle_word" src="images/puzzle.png"/>
-
-
-<!--<img class="gift_word" src=""/>-->
 
 <div class="vision">
     <img class="vision1" src="images/vision4.jpeg"/>
     <img class="vision2" src="images/vision2.jpg"/>
 </div>
 <div class="vision">
-<img class="vision3" src="images/vison3.jpg"/>
-<img class="vision4" src="images/vision1.jpg"/>
+    <img class="vision3" src="images/vison3.jpg"/>
+    <img class="vision4" src="images/vision1.jpg"/>
 </div>
 
 
@@ -62,30 +58,15 @@
     </div>
 </div>
 <div class="mask_black"></div>
-
-<!--<div class="rank_list">-->
-<!--<div class="list_rank">-->
-        <!--<img src="images/rank_list.png"/>-->
-
-    <!--<span class="photo">头像</span><span class="nick">昵称</span><span class="time">游戏用时</span>-->
-    <!--<div>-->
-        <!--<div class="img_photo"></div>-->
-        <!--<div class="rank">NO.1</div>-->
-        <!--<div class="name">放松自己</div>-->
-        <!--<div class="cost_time"><span class="number">10.55555</span>秒</div>-->
-    <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
-<div class="share"><img src="images/share.jpg" /></div>
+<div class="share"><img src="images/share.jpg"/></div>
 <div class="modal_block clearfix">
-    <img src="images/success.png" />
-    <!--<a class="close" ><img  src="images/close.png" /></a>-->
+    <img src="images/success.png"/>
     <div class="game_count">
-    <p class="word">您没有游戏次数了（ ＴДＴ)</p>
-    <p class="word">关注微信公众号获得购物券</p>
-    <P class="word">分享给好友可增加游戏次数</P>
-    <a class="click_wechat"><img src="images/click_wechat.png" /></a>
-    <a class="share_friends"><img src="images/share_friend.png" /></a>
+        <p class="word">您没有游戏次数了（ ＴДＴ)</p>
+        <p class="word">关注微信公众号获得购物券</p>
+        <P class="word">分享给好友可增加游戏次数</P>
+        <a class="click_wechat"><img src="images/click_wechat.png"/></a>
+        <a class="share_friends"><img src="images/share_friend.png"/></a>
     </div>
 </div>
 
@@ -143,12 +124,11 @@
 
 </div>
 
-<!--<a class="rank_list"><img src="" class="list_rank"/></a>-->
 <p class="text" style="display: none">0</p>
 </body>
 
-<script src="javascript/jquery-1.11.3.min.js"></script>
-<script src="javascript/base.js"></script>
-<script src="javascript/frontpage.js"></script>
-<script src="javascript/jQueryRotate.js"></script>
+<script src="../../plugin_folder/jquery_v1.11.3/jquery-1.11.3.min.js"></script>
+<script src="../../plugin_folder/jquery.rotate_v2.3/jQueryRotate.js"></script>
+<script src="../../common_folder/javascripts/base.js"></script>
+<script src="javascript/index.js"></script>
 </html>
