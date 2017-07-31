@@ -1,87 +1,101 @@
 @charset "utf-8";
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
 }
-html{
+
+html {
     background-image: url("../images/bg.png");
     background-size: 100%;
     background-repeat: no-repeat;
     height: 100%;
 
 }
-body{
+
+body {
     font-family: "微软雅黑";
     font-size: 14px;
     line-height: 1.428571429;
     color: #fff;
     height: 100%;
-    height: 100%;
 }
-.img_responsive{
+
+.img_responsive {
     display: inline-block;
     height: auto;
     max-width: 100%;
 }
-.hide{
+
+.hide {
     display: none;
 }
-.l{
+
+.l {
     float: left;
 }
-.r{
+
+.r {
     float: right;
 }
-.container_monkey{
+
+.container_monkey {
     height: 100%;
 }
-.footer{
+
+.footer {
     height: 20%;
     background-image: url("../images/img15.png");
     background-size: 100%;
     background-repeat: no-repeat;
 }
-.footer_left{
+
+.footer_left {
     width: 60%;
     padding: 10%;
     box-sizing: border-box;
     height: 100%;
 
 }
-.footer_right{
+
+.footer_right {
     width: 40%;
     margin-top: 5%;
     position: relative;
 }
-.game_con{
+
+.game_con {
     height: 80%;
     width: 100%;
     background-image: url("../images/bg.png");
     background-size: 100%;
     background-repeat: no-repeat;
 }
-.game_btn_mask{
+
+.game_btn_mask {
     width: 100%;
     height: 100%;
     position: absolute;
-    right: 0px;
+    right: 0;
     z-index: 100000;
-    top: 0px;
+    top: 0;
     background: #333;
     opacity: 0;
     display: none;
 }
-.game_con_header{
+
+.game_con_header {
     height: 40%;
     box-sizing: border-box;
-    padding-top: 0px;
+    padding-top: 0;
 }
-.p_img{
+
+.p_img {
     width: 68%;
     margin: 0 auto;
     display: block;
 }
-.line{
+
+.line {
     height: 10%;
     width: 1px;
     background: #fff;
@@ -89,19 +103,23 @@ body{
     left: 10%;
     opacity: 0.5;
 }
-.game_con_content{
-    height:46% ;
+
+.game_con_content {
+    height: 46%;
 }
-.game_con_footer{
-    height:14% ;
+
+.game_con_footer {
+    height: 14%;
 }
-.stone{
+
+.stone {
     position: absolute;
     left: 31%;
     width: 5%;
     top: 70%;
 }
-#protagonist{
+
+#protagonist {
     height: auto;
     width: 15%;
     margin: 0 auto;
@@ -111,37 +129,39 @@ body{
 }
 
 /*   倒计时             */
-.count_time_box{
+.count_time_box {
     position: absolute;
-    right: 0px;
+    right: 0;
 }
-.count_down{
+
+.count_down {
     height: 100%;
     box-sizing: border-box;
     padding-top: 11%;
 }
-.count_down_img{
-    display: block;
+
+.count_down_img {
     width: 56%;
     margin: 0 auto;
     display: none;
 }
+
 /*              蒙层              */
-.mask_game{
+.mask_game {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 80%;
-    filter: alpha(opacity = 75);
+    filter: alpha(opacity=75);
     -moz-opacity: .75;
-    -khtml-opacity: .75;
     opacity: .75;
     background-color: #000;
     z-index: 9998;
 }
+
 /*                     活动规则              */
-.game_rule_details{
+.game_rule_details {
     position: fixed;
     top: 5%;
     left: 5%;
@@ -156,24 +176,31 @@ body{
     line-height: 30px;
 
 }
-::-webkit-scrollbar{width:0px;}
-.p_s_box{
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.p_s_box {
     width: 30%;
     float: left;
     margin-right: 3%;
     margin-bottom: 13px;
     text-align: center;
 }
-ul{
+
+ul {
     list-style: none;
 }
-.p_s_img{
+
+.p_s_img {
     width: 40%;
     vertical-align: middle;
     margin-right: 5px;
 }
+
 /*                       活动结束                         */
-.game_over{
+.game_over {
     position: fixed;
     top: 10%;
     left: 10%;
@@ -181,53 +208,61 @@ ul{
     height: 60%;
     z-index: 9999;
     box-sizing: border-box;
-    padding:10px;
+    padding: 10px;
     color: #fff;
     display: none;
 }
-.mess_p{
+
+.mess_p {
     height: 30px;
     line-height: 30px;
     font-size: 18px;
     color: #ffe40a;;
 }
-.score_box{
+
+.score_box {
 
 }
-.p_score_box{
+
+.p_score_box {
     width: 50%;
     margin: 0 auto;
     padding-top: 27px;
     box-sizing: border-box;
     display: none;
 }
+
 /*          礼物框         */
-.p_box{
+.p_box {
 
     height: 100%;
 }
-.p_li{
+
+.p_li {
     width: 20%;
     float: left;
     display: inline-block;
     position: absolute;
     top: 10%;
 }
+
 /*   清除浮动  */
-.clearfix:after{
-    content:".";
-    clear:both;
-    height:0px;
-    display:block;
-    visibility:hidden;
+.clearfix:after {
+    content: ".";
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
 }
+
 @media (min-width: 300px) {
-    .mess_p{
+    .mess_p {
         font-size: 16px;
     }
 }
+
 @media (min-width: 370px) {
-    .mess_p{
+    .mess_p {
         font-size: 18px;
     }
 

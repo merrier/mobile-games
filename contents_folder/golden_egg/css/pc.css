@@ -10,18 +10,20 @@
     list-style: none;
     position: relative;
 }
-html{
+
+html {
     height: 100%;
 }
-body{
+
+body {
     font-family: "微软雅黑";
     font-size: 14px;
     height: 100%;
     width: 100%;
 }
 
-.main{
-    width:100%;
+.main {
+    width: 100%;
 }
 
 /*音乐按钮*/
@@ -35,85 +37,85 @@ body{
     color: #FFF;
 }
 
-.music_button{
+.music_button {
     position: absolute;
     right: 1rem;
-    top:1rem;
+    top: 1rem;
     z-index: 2;
     width: 2rem;
     height: 2rem;
 }
 
-.play_button{
+.play_button {
     z-index: 2;
     animation: rotate 1s linear infinite;
     -webkit-animation: rotate 1s linear infinite;
     display: block;
 }
 
-.pause_button{
+.pause_button {
     display: none;
     z-index: 2;
 }
 
 /*旋转动画*/
 @-webkit-keyframes rotate {
-    0%{
+    0% {
         -webkit-transform: rotate(0deg);
     }
-    50%{
+    50% {
         -webkit-transform: rotate(180deg);
     }
-    100%{
+    100% {
         -webkit-transform: rotate(360deg);
     }
 }
 
 @-moz-keyframes rotate {
-    0%{
+    0% {
         -moz-transform: rotate(0deg);
     }
-    50%{
+    50% {
         -moz-transform: rotate(180deg);
     }
-    100%{
+    100% {
         -moz-transform: rotate(360deg);
     }
 }
 
 @-o-keyframes rotate {
-    0%{
+    0% {
         -o-transform: rotate(0deg);
     }
-    50%{
+    50% {
         -o-transform: rotate(180deg);
     }
-    100%{
+    100% {
         -o-transform: rotate(360deg);
     }
 }
 
 @keyframes rotate {
-    0%{
+    0% {
         transform: rotate(0deg);
     }
-    50%{
+    50% {
         transform: rotate(180deg);
     }
-    100%{
+    100% {
         transform: rotate(360deg);
     }
 }
+
 /*旋转动画*/
 /*音乐按钮*/
 
-
-html{
+html {
     width: 100%;
     height: 100%;
 }
 
-body{
+body {
     width: 100%;
     height: 100%;
     background-image: url("../images/background_pc.jpg");
@@ -121,46 +123,51 @@ body{
     font-family: "Microsoft Yahei", "微软雅黑";
 }
 
-.pause_page{
+.pause_page {
     width: 100%;
     height: 100%;
 }
 
-.last_join{
+.last_join {
     float: right;
     margin-right: 10px;
     color: gold;
     font-size: 32px;
     margin-top: 10px;
 }
-.golden_egg{
+
+.golden_egg {
     padding-top: 71px;
     text-align: center;
     color: gold;
     font-size: 48px;
 }
-.next_join{
+
+.next_join {
     position: absolute;
     left: 15px;
     bottom: 15px;
     color: white;
     font-size: 22px;
 }
-.qr_code{
+
+.qr_code {
     width: 150px;
     height: 150px;
     position: absolute;
     right: 23px;
     bottom: 50px;
 }
-.prompt_message{
+
+.prompt_message {
     position: absolute;
     right: 10px;
     bottom: 10px;
     color: white;
 }
-.mask_black{
-    background-color: rgba(0,0,0,0.8);
+
+.mask_black {
+    background-color: rgba(0, 0, 0, 0.8);
     position: absolute;
     top: 0;
     left: 0;
@@ -169,59 +176,62 @@ body{
     display: none;
 }
 
-.activity_begin{
+.activity_begin {
     color: white;
     text-align: center;
     display: none;
     padding-top: 60px;
 }
 
-.join_num{
+.join_num {
     position: absolute;
-    top:15px;
-    right:10px;
+    top: 15px;
+    right: 10px;
     font-size: 22px;
 
 }
-.ready_go{
+
+.ready_go {
 
     font-size: 48px;
 
 }
-.qr{
-    margin-top:75px;
+
+.qr {
+    margin-top: 75px;
     width: 250px;
     height: 250px;
 }
 
-.util_end{
+.util_end {
     margin-top: 70px;
     font-size: 22px;
 }
 
-.count_dowm{
+.count_dowm {
     display: none;
     text-align: center;
     color: white;
     padding-top: 60px;
 }
-.current_num{
+
+.current_num {
     position: absolute;
     top: 10px;
     right: 30px;
 }
 
-.up_begin{
+.up_begin {
     margin-top: -10px;
     font-size: 48px;
 }
 
-.ten_num{
+.ten_num {
     margin-top: 160px;
     font-size: 108px;
 }
 
-.left_shake{
+.left_shake {
     position: absolute;
     top: 200px;
     left: 50px;
@@ -232,7 +242,7 @@ body{
     animation: rotate 0.5s linear infinite;
 }
 
-.right_shake{
+.right_shake {
     position: absolute;
     top: 200px;
     right: 50px;
@@ -245,82 +255,82 @@ body{
 }
 
 @-webkit-keyframes rotate {
-    0%{
+    0% {
         -webkit-transform: rotate(0deg);
     }
-    25%{
+    25% {
         -webkit-transform: rotate(20deg);
     }
-    50%{
+    50% {
         -webkit-transform: rotate(0deg);
     }
-    75%{
+    75% {
         -webkit-transform: rotate(-20deg);
     }
-    100%{
+    100% {
         -webkit-transform: rotate(0deg);
     }
 }
 
 @-moz-keyframes rotate {
-    0%{
+    0% {
         -moz-transform: rotate(0deg);
     }
-    25%{
+    25% {
         -moz-transform: rotate(20deg);
     }
-    50%{
+    50% {
         -moz-transform: rotate(0deg);
     }
-    75%{
+    75% {
         -moz-transform: rotate(-20deg);
     }
-    100%{
+    100% {
         -moz-transform: rotate(0deg);
     }
 }
 
 @-o-keyframes rotate {
-    0%{
+    0% {
         -o-transform: rotate(0deg);
     }
-    25%{
+    25% {
         -o-transform: rotate(20deg);
     }
-    50%{
+    50% {
         -o-transform: rotate(0deg);
     }
-    75%{
+    75% {
         -o-transform: rotate(-20deg);
     }
-    100%{
+    100% {
         -o-transform: rotate(0deg);
     }
 }
 
 @keyframes rotate {
-    0%{
+    0% {
         transform: rotate(0deg);
     }
-    25%{
+    25% {
         transform: rotate(20deg);
     }
-    50%{
+    50% {
         transform: rotate(0deg);
     }
-    75%{
+    75% {
         transform: rotate(-20deg);
     }
-    100%{
+    100% {
         transform: rotate(0deg);
     }
 }
 
-.current_num{
+.current_num {
     font-size: 22px;
 }
 
-.golden_egg_animate{
+.golden_egg_animate {
     width: 100%;
     height: 100%;
     background-image: url("../images/break.gif");
@@ -328,24 +338,25 @@ body{
     display: none;
 }
 
-.end{
+.end {
     color: white;
     display: none;
     text-align: center;
     font-size: 40px;
 }
-.img_photo{
+
+.img_photo {
     margin-top: 80px;
     width: 150px;
     height: 150px;
 
 }
 
-.end_des{
-  margin-top: 113px;
+.end_des {
+    margin-top: 113px;
 }
 
-.rank_show{
+.rank_show {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -357,15 +368,15 @@ body{
 }
 
 /*.rank_show h1{*/
-    /*margin: 0 auto;*/
-    /*height: 80px;*/
-    /*line-height: 80px;*/
-    /*background-color: #f32a3d;*/
-    /*color: #FFF;*/
-    /*font-weight: normal;*/
+/*margin: 0 auto;*/
+/*height: 80px;*/
+/*line-height: 80px;*/
+/*background-color: #f32a3d;*/
+/*color: #FFF;*/
+/*font-weight: normal;*/
 /*}*/
 
-.rank_show .title{
+.rank_show .title {
     margin: 0 auto;
     height: 10%;
     background-color: #f32a3d;
@@ -373,35 +384,35 @@ body{
     padding-top: 16px;
 }
 
-.rank_show .title h1{
+.rank_show .title h1 {
     font-weight: normal;
     font-size: 24px;
 }
 
-.shake_last_time{
+.shake_last_time {
     display: inline-block;
     position: absolute;
-    top:32%;
+    top: 32%;
     right: 5%;
     color: #FFF;
 }
 
-.shake_last_time span{
+.shake_last_time span {
     color: #fff571;
 }
 
-.rank_show .rank_item{
+.rank_show .rank_item {
     height: 9%;
     position: relative;
     background-color: lightgrey;
     line-height: 60px;
 }
 
-.rank_show .rank_item:nth-child(2n){
+.rank_show .rank_item:nth-child(2n) {
     background-color: #FFF;
 }
 
-.rank_show .rank_item .rank_star{
+.rank_show .rank_item .rank_star {
     display: inline-block;
     background-image: url("../images/star.png");
     background-size: 100% 100%;
@@ -409,27 +420,27 @@ body{
     height: 40px;
     position: absolute;
     left: 3%;
-    top:20%;
+    top: 20%;
     line-height: 42px;
     font-size: 16px;
     font-weight: bold;
     color: #f32a3d;
 }
 
-.rank_show .rank_item .rank_star_none{
+.rank_show .rank_item .rank_star_none {
     display: inline-block;
     width: 40px;
     height: 40px;
     position: absolute;
     left: 3%;
-    top:10px;
+    top: 10px;
     line-height: 40px;
     font-size: 16px;
     font-weight: bold;
     color: #f32a3d;
 }
 
-.rank_show .rank_head{
+.rank_show .rank_head {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -438,7 +449,7 @@ body{
     top: 10%;
 }
 
-.rank_show .rank_egg{
+.rank_show .rank_egg {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -447,7 +458,7 @@ body{
     top: 10%;
 }
 
-.rank_show .rank_item .progress{
+.rank_show .rank_item .progress {
     position: absolute;
     top: 35%;
     left: 13%;
@@ -457,7 +468,7 @@ body{
     border-radius: 6px;
 }
 
-.progressbar{
+.progressbar {
     width: 20%;
     height: 100%;
     background-color: #fff571;
@@ -468,7 +479,7 @@ body{
     z-index: 2;
 }
 
-.rank_show .rank_item .arrow_img{
+.rank_show .rank_item .arrow_img {
     position: absolute;
     top: -20%;
     left: 0;

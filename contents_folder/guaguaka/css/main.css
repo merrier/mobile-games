@@ -1,20 +1,20 @@
 @charset "utf-8";
 /*主页面*/
-body{
+body {
     background-color: #ca1946;
 }
 
-.main_head_img{
-    width:100%;
-    height:auto;
+.main_head_img {
+    width: 100%;
+    height: auto;
 }
 
-.main_content{
-    width:95%;
+.main_content {
+    width: 95%;
     margin: 10px auto;
 }
 
-.btn_activity_des{
+.btn_activity_des {
     float: right;
     text-decoration: underline;
     color: #ffffff;
@@ -22,10 +22,10 @@ body{
     margin-bottom: 10px;
 }
 
-.main_canvas_box{
+.main_canvas_box {
     position: relative;
-    width:100%;
-    height:80px;
+    width: 100%;
+    height: 80px;
     margin-bottom: 0.6rem;
     padding: 5px;
     background-color: #ffffff;
@@ -36,34 +36,34 @@ body{
     -moz-box-sizing: border-box;
 }
 
-.main_times{
+.main_times {
     margin-bottom: 0.6rem;
     font-size: 0.65rem;
     overflow: hidden;
 }
 
-.main_times_chance{
+.main_times_chance {
     float: left;
 }
 
-.main_times_help{
+.main_times_help {
     float: right;
 }
 
-.main_times_chancenum,.main_times_helpnum{
+.main_times_chancenum, .main_times_helpnum {
     color: #ffffff;
 }
 
-.main_btn_box{
-    width:90%;
+.main_btn_box {
+    width: 90%;
     margin: 0 auto;
     overflow: hidden;
     margin-bottom: 15px;
 }
 
-.main_btn{
-    height:33px;
-    width:123px;
+.main_btn {
+    height: 33px;
+    width: 123px;
     background-image: url("../images/main_btn_bg.png");
     background-size: 100% 100%;
     font-size: 15px;
@@ -72,39 +72,39 @@ body{
     color: #aa001e;
 }
 
-.btn_again,.btn_help{
+.btn_again, .btn_help {
     float: left;
 }
 
-.btn_share,.btn_goplay{
+.btn_share, .btn_goplay {
     float: right;
 }
 
-.main_foot{
-    width:100%;
+.main_foot {
+    width: 100%;
     border-radius: 15px;
     background-color: #ffe4e4;
 }
 
-.main_foot_title{
+.main_foot_title {
     position: relative;
     font-size: 14px;
     overflow: hidden;
-    height:30px;
+    height: 30px;
 }
 
-.main_foot_content{
+.main_foot_content {
     padding: 10px 0;
 }
 
-.foot_title_btn{
+.foot_title_btn {
     display: block;
     position: absolute;
     top: 0;
     left: 0;
     background-color: #e63f43;
-    width:100px;
-    height:30px;
+    width: 100px;
+    height: 30px;
     line-height: 30px;
     color: #ffffff;
     text-align: center;
@@ -112,18 +112,18 @@ body{
     border-top-left-radius: 15px;
 }
 
-.foot_title_btnnow{
+.foot_title_btnnow {
     background-color: #ffc501;
     z-index: 0;
 }
 
-.foot_title_btnr{
+.foot_title_btnr {
     left: 88px;
 }
 
-.foot_home_des{
+.foot_home_des {
     height: 30px;
-    width:98%;
+    width: 98%;
     line-height: 20px;
     margin: 0 auto;
     padding-left: 20px;
@@ -134,61 +134,61 @@ body{
     border-bottom: 2px solid #e63f43;
 }
 
-.foot_home_list{
+.foot_home_list {
     padding: 5px 25px;
-    padding-right:10px;
-    height:225px;
+    padding-right: 10px;
+    height: 225px;
     overflow-y: auto;
 }
 
-.foot_home_item{
-    height:40px;
+.foot_home_item {
+    height: 40px;
     margin-bottom: 5px;
     line-height: 40px;
     font-size: 13px;
     text-align: center;
 }
 
-.home_item_headimg{
+.home_item_headimg {
     float: left;
-    height:40px;
-    width:40px;
+    height: 40px;
+    width: 40px;
     margin-right: 5px;
 }
 
-.home_item_spa{
+.home_item_spa {
     float: right;
 }
 
-.foot_prize_des{
-    width:90%;
+.foot_prize_des {
+    width: 90%;
     margin: 0 auto;
     text-align: left;
     line-height: 22px;
     font-size: 13px;
 }
 
-.canvas_content{
+.canvas_content {
     position: absolute;
     top: 0;
     left: 0;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
     text-align: center;
     line-height: 80px;
-    color:red;
+    color: red;
 }
 
-#canvas_img{
+#canvas_img {
     position: absolute;
-    width: calc( 100% - 10px);
-    height: calc( 100% - 10px);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
     /*width: 288px;*/
 }
 
 /*活动规则介绍*/
 
-.rule_div{
+.rule_div {
     width: 100%;
     text-align: right;
     position: fixed;
@@ -196,7 +196,7 @@ body{
 
 }
 
-.rule{
+.rule {
     font-size: 14px;
     color: white;
     margin-right: 20px;
@@ -231,30 +231,28 @@ body{
     overflow-y: scroll;
 }
 
-.rule_content_box{
+.rule_content_box {
     margin-bottom: 20px;
 }
 
-.rule_title{
+.rule_title {
     font-weight: bold;
     font-size: 15px;
 }
 
-.rule_prize_des{
+.rule_prize_des {
     margin-bottom: 10px;
 }
 
-.rule_prize_tips{
+.rule_prize_tips {
     font-weight: bold;
     font-size: 12px;
 }
 
-.rule_prize_img{
-    width:100%;
-    height:auto;
+.rule_prize_img {
+    width: 100%;
+    height: auto;
 }
-
-
 
 /*转发好友*/
 .h_f_box {

@@ -3,14 +3,14 @@
  // +--------------------------------------------------------------------------*/
 // JavaScript Document
 
-$(function(){
+$(function () {
 
     //------------------正则表达式验证-----------------
-    function regularExpression(type,val){
+    function regularExpression(type, val) {
         var test_type = type;
         var val = val;
         var test_rule;
-        switch (test_type){
+        switch (test_type) {
             case "positive_integers":
                 test_rule = /^[0-9]*[1-9][0-9]*$/;    //正整数
                 break;
@@ -24,33 +24,33 @@ $(function(){
 
 
     //---------------------输入比分正则验证--------------------
-    $(".enter_score_show").delegate(".score_input","blur",function(){
+    $(".enter_score_show").delegate(".score_input", "blur", function () {
         var val = $(this).val();
-        var result = regularExpression("positive_integers_zero",val);
-        if(!result){
+        var result = regularExpression("positive_integers_zero", val);
+        if (!result) {
             $(this).val("");
             $(".enter_score_tips").show();
             return false;
-        }else{
+        } else {
             $(".enter_score_tips").hide();
         }
     });
 
 
     //-----------------确定按钮表单验证---------------
-    $(".enter_score_form").delegate(".common_btn_confirm","click",function(event){
+    $(".enter_score_form").delegate(".common_btn_confirm", "click", function (event) {
         var state = true;
-        $(".score_input").each(function(){
+        $(".score_input").each(function () {
             var val = $(this).val();
-            if(val==""||val==null){
+            if (val == "" || val == null) {
                 event.preventDefault();
                 $(".enter_score_tips").show();
                 state = false;
             }
         });
-        if(state == true){
+        if (state == true) {
             alert("提交成功");
-            location.href='./has_guessed.html';
+            location.href = './has_guessed.html';
         }
     });
 

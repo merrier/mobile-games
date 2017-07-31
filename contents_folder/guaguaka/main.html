@@ -13,222 +13,222 @@
 </head>
 <body>
 
-    <!--预加载模块-->
-    <div class="bg_flop">
-        <div class="fakeloader">
-            <div class="fakeloader_box">
+<!--预加载模块-->
+<div class="bg_flop">
+    <div class="fakeloader">
+        <div class="fakeloader_box">
 
-            </div>
-            <p class="fakeloader_percent">正在加载...
-                <span class='fakeloader_percentshow'>0%</span>
-            </p>
         </div>
+        <p class="fakeloader_percent">正在加载...
+            <span class='fakeloader_percentshow'>0%</span>
+        </p>
     </div>
+</div>
 
-    <!--展示页面-->
-    <div class="main">
+<!--展示页面-->
+<div class="main">
 
-        <!--通用蒙版-->
-        <div class="mask_white" style="display: none"></div>
+    <!--通用蒙版-->
+    <div class="mask_white" style="display: none"></div>
 
-        <div class="mask_black" style="display: none"></div>
+    <div class="mask_black" style="display: none"></div>
 
-        <div class="mask_black_noclick" style="display: none"></div>
+    <div class="mask_black_noclick" style="display: none"></div>
 
-        <!--注册页面-->
-        <div class="mask_common mask_register" style="display: none">
-            <div class="mask_box">
-                <div class="btn_mask_close mask_close">×</div>
-                <div class="register" style="display: block">
-                    <form id="itemForm">
-                        <label>手机号：</label>
-                        <input class="rect" id="phone_number" type="text" name="phone_number" maxlength="11">
-                        <div style="position:relative;overflow: hidden" class="yzm_div">
-                            <a href="#" id="getyzm" onclick="get_yzm(this)">获取验证码</a>
-                            <div class="small_mask"></div>
-                            <p class="frm_desc"></p>
-                        </div>
-
-                        <label>验证码：</label>
-                        <input class="rect" type="text" name="captcha" id="inputyzm">
+    <!--注册页面-->
+    <div class="mask_common mask_register" style="display: none">
+        <div class="mask_box">
+            <div class="btn_mask_close mask_close">×</div>
+            <div class="register" style="display: block">
+                <form id="itemForm">
+                    <label>手机号：</label>
+                    <input class="rect" id="phone_number" type="text" name="phone_number" maxlength="11">
+                    <div style="position:relative;overflow: hidden" class="yzm_div">
+                        <a href="#" id="getyzm" onclick="get_yzm(this)">获取验证码</a>
+                        <div class="small_mask"></div>
                         <p class="frm_desc"></p>
+                    </div>
 
-                        <img src="images/btn_register.png" class="zhuce" id="register" onclick="return validateForm()" />
-                        <div id="Lb_Random" class="yzm"></div>
-                    </form>
-                </div>
-            </div>
-        </div>
+                    <label>验证码：</label>
+                    <input class="rect" type="text" name="captcha" id="inputyzm">
+                    <p class="frm_desc"></p>
 
-        <!--转发好友-->
-        <div class="forward" style="display: none;">
-            <img src="images/forward.png" class="img_responsive">
-        </div>
-
-        <!--我的奖品蒙版-->
-        <div class="mask_common mask_myprize" style="display: none">
-            <div class="mask_box">
-                <img class="mask_head_img" src="images/mask_crown.png">
-                <div class="mask_content">
-                    <div class="myprize_con_main">一等奖一份</div>
-                    <a class="mask_myprize_close mask_close">关闭</a>
-                </div>
-            </div>
-        </div>
-
-
-        <!--中奖页面-->
-        <div class="mask_common mask_prize" style="display:none;">
-            <div class="mask_box">
-                <div class="mask_prize_head">
-                    <img class="img_responsive" src="images/prize_title.png">
-                    <span class="mask_prize_title">恭喜您中了一等奖</span>
-                </div>
-
-                <div class="mask_prize_crown">
-                    <img class="img_responsive" src="images/mask_crown.png">
-                </div>
-
-                <div class="mask_prize_box">
-                    <img class="img_responsive" src="images/prize_bag.png">
-                    <span class="mask_prize_content">一等奖</span>
-                </div>
-
-                <a class="mask_prize_close mask_close">关闭</a>
-            </div>
-        </div>
-
-        <!--未中奖-->
-        <div class="mask_common mask_noprize" style="display: none;">
-            <div class="mask_box">
-                <img class="mask_head_img" src="images/mask_cryface.png">
-                <div class="mask_content">
-                    <div class="myprize_con_main">很遗憾，您未中奖！</div>
-                    <a class="mask_noprize_close mask_close">关闭</a>
-                </div>
-            </div>
-        </div>
-
-
-        <!--活动规则介绍-->
-        <div class="mask_common rule_box" style="display: none;">
-            <div class="rule_header"><img src="images/rule_header.png" class="img_responsive"></div>
-            <div class="rule_content">
-                <div class="rule_content_box">
-                    <p class="rule_title">大富翁活动内容:</p>
-                    <p>双安商场“春之花嫁”甜蜜盛放</p>
-                    <p>玩转大富翁，娘家送豪礼</p>
-                    <p>美美的春天，就要美美的“嫁”！</p>
-                </div>
-
-                <div class="rule_content_box">
-                    <p><span class="rule_label">活动时间:</span>3月18日-3月24日</p>
-                    <p><span class="rule_label">兑奖时间:</span>3月25日-3月27日</p>
-                    <p><span class="rule_label">兑奖地点:</span>四层VIP服务台</p>
-                </div>
-
-                <div class="rule_content_box">
-                    <p class="rule_title">大富翁游戏规则:</p>
-                    <p>1、大富翁游戏每人有3次初始游戏机会；</p>
-                    <p>2、每5位好友助力可额外获得一次游戏机会；</p>
-                    <p>3、每位用户获得金币以最高一次记录为准；</p>
-                    <p>4、获得大奖用户不可再次进行金币兑换；</p>
-                    <p>5、礼品核销时间：3月25日-3月27日</p>
-                    <p>6、礼品领取地点：顾客本人凭注册手机号至四层VIP服务台</p>
-                </div>
-
-                <div class="rule_content_box">
-                    <p class="rule_title">大奖奖项设定:</p>
-                    <p>1、<span class="rule_label">一等奖1名:</span>奖品iwatch</p>
-                    <p>2、<span class="rule_label">二等奖2名:</span>菲仕乐5件套</p>
-                    <p>3、<span class="rule_label">三等奖30名:</span>爱的蜡烛礼盒30个</p>
-                </div>
-
-                <div class="rule_content_box">
-                    <p class="rule_title">金币兑换奖设定:</p>
-                    <p class="rule_prize_des">1 游戏金币排名1-5名，可兑换 烧烤架1个。共5份。</p>
-                    <img class="rule_prize_img" src="images/prize_third.jpg">
-                    <!--<p class="rule_prize_tips">绿植图片仅供参考，以现场实物为准。</p>-->
-                    <p class="rule_prize_des">2 游戏金币排名6-25名，可兑换 居家抱枕1个。共20份。</p>
-                    <img class="rule_prize_img" src="images/prize_second.JPG">
-                    <p class="rule_prize_des">3 游戏金币排名26-100名，可兑换 爱的蜡烛礼盒1个。共75份。</p>
-                    <img class="rule_prize_img" src="images/prize_first.jpg">
-                </div>
-
-            </div>
-        </div>
-
-        <!--主页面-->
-        <img src="images/main_head.png" class="main_head_img">
-        <div class="main_content">
-            <p class="btn_activity_des">活动说明</p>
-            <div class="main_canvas_box">
-                <p class="canvas_content">恭喜您，未中奖！</p>
-                <img src="images/canvas_img.png" id="canvas_img">
-            </div>
-            <div class="main_times">
-                <p class="main_times_chance">您当前有<span class="main_times_chancenum">4</span>次机会</p>
-                <p class="main_times_help">离下次机会还需<span class="main_times_helpnum">3</span>次助力</p>
-            </div>
-            <div class="main_btn_box">
-                <div class="btn_again main_btn">再来一次</div>
-                <div class="btn_share main_btn">我要分享</div>
-            </div>
-            <div class="main_foot">
-                <div class="main_foot_title">
-                    <span class="foot_title_btn foot_title_btnnow">活动奖品</span>
-                    <span class="foot_title_btn foot_title_btnr">我的HOME</span>
-                </div>
-                <div class="main_foot_content">
-                    <p class="foot_prize_des"></p>
-                    <p class="foot_prize_des"></p>
-                    <p class="foot_prize_des"></p>
-                    <p class="foot_prize_des"></p>
-                    <p class="foot_prize_des"></p>
-                </div>
-                <div class="main_foot_content" style="display: none">
-                    <p class="foot_home_des">获得奖励：XXXXX奖</p>
-                    <ul class="foot_home_list">
-                        <li class="foot_home_item">
-                            <img src="" class="home_item_headimg"/>
-                            <span class="home_item_nickname displayPart" displayLength="16">z vhasdgsdfhcxvb</span>
-                            <span class="home_item_spa">为您助力一次</span>
-                        </li>
-                        <li class="foot_home_item">
-                            <img src="" class="home_item_headimg"/>
-                            <span class="home_item_nickname displayPart" displayLength="16">我阿萨德发你拉屎的那个撒大了农夫萨丁</span>
-                            <span class="home_item_spa">为您助力一次</span>
-                        </li>
-                        <li class="foot_home_item">
-                            <img src="" class="home_item_headimg"/>
-                            <span class="home_item_nickname displayPart" displayLength="16">asdlfnsadfn</span>
-                            <span class="home_item_spa">为您助力一次</span>
-                        </li>
-                        <li class="foot_home_item">
-                            <img src="" class="home_item_headimg"/>
-                            <span class="home_item_nickname displayPart" displayLength="16">asdlfnsadfn</span>
-                            <span class="home_item_spa">为您助力一次</span>
-                        </li>
-                        <li class="foot_home_item">
-                            <img src="" class="home_item_headimg"/>
-                            <span class="home_item_nickname displayPart" displayLength="16">asdlfnsadfn</span>
-                            <span class="home_item_spa">为您助力一次</span>
-                        </li>
-                        <li class="foot_home_item">
-                            <img src="" class="home_item_headimg"/>
-                            <span class="home_item_nickname displayPart" displayLength="16">asdlfnsadfn</span>
-                            <span class="home_item_spa">为您助力一次</span>
-                        </li>
-                        <li class="foot_home_item">
-                            <img src="" class="home_item_headimg"/>
-                            <span class="home_item_nickname displayPart" displayLength="16">asdlfnsadfn</span>
-                            <span class="home_item_spa">为您助力一次</span>
-                        </li>
-                    </ul>
-                </div>
+                    <img src="images/btn_register.png" class="zhuce" id="register" onclick="return validateForm()"/>
+                    <div id="Lb_Random" class="yzm"></div>
+                </form>
             </div>
         </div>
     </div>
+
+    <!--转发好友-->
+    <div class="forward" style="display: none;">
+        <img src="images/forward.png" class="img_responsive">
+    </div>
+
+    <!--我的奖品蒙版-->
+    <div class="mask_common mask_myprize" style="display: none">
+        <div class="mask_box">
+            <img class="mask_head_img" src="images/mask_crown.png">
+            <div class="mask_content">
+                <div class="myprize_con_main">一等奖一份</div>
+                <a class="mask_myprize_close mask_close">关闭</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--中奖页面-->
+    <div class="mask_common mask_prize" style="display:none;">
+        <div class="mask_box">
+            <div class="mask_prize_head">
+                <img class="img_responsive" src="images/prize_title.png">
+                <span class="mask_prize_title">恭喜您中了一等奖</span>
+            </div>
+
+            <div class="mask_prize_crown">
+                <img class="img_responsive" src="images/mask_crown.png">
+            </div>
+
+            <div class="mask_prize_box">
+                <img class="img_responsive" src="images/prize_bag.png">
+                <span class="mask_prize_content">一等奖</span>
+            </div>
+
+            <a class="mask_prize_close mask_close">关闭</a>
+        </div>
+    </div>
+
+    <!--未中奖-->
+    <div class="mask_common mask_noprize" style="display: none;">
+        <div class="mask_box">
+            <img class="mask_head_img" src="images/mask_cryface.png">
+            <div class="mask_content">
+                <div class="myprize_con_main">很遗憾，您未中奖！</div>
+                <a class="mask_noprize_close mask_close">关闭</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--活动规则介绍-->
+    <div class="mask_common rule_box" style="display: none;">
+        <div class="rule_header"><img src="images/rule_header.png" class="img_responsive"></div>
+        <div class="rule_content">
+            <div class="rule_content_box">
+                <p class="rule_title">大富翁活动内容:</p>
+                <p>双安商场“春之花嫁”甜蜜盛放</p>
+                <p>玩转大富翁，娘家送豪礼</p>
+                <p>美美的春天，就要美美的“嫁”！</p>
+            </div>
+
+            <div class="rule_content_box">
+                <p><span class="rule_label">活动时间:</span>3月18日-3月24日</p>
+                <p><span class="rule_label">兑奖时间:</span>3月25日-3月27日</p>
+                <p><span class="rule_label">兑奖地点:</span>四层VIP服务台</p>
+            </div>
+
+            <div class="rule_content_box">
+                <p class="rule_title">大富翁游戏规则:</p>
+                <p>1、大富翁游戏每人有3次初始游戏机会；</p>
+                <p>2、每5位好友助力可额外获得一次游戏机会；</p>
+                <p>3、每位用户获得金币以最高一次记录为准；</p>
+                <p>4、获得大奖用户不可再次进行金币兑换；</p>
+                <p>5、礼品核销时间：3月25日-3月27日</p>
+                <p>6、礼品领取地点：顾客本人凭注册手机号至四层VIP服务台</p>
+            </div>
+
+            <div class="rule_content_box">
+                <p class="rule_title">大奖奖项设定:</p>
+                <p>1、<span class="rule_label">一等奖1名:</span>奖品iwatch</p>
+                <p>2、<span class="rule_label">二等奖2名:</span>菲仕乐5件套</p>
+                <p>3、<span class="rule_label">三等奖30名:</span>爱的蜡烛礼盒30个</p>
+            </div>
+
+            <div class="rule_content_box">
+                <p class="rule_title">金币兑换奖设定:</p>
+                <p class="rule_prize_des">1 游戏金币排名1-5名，可兑换 烧烤架1个。共5份。</p>
+                <img class="rule_prize_img" src="images/prize_third.jpg">
+                <!--<p class="rule_prize_tips">绿植图片仅供参考，以现场实物为准。</p>-->
+                <p class="rule_prize_des">2 游戏金币排名6-25名，可兑换 居家抱枕1个。共20份。</p>
+                <img class="rule_prize_img" src="images/prize_second.JPG">
+                <p class="rule_prize_des">3 游戏金币排名26-100名，可兑换 爱的蜡烛礼盒1个。共75份。</p>
+                <img class="rule_prize_img" src="images/prize_first.jpg">
+            </div>
+
+        </div>
+    </div>
+
+    <!--主页面-->
+    <img src="images/main_head.png" class="main_head_img">
+    <div class="main_content">
+        <p class="btn_activity_des">活动说明</p>
+        <div class="main_canvas_box">
+            <p class="canvas_content">恭喜您，未中奖！</p>
+            <img src="images/canvas_img.png" id="canvas_img">
+        </div>
+        <div class="main_times">
+            <p class="main_times_chance">您当前有<span class="main_times_chancenum">4</span>次机会</p>
+            <p class="main_times_help">离下次机会还需<span class="main_times_helpnum">3</span>次助力</p>
+        </div>
+        <div class="main_btn_box">
+            <div class="btn_again main_btn">再来一次</div>
+            <div class="btn_share main_btn">我要分享</div>
+        </div>
+        <div class="main_foot">
+            <div class="main_foot_title">
+                <span class="foot_title_btn foot_title_btnnow">活动奖品</span>
+                <span class="foot_title_btn foot_title_btnr">我的HOME</span>
+            </div>
+            <div class="main_foot_content">
+                <p class="foot_prize_des"></p>
+                <p class="foot_prize_des"></p>
+                <p class="foot_prize_des"></p>
+                <p class="foot_prize_des"></p>
+                <p class="foot_prize_des"></p>
+            </div>
+            <div class="main_foot_content" style="display: none">
+                <p class="foot_home_des">获得奖励：XXXXX奖</p>
+                <ul class="foot_home_list">
+                    <li class="foot_home_item">
+                        <img src="" class="home_item_headimg"/>
+                        <span class="home_item_nickname displayPart" displayLength="16">z vhasdgsdfhcxvb</span>
+                        <span class="home_item_spa">为您助力一次</span>
+                    </li>
+                    <li class="foot_home_item">
+                        <img src="" class="home_item_headimg"/>
+                        <span class="home_item_nickname displayPart" displayLength="16">我阿萨德发你拉屎的那个撒大了农夫萨丁</span>
+                        <span class="home_item_spa">为您助力一次</span>
+                    </li>
+                    <li class="foot_home_item">
+                        <img src="" class="home_item_headimg"/>
+                        <span class="home_item_nickname displayPart" displayLength="16">asdlfnsadfn</span>
+                        <span class="home_item_spa">为您助力一次</span>
+                    </li>
+                    <li class="foot_home_item">
+                        <img src="" class="home_item_headimg"/>
+                        <span class="home_item_nickname displayPart" displayLength="16">asdlfnsadfn</span>
+                        <span class="home_item_spa">为您助力一次</span>
+                    </li>
+                    <li class="foot_home_item">
+                        <img src="" class="home_item_headimg"/>
+                        <span class="home_item_nickname displayPart" displayLength="16">asdlfnsadfn</span>
+                        <span class="home_item_spa">为您助力一次</span>
+                    </li>
+                    <li class="foot_home_item">
+                        <img src="" class="home_item_headimg"/>
+                        <span class="home_item_nickname displayPart" displayLength="16">asdlfnsadfn</span>
+                        <span class="home_item_spa">为您助力一次</span>
+                    </li>
+                    <li class="foot_home_item">
+                        <img src="" class="home_item_headimg"/>
+                        <span class="home_item_nickname displayPart" displayLength="16">asdlfnsadfn</span>
+                        <span class="home_item_spa">为您助力一次</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 
 <script src="../../plugin_folder/jquery_v1.11.3/jquery-1.11.3.min.js"></script>
@@ -239,18 +239,18 @@
 <script src="js/flop.js"></script>
 <script src="js/main.js"></script>
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
         $(".bg_flop").fakeLoader({
 //                timeToHide:1200,
-            bgColor:"#ca1946",
-            spinner:"spinner6"
+            bgColor: "#ca1946",
+            spinner: "spinner6"
         });
     });
 
-    addEventListener( "load", init, false );
-    function init( event ) {
-        $('#canvas_img').eraser( {
-            size:20,
+    addEventListener("load", init, false);
+    function init(event) {
+        $('#canvas_img').eraser({
+            size: 20,
             completeRatio: .3,
             completeFunction: prizeShow
         });//画布被擦除50%时触发事件

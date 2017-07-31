@@ -2,159 +2,155 @@
 /* +--------------------------------------------------------------------------
 // | Author: Merrier <953075999@qq.com> <http://www.merrier.wang> <Date:2016/5/11 22:27>
 // +--------------------------------------------------------------------------*/
-
 //引入全局less变量
 @import "../../../common_folder/less/Game_library";
 
-
-.bgcolor_transparent{
+.bgcolor_transparent {
   background-color: rgba(83, 131, 8, 0.7);
 }
 
-.green_border{
+.green_border {
   border: 2px solid #345405;
 }
 
+html {
 
-html{
+  body {
 
-  body{
-
-    .main{
-      .size(100%,100%);
+    .main {
+      .size(100%, 100%);
       color: #ffffff;
       .background_percent100("../images/main_bg.png");
 
-      .logo_head{
-        .size(100%,60px);
+      .logo_head {
+        .size(100%, 60px);
         margin-bottom: 10px;
 
-        .head_market_logo{
+        .head_market_logo {
           position: absolute;
           top: 15px;
           left: 5px;
-          .size(138px,30px);
+          .size(138px, 30px);
         }
-        .head_euro_logo{
+        .head_euro_logo {
           position: absolute;
           top: 5px;
           right: 10px;
-          .size(40px,50px);
+          .size(40px, 50px);
         }
       }
 
-      .common_box{
-        width:96%;
-        height:~"calc(100% - 105px)";
+      .common_box {
+        width: 96%;
+        height: ~"calc(100% - 105px)";
         margin-bottom: 35px;
         .clearfix;
         .center_block;
 
-        h3{
+        h3 {
           color: #ffffff;
           font-size: 20px;
           text-align: center;
           margin-bottom: 15px;
         }
-        .common_battle{
-          width:100%;
-          height:~"calc(100% - 40px)";
+        .common_battle {
+          width: 100%;
+          height: ~"calc(100% - 40px)";
           overflow-y: auto;
           .clearfix;
 
+          .battle_box {
+            position: relative;
+            .size(49%, 85px);
+            margin-bottom: 10px;
+            padding: 2px 10px;
+            .green_border;
+            border-radius: 8px;
+            .bgcolor_transparent;
+            box-sizing: border-box;
+            text-decoration: none;
+            color: #fff;
 
-            .battle_box{
-              position: relative;
-              .size(49%,85px);
-              margin-bottom: 10px;
-              padding: 2px 10px;
-              .green_border;
-              border-radius: 8px;
-              .bgcolor_transparent;
-              box-sizing: border-box;
-              text-decoration: none;
-              color:#fff;
+            > img {
+              position: absolute;
+              right: 2px;
+              top: 2px;
+            }
 
-              >img{
-                position: absolute;
-                right:2px;
-                top:2px;
+            h5 {
+              font-size: 12px;
+              font-weight: normal;
+              text-align: center;
+              margin-bottom: 5px;
+            }
+            span {
+              position: absolute;
+              width: 100%;
+              left: 0;
+              top: 33px;
+              text-align: center;
+              font-size: 12px;
+            }
+            .battle_result {
+              top: 50px;
+            }
+            .battle_box_team {
+              width: 50px;
+
+              img {
+                display: block;
+                .size(45px, 40px);
+                .center_block;
+                margin-bottom: 2px;
               }
-
-              h5{
-                font-size: 12px;
-                font-weight: normal;
+              p {
+                width: 100%;
+                font-size: 10px;
                 text-align: center;
-                margin-bottom: 5px;
-              }
-              span{
-                position: absolute;
-                width:100%;
-                left:0;
-                top:33px;
-                text-align: center;
-                font-size: 12px;
-              }
-              .battle_result{
-                top:50px;
-              }
-              .battle_box_team{
-                width:50px;
-
-                img{
-                  display: block;
-                  .size(45px,40px);
-                  .center_block;
-                  margin-bottom: 2px;
-                }
-                p{
-                  width:100%;
-                  font-size: 10px;
-                  text-align: center;
-                }
-              }
-              .battle_box_hometeam{
-                float: left;
-              }
-              .battle_box_visitteam{
-                float: right;
               }
             }
-            .battle_box:nth-child(2n+1){
+            .battle_box_hometeam {
               float: left;
             }
-            .battle_box:nth-child(2n){
+            .battle_box_visitteam {
               float: right;
             }
+          }
+          .battle_box:nth-child(2n+1) {
+            float: left;
+          }
+          .battle_box:nth-child(2n) {
+            float: right;
+          }
 
         }
       }
 
-      .alert_battle_outdate{
+      .alert_battle_outdate {
         position: fixed;
-        .size(16rem,7rem);
+        .size(16rem, 7rem);
         top: 50%;
         left: 50%;
         margin-top: -3.5rem;
         margin-left: -8rem;
         text-align: center;
 
-        .battle_outdate_content{
-          .size(100%,5.5rem);
+        .battle_outdate_content {
+          .size(100%, 5.5rem);
           padding: 0.8rem;
           color: #000;
           background-color: #ffffff;
           .border-top-radius(10px);
 
-          h6{
+          h6 {
             color: #db0000;
             font-size: 1rem;
             margin-bottom: 0.5rem;
           }
         }
 
-        .mask_close{
-          .size(100%,1.5rem);
+        .mask_close {
+          .size(100%, 1.5rem);
           color: #ffffff;
           font-size: 1.1rem;
           line-height: 1.5rem;
@@ -164,10 +160,10 @@ html{
         }
       }
 
-      .common_btn_confirm{
+      .common_btn_confirm {
         display: block;
         float: none;
-        .size(120px,30px);
+        .size(120px, 30px);
         .center_block;
         margin-top: 60px;
         margin-bottom: 20px;
@@ -182,11 +178,11 @@ html{
         box-shadow: 0 0 25px 10px #afa587;
       }
 
-      .common_foot_btn{
+      .common_foot_btn {
         position: fixed;
-        left:0;
+        left: 0;
         bottom: 0;
-        .size(100%,35px);
+        .size(100%, 35px);
         line-height: 35px;
         text-align: center;
         font-size: 18px;
@@ -199,28 +195,27 @@ html{
     }
   }
 
+  body.index {
 
-  body.index{
+    .main {
 
-    .main{
-
-      .index_main{
+      .index_main {
         position: relative;
-        .size(100%,100%);
+        .size(100%, 100%);
         .background_percent100("../images/index_bg.png");
 
-        .index_begin{
+        .index_begin {
           position: absolute;
-          .size(172px,41px);
+          .size(172px, 41px);
           left: 50%;
           bottom: 50px;
           margin-left: -86px;
           .background_percent100("../images/index_begin.png");
         }
-        .btn_activity_des{
+        .btn_activity_des {
           position: absolute;
-          bottom:25px;
-          width:100%;
+          bottom: 25px;
+          width: 100%;
           text-align: center;
           text-decoration: underline;
           color: #ffffff;
@@ -231,36 +226,35 @@ html{
     }
   }
 
+  body.body_register {
 
-  body.body_register{
+    .main {
 
-    .main{
+      .register {
 
-      .register{
-
-        h2{
+        h2 {
           font-size: 20px;
-          color:#ffffff;
+          color: #ffffff;
           .word_space(2px);
           margin-bottom: 30px;
         }
-        #regForm{
+        #regForm {
 
-          label{
+          label {
             display: none;
           }
 
-          .reg_tips{
+          .reg_tips {
             font-size: 12px;
           }
 
-          #code_random{
+          #code_random {
             display: none;
           }
 
-          .reg_input{
+          .reg_input {
             position: relative;
-            height:40px;
+            height: 40px;
             line-height: 40px;
             text-align: center;
             font-size: 14px;
@@ -269,18 +263,18 @@ html{
             .green_border;
             border-radius: 8px;
 
-            &::-webkit-input-placeholder{
+            &::-webkit-input-placeholder {
               opacity: 1;
-              color:#ffffff;
+              color: #ffffff;
             }
-            &::-moz-placeholder{
+            &::-moz-placeholder {
               opacity: 1;
-              color:#ffffff;
+              color: #ffffff;
             }
           }
-          .reg_box{
-            #reg_btn_getcode{
-              .size(100px,30px);
+          .reg_box {
+            #reg_btn_getcode {
+              .size(100px, 30px);
               margin-top: 45px;
               margin-bottom: 10px;
               line-height: 30px;
@@ -291,7 +285,7 @@ html{
               background-color: transparent;
               .background_percent100("../images/reg_btn_getcode.png");
             }
-            .reg_tips_yellow{
+            .reg_tips_yellow {
               position: absolute;
               width: 100%;
               text-align: center;
@@ -305,14 +299,13 @@ html{
     }
   }
 
+  body.enter_score {
 
-  body.enter_score{
+    .common_box {
 
-    .common_box{
-
-      .enter_score_show{
+      .enter_score_show {
         position: relative;
-        .size(100%,200px);
+        .size(100%, 200px);
         padding: 20px;
         .bgcolor_transparent;
         .green_border;
@@ -320,21 +313,21 @@ html{
         border-radius: 15px;
         box-sizing: border-box;
 
-        .score_show_box{
-          .size(100px,100%);
+        .score_show_box {
+          .size(100px, 100%);
 
-          img{
-            .size(100%,100px);
+          img {
+            .size(100%, 100px);
           }
-          p{
+          p {
             width: 100%;
             margin-bottom: 15px;
             text-align: center;
             font-size: 12px;
           }
-          input{
+          input {
             display: block;
-            .size(60px,25px);
+            .size(60px, 25px);
             line-height: 25px;
             .center_block;
             color: #ffffff;
@@ -344,15 +337,15 @@ html{
             background-color: transparent;
           }
         }
-        .score_show_hometeam{
+        .score_show_hometeam {
           float: left;
         }
-        .score_show_visitteam{
+        .score_show_visitteam {
           float: right;
         }
-        span{
+        span {
           position: absolute;
-          width:100%;
+          width: 100%;
           left: 0;
           top: 60px;
           text-align: center;
@@ -360,7 +353,7 @@ html{
         }
       }
 
-      .enter_score_tips{
+      .enter_score_tips {
         display: none;
         position: absolute;
         color: #ff0000;

@@ -1,22 +1,25 @@
-body{
+body {
     background-image: url('../images/background_share.png');
     background-size: 100% 100%;
 }
-.photo{
+
+.photo {
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-   margin-left: 2rem;
+    margin-left: 2rem;
     margin-top: 1rem;
 
 }
-#music_btn{
+
+#music_btn {
     color: white;
     position: fixed;
-    top:1rem;
+    top: 1rem;
     left: 14rem;
 }
-.frame{
+
+.frame {
     width: 80%;
     margin-left: 10%;
     /*margin-top: 8%;*/
@@ -24,9 +27,10 @@ body{
     border-radius: 10%;
     opacity: 0.9;
 }
-.gift_group{
+
+.gift_group {
     position: absolute;
-    top:5rem;
+    top: 5rem;
     left: calc(50% - 4.5rem);
     height: 15rem;
     overflow-x: hidden;
@@ -35,24 +39,29 @@ body{
     /*border-radius: 28px;*/
     /*width: 80%;*/
 }
-.gift_photo{
+
+.gift_photo {
     width: 4rem;
     height: 4rem;
     border-radius: 0.4rem;
     float: left;
 }
-.gift_info{
+
+.gift_info {
     float: left;
     margin-left: 1rem;
     font-size: 0.8rem;
 }
-.gift_name{
+
+.gift_name {
     margin: 0.4rem 0;
 }
-.gift{
+
+.gift {
     position: relative;
     margin-top: 1rem;
 }
+
 .clearfix:after {
     content: ".";
     display: block;
@@ -60,8 +69,9 @@ body{
     clear: both;
     visibility: hidden;
 }
-.btn_gift{
-    background-color: rgb(253,253,174);
+
+.btn_gift {
+    background-color: rgb(253, 253, 174);
     color: #e13e3d;
     width: 4rem;
     height: 2rem;
@@ -72,9 +82,10 @@ body{
     border-radius: 0.4rem;
     margin-top: 0.4rem;
 }
-.btn_finish{
+
+.btn_finish {
     background-color: #ffffff;
-    color: rgb(73,73,73);
+    color: rgb(73, 73, 73);
     width: 4rem;
     height: 2rem;
     display: block;
@@ -84,7 +95,8 @@ body{
     border-radius: 0.4rem;
     margin-top: 0.4rem;
 }
-.share_rules{
+
+.share_rules {
     padding: 0.2rem;
     background-color: #fff;
     color: #e13e3d;
@@ -94,8 +106,9 @@ body{
     top: 11rem;
     right: 0rem;
 }
-.btn_join{
-    background-color: rgb(253,253,174);
+
+.btn_join {
+    background-color: rgb(253, 253, 174);
     color: #e13e3d;
     width: 6rem;
     font-size: 1rem;
@@ -104,52 +117,60 @@ body{
     display: block;
     text-align: center;
     border-radius: 0.4rem;
-    margin:0rem auto;
+    margin: 0rem auto;
 }
-.pause{
+
+.pause {
     color: white;
     position: fixed;
-    top:1rem;
+    top: 1rem;
     left: 14rem;
 }
-.finish_photo{
+
+.finish_photo {
     width: 3rem;
     height: 3rem;
     position: absolute;
     left: 0.5rem;
     top: 0.6rem;
 }
-.rule-box{
+
+.rule-box {
     display: none;
     position: absolute;
-    top:calc(50% - 10.4rem);
+    top: calc(50% - 10.4rem);
     left: 15%;
     z-index: 9999;
     background-color: white;
     width: 70%;
     border-radius: 1rem;
 }
-.rule_header img{
+
+.rule_header img {
     width: 100%;
 }
-.rule_header{
+
+.rule_header {
     width: 90%;
     margin-left: 5%;
     height: 4.8rem;
 }
-.rule-content{
+
+.rule-content {
     font-size: 0.8rem;
     padding: 1rem;
     height: 10rem;
     overflow-x: hidden;
     overflow-y: auto;
 }
-.rule-content p{
+
+.rule-content p {
     padding-bottom: 0.2rem;
 }
-.close{
+
+.close {
     width: 8rem;
-    background-color: rgb(253,253,174);
+    background-color: rgb(253, 253, 174);
     color: #e13e3d;
     text-align: center;
     font-size: 1.2rem;
@@ -158,16 +179,16 @@ body{
     margin: 0.5rem auto;
 }
 
-.music_button{
+.music_button {
     position: absolute;
     right: 1rem;
-    top:1rem;
+    top: 1rem;
     z-index: 2;
     width: 2rem;
     height: 2rem;
 }
 
-.play_button{
+.play_button {
     z-index: 2;
     animation: rotate 1s linear infinite;
     -webkit-animation: rotate 1s linear infinite;
@@ -176,55 +197,55 @@ body{
     display: block;
 }
 
-.pause_button{
+.pause_button {
     display: none;
     z-index: 2;
 }
 
 @keyframes rotate {
-    0%{
+    0% {
         transform: rotate(0deg);
     }
-    50%{
+    50% {
         transform: rotate(180deg);
     }
-    100%{
+    100% {
         transform: rotate(360deg);
     }
 }
 
 @-webkit-keyframes rotate {
-    0%{
+    0% {
         -webkit-transform: rotate(0deg);
     }
-    50%{
+    50% {
         -webkit-transform: rotate(180deg);
     }
-    100%{
+    100% {
         -webkit-transform: rotate(360deg);
     }
 }
 
 @-moz-keyframes rotate {
-    0%{
+    0% {
         -moz-transform: rotate(0deg);
     }
-    50%{
+    50% {
         -moz-transform: rotate(180deg);
     }
-    100%{
+    100% {
         -moz-transform: rotate(360deg);
     }
 }
 
 @-o-keyframes rotate {
-    0%{
+    0% {
         -o-transform: rotate(0deg);
     }
-    50%{
+    50% {
         -o-transform: rotate(180deg);
     }
-    100%{
+    100% {
         -o-transform: rotate(360deg);
     }
 }

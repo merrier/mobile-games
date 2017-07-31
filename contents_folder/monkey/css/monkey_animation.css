@@ -1,76 +1,93 @@
 @charset "utf-8";
 /*猴子动画*/
-.ani_mon_0{
+.ani_mon_0 {
     -webkit-animation: m_move 3.5s infinite linear;
     animation: m_move 3.5s infinite linear;
 }
-.ani_mon{
+
+.ani_mon {
     -webkit-animation: m_move 3s infinite linear;
     animation: m_move 3s infinite linear;
 }
-.ani_mon_1{
+
+.ani_mon_1 {
     -webkit-animation: m_move 2.5s infinite linear;
     animation: m_move 2.5s infinite linear;
 }
-.ani_mon_2{
+
+.ani_mon_2 {
     -webkit-animation: m_move 2s infinite linear;
     animation: m_move 2s infinite linear;
 }
-.ani_mon_3{
+
+.ani_mon_3 {
     -webkit-animation: m_move 1.5s infinite linear;
     animation: m_move 1.5s infinite linear;
 }
-.ani_mon_4{
+
+.ani_mon_4 {
     -webkit-animation: m_move 1s infinite linear;
     animation: m_move 1s infinite linear;
 }
+
 /*.ani_s_1{
     -webkit-animation: p_move 3s infinite  forwards linear;
     animation: p_move 3s forwards infinite linear;
 
 }*/
 /*香蕉的动画*/
-.ani_s_t{
-    -webkit-animation: p_t_move 2s   forwards linear;
-    animation: p_t_move 2s forwards  linear;
+.ani_s_t {
+    -webkit-animation: p_t_move 2s forwards linear;
+    animation: p_t_move 2s forwards linear;
 }
+
 @-webkit-keyframes m_move {
-    0% {left: -30%;}
-    50%{
-       left:85%
+    0% {
+        left: -30%;
     }
-    100%{
-        left:-30%
+    50% {
+        left: 85%
+    }
+    100% {
+        left: -30%
     }
 }
+
 @keyframes m_move {
-    0% {left: -30%;}
-    50%{
-        left:85%
+    0% {
+        left: -30%;
     }
-    100%{
-        left:-30%
+    50% {
+        left: 85%
+    }
+    100% {
+        left: -30%
     }
 
 }
+
 @-webkit-keyframes p_t_move {
-    0% {top: 70%;}
-    90%{
-        top:0%;
+    0% {
+        top: 70%;
     }
-    100%{
-        top:-15%;
+    90% {
+        top: 0%;
+    }
+    100% {
+        top: -15%;
     }
 
 }
 
 /* Standard syntax */
 @keyframes p_t_move {
-    0% {top: 70%;}
-    90%{
-        top:0%;
+    0% {
+        top: 70%;
     }
-    100%{
-        top:-15%;
+    90% {
+        top: 0%;
+    }
+    100% {
+        top: -15%;
     }
 }

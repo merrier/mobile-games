@@ -1,16 +1,14 @@
-.main{
-    /*background-color: #FD746C;*/
+.main {
     position: relative;
     padding-bottom: 2rem;
 }
 
-.head_image{
+.head_image {
     width: 100%;
-    /*height: 20%;*/
     height: 8rem;
 }
 
-.head_image img{
+.head_image img {
     width: 100%;
     height: 100%;
     background-size: 100%;
@@ -25,17 +23,17 @@
     padding-bottom: 1rem;
 }
 
-.content_game .current_state{
+.content_game .current_state {
     background-color: #00FF6F;
 }
 
-.bottom_button{
+.bottom_button {
     width: 100%;
     height: 3rem;
     position: relative;
 }
 
-.check_prizes{
+.check_prizes {
     width: 1.5rem;
     padding: 0.3rem;
     line-height: 1rem;
@@ -45,7 +43,7 @@
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
     color: #FD746C;
-    box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
     position: fixed;
     left: 0;
     top: 10rem;
@@ -53,7 +51,7 @@
     text-decoration: none;
 }
 
-.share_friends{
+.share_friends {
     width: 4.8rem;
     height: 1.7rem;
     line-height: 1.7rem;
@@ -66,10 +64,10 @@
     margin-right: 10%;
     float: right;
     position: relative;
-    box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
 }
 
-.start_game{
+.start_game {
     width: 4.8rem;
     height: 1.7rem;
     line-height: 1.7rem;
@@ -82,14 +80,14 @@
     margin-left: 10%;
     float: left;
     position: relative;
-    box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
 }
 
-.clear{
-    clear:both;
+.clear {
+    clear: both;
 }
 
-.assistance_ranking_list{
+.assistance_ranking_list {
     width: 100%;
     height: 10.2rem;
     text-align: center;
@@ -98,24 +96,24 @@
     position: relative;
 }
 
-.assistance_ranking_list img{
+.assistance_ranking_list img {
     width: 100%;
     height: 100%;
     background-size: 100%;
     border-radius: 0.5rem;
 }
 
-.ranking_list_div{
+.ranking_list_div {
     width: 76%;
     position: absolute;
     height: 80%;
     z-index: 2;
-    top:0.5rem;
+    top: 0.5rem;
     padding: 0 10%;
     overflow: auto;
 }
 
-.ranking_list_div ul li{
+.ranking_list_div ul li {
     width: 100%;
     height: 2rem;
     font-size: 0.7rem;
@@ -126,20 +124,20 @@
     text-align: left;
 }
 
-.ranking_list_div ul li img{
+.ranking_list_div ul li img {
     width: 1.4rem;
     height: 1.4rem;
     position: relative;
-    top:0.3rem;
+    top: 0.3rem;
     border-radius: 1rem;
     margin-right: 0.5rem;
 }
 
-.ranking_list_head{
+.ranking_list_head {
     width: 8.2rem;
     height: 2.2rem;
     margin: 0.5rem auto;
-    color:#FFF;
+    color: #FFF;
     text-align: center;
     position: relative;
     background-image: url("../images/prize_title.png");
@@ -147,30 +145,32 @@
     background-repeat: no-repeat;
 }
 
-.ranking_list_head span{
+.ranking_list_head span {
     font-size: 1rem;
 }
-.opportunity{
+
+.opportunity {
     margin-left: 2rem;
     font-size: 0.8rem;
 }
-.assistance_ranking_list p{
+
+.assistance_ranking_list p {
     font-size: 1.3rem;
 }
 
-.mask_share{
+.mask_share {
     width: 100%;
     height: 100%;
     opacity: 0.9;
     position: fixed;
-    top:0;
+    top: 0;
     z-index: 1000;
     background-image: url("../../../common_folder/images/share.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
-.content_game{
+.content_game {
     width: 80%;
     height: auto;
     margin: auto;
@@ -181,12 +181,12 @@
     text-align: center;
 }
 
-.content_game .hide{
+.content_game .hide {
     color: transparent;
     background-color: transparent;
 }
 
-.game_square{
+.game_square {
     margin: 4px;
     background-color: #d3d2c0;
     border-radius: 6px;

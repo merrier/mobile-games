@@ -1,6 +1,6 @@
 @font-face {
     font-family: "pop";
-    src:url("../fonts/pop.ttf");
+    src: url("../fonts/pop.ttf");
 }
 
 * {
@@ -13,7 +13,7 @@
     position: relative;
 }
 
-html,body{
+html, body {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -22,7 +22,7 @@ html,body{
     font-size: 14px;
 }
 
-.main{
+.main {
     width: 100%;
     height: 100%;
     position: relative;
@@ -32,57 +32,57 @@ html,body{
     text-align: center;
 }
 
-.head_img{
+.head_img {
     width: 3rem;
     height: 3rem;
     border-radius: 2rem;
     position: absolute;
     left: 0.4rem;
-    top:0.4rem;
-    z-index:2;
+    top: 0.4rem;
+    z-index: 2;
 }
 
-.music_button{
+.music_button {
     position: absolute;
     right: 1rem;
-    top:1rem;
+    top: 1rem;
     z-index: 2;
     width: 2rem;
     height: 2rem;
 }
 
-.play_button{
+.play_button {
     z-index: 2;
     animation: rotate 1s linear infinite;
     -webkit-animation: rotate 1s linear infinite;
     display: block;
 }
 
-.pause_button{
+.pause_button {
     display: none;
     z-index: 2;
 }
 
 @keyframes rotate {
-    0%{
+    0% {
         transform: rotate(0deg);
     }
-    50%{
+    50% {
         transform: rotate(180deg);
     }
-    100%{
+    100% {
         transform: rotate(360deg);
     }
 }
 
 @-webkit-keyframes rotate {
-    0%{
+    0% {
         -webkit-transform: rotate(0deg);
     }
-    50%{
+    50% {
         -webkit-transform: rotate(180deg);
     }
-    100%{
+    100% {
         -webkit-transform: rotate(360deg);
     }
 }
@@ -97,7 +97,7 @@ html,body{
     color: #FFF;
 }
 
-.start_game{
+.start_game {
     position: absolute;
     /*width: 40%;*/
     left: 30%;
@@ -105,14 +105,14 @@ html,body{
     z-index: 3;
     background-color: #d11b2c;
     border-radius: 6px;
-    padding:0.4rem 2rem;
+    padding: 0.4rem 2rem;
     color: #fff;
     font-size: 0.8rem;
     font-family: "pop";
     box-shadow: 3px 3px 3px #ceced3;
 }
 
-.christmas_tree{
+.christmas_tree {
     width: 80%;
     height: 83%;
     margin: auto;
@@ -128,164 +128,180 @@ html,body{
     /*-moz-animation:tree_move 1s;*/
     /*-webkit-animation:tree_move 1s;*/
     /*-o-animation:tree_move 1s;*/
-    transform-origin:50% 120%;
-    -moz-transform-origin:50% 120%;
-    -webkit-transform-origin:50% 120%;
-    -o-transform-origin:50% 120%;
+    transform-origin: 50% 120%;
+    -moz-transform-origin: 50% 120%;
+    -webkit-transform-origin: 50% 120%;
+    -o-transform-origin: 50% 120%;
     display: none;
 }
 
-.gift{
+.gift {
     position: absolute;
-    top:0;
+    top: 0;
     width: 24%;
     height: 12%;
     z-index: 2;
     left: 38%;
     display: none;
 }
-@keyframes mymove
-{
-    from {top:0px;}
-    to {top:200px;}
+
+@keyframes mymove {
+    from {
+        top: 0px;
+    }
+    to {
+        top: 200px;
+    }
 }
 
 @-moz-keyframes mymove /* Firefox */
 {
-    from {-moz-top:0px;}
-    to {-moz-top:200px;}
+    from {
+        -moz-top: 0px;
+    }
+    to {
+        -moz-top: 200px;
+    }
 }
 
 @-webkit-keyframes mymove /* Safari and Chrome */
 {
-    from {-webkit-top:0px;}
-    to {-webkit-top:200px;}
+    from {
+        -webkit-top: 0px;
+    }
+    to {
+        -webkit-top: 200px;
+    }
 }
 
 @-o-keyframes mymove /* Opera */
 {
-    from {-o-top:0px;}
-    to {-o-top:200px;}
+    from {
+        -o-top: 0px;
+    }
+    to {
+        -o-top: 200px;
+    }
 }
 
 @keyframes tree_move {
-    0%{
-        transform:rotate(0deg);
+    0% {
+        transform: rotate(0deg);
     }
-    10%{
-        transform:rotate(6deg);
+    10% {
+        transform: rotate(6deg);
     }
-    20%{
-        transform:rotate(0deg);
+    20% {
+        transform: rotate(0deg);
     }
-    30%{
-        transform:rotate(-6deg);
+    30% {
+        transform: rotate(-6deg);
     }
-    40%{
-        transform:rotate(0deg);
+    40% {
+        transform: rotate(0deg);
     }
-    50%{
-        transform:rotate(6deg);
+    50% {
+        transform: rotate(6deg);
     }
-    60%{
-        transform:rotate(0deg);
+    60% {
+        transform: rotate(0deg);
     }
-    70%{
-        transform:rotate(-6deg);
+    70% {
+        transform: rotate(-6deg);
     }
-    80%{
-        transform:rotate(0deg);
+    80% {
+        transform: rotate(0deg);
     }
-    90%{
-          transform:rotate(6deg);
+    90% {
+        transform: rotate(6deg);
     }
-    100%{
-        transform:rotate(0deg);
+    100% {
+        transform: rotate(0deg);
     }
 }
 
 @-moz-keyframes tree_move /* Firefox */
 {
     0% {
-        -moz-transform:rotate(0deg);
+        -moz-transform: rotate(0deg);
     }
-    20%{
-        -moz-transform:rotate(6deg);
+    20% {
+        -moz-transform: rotate(6deg);
     }
-    40%{
-        -moz-transform:rotate(-6deg);
+    40% {
+        -moz-transform: rotate(-6deg);
     }
-    60%{
-        -moz-transform:rotate(6deg);
+    60% {
+        -moz-transform: rotate(6deg);
     }
-    80%{
-        -moz-transform:rotate(-6deg);
+    80% {
+        -moz-transform: rotate(-6deg);
     }
     100% {
-        -moz-transform:rotate(0deg);
+        -moz-transform: rotate(0deg);
     }
 }
 
 @-webkit-keyframes tree_move /* Safari and Chrome */
 {
-    0%{
-        -webkit-transform:rotate(0deg);
+    0% {
+        -webkit-transform: rotate(0deg);
     }
-    10%{
-        -webkit-transform:rotate(6deg);
+    10% {
+        -webkit-transform: rotate(6deg);
     }
-    20%{
-        -webkit-transform:rotate(0deg);
+    20% {
+        -webkit-transform: rotate(0deg);
     }
-    30%{
-        -webkit-transform:rotate(-6deg);
+    30% {
+        -webkit-transform: rotate(-6deg);
     }
-    40%{
-        -webkit-transform:rotate(0deg);
+    40% {
+        -webkit-transform: rotate(0deg);
     }
-    50%{
-        -webkit-transform:rotate(6deg);
+    50% {
+        -webkit-transform: rotate(6deg);
     }
-    60%{
-        -webkit-transform:rotate(0deg);
+    60% {
+        -webkit-transform: rotate(0deg);
     }
-    70%{
-        -webkit-transform:rotate(-6deg);
+    70% {
+        -webkit-transform: rotate(-6deg);
     }
-    80%{
-        -webkit-transform:rotate(0deg);
+    80% {
+        -webkit-transform: rotate(0deg);
     }
-    90%{
-        -webkit-transform:rotate(6deg);
+    90% {
+        -webkit-transform: rotate(6deg);
     }
-    100%{
-        -webkit-transform:rotate(0deg);
+    100% {
+        -webkit-transform: rotate(0deg);
     }
 }
 
 @-o-keyframes tree_move /* Opera */
 {
     0% {
-        -o-transform:rotate(0deg);
+        -o-transform: rotate(0deg);
     }
-    20%{
-        -o-transform:rotate(6deg);
+    20% {
+        -o-transform: rotate(6deg);
     }
-    40%{
-        -o-transform:rotate(-6deg);
+    40% {
+        -o-transform: rotate(-6deg);
     }
-    60%{
-        -o-transform:rotate(6deg);
+    60% {
+        -o-transform: rotate(6deg);
     }
-    80%{
-        -o-transform:rotate(-6deg);
+    80% {
+        -o-transform: rotate(-6deg);
     }
     100% {
-        -o-transform:rotate(0deg);
+        -o-transform: rotate(0deg);
     }
 }
 
-.mask_shake{
+.mask_shake {
     /*background-image: url('../images/shaking.png');*/
     /*background-position: 0 50%;*/
     /*background-repeat: no-repeat;*/
@@ -293,13 +309,13 @@ html,body{
     position: absolute;
     width: 100%;
     height: 100%;
-    top:0;
+    top: 0;
     z-index: 3;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     display: none;
 }
 
-.mask_shake_img{
+.mask_shake_img {
     margin-top: 6%;
     width: 100%;
     height: 56%;
@@ -307,13 +323,13 @@ html,body{
     -moz-animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     -o-animation-fill-mode: forwards;
-    animation:tree_move 1s;
-    -moz-animation:tree_move 1s;
-    -webkit-animation:tree_move 1s;
-    -o-animation:tree_move 1s;
+    animation: tree_move 1s;
+    -moz-animation: tree_move 1s;
+    -webkit-animation: tree_move 1s;
+    -o-animation: tree_move 1s;
 }
 
-.shake_prompt{
+.shake_prompt {
     font-size: 1.4rem;
     text-align: center;
     color: #FFF;
@@ -321,9 +337,9 @@ html,body{
     margin-top: 26%;
 }
 
-.rule_button{
+.rule_button {
     position: absolute;
-    top:16%;
+    top: 16%;
     right: 0;
     width: 1.2rem;
     height: 5rem;
@@ -336,40 +352,42 @@ html,body{
     font-family: "pop";
 }
 
-.rule_div{
+.rule_div {
     position: absolute;
-    top:0;
+    top: 0;
     width: 100%;
     height: 100%;
     z-index: 5;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     display: none;
 }
 
-.rule-box{
+.rule-box {
     background-color: #ffffff;
     /*display: none;*/
     position: absolute;
-    top:calc(50% - 8rem);
+    top: calc(50% - 8rem);
     left: 15%;
     width: 11rem;
     border-radius: 17px;
     font-family: "pop";
 }
-.rule_header{
+
+.rule_header {
     width: 100%;
     height: 4rem;
     background-color: rgb(130, 52, 143);
-    border-top-left-radius:17px ;
+    border-top-left-radius: 17px;
     border-top-right-radius: 17px;
     text-align: center;
 }
-.rule_header img{
+
+.rule_header img {
     width: 80%;
     height: 100%;
 }
 
-.rule-content{
+.rule-content {
     overflow-x: hidden;
     overflow-y: auto;
     height: 12rem;
@@ -380,22 +398,22 @@ html,body{
     padding-bottom: 0.5rem;
 }
 
-.close_button{
+.close_button {
     position: absolute;
     top: -0.8rem;
     right: -0.4rem;
     width: 1.8rem;
     height: 1.8rem;
-    z-index:6;
+    z-index: 6;
 }
 
-.prize_button{
+.prize_button {
     position: absolute;
-    bottom:12%;
+    bottom: 12%;
     right: 0rem;
     width: 2.2rem;
     height: 2.2rem;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
     border-radius: 1.1rem;
     background-image: url("../images/mygift.png");
@@ -404,17 +422,17 @@ html,body{
     background-position: 50% 50%;
 }
 
-.prize_div{
+.prize_div {
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
     z-index: 5;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     display: none;
 }
 
-.prize_box{
+.prize_box {
     position: absolute;
     width: 80%;
     height: 60%;
@@ -426,23 +444,23 @@ html,body{
     border-radius: 28px;
 }
 
-.gift_groups{
+.gift_groups {
     overflow-y: auto;
     position: absolute;
-    top:3%;
+    top: 3%;
     left: 2%;
     width: 96%;
     height: 92%;
 }
 
-.gift_item{
+.gift_item {
     width: 100%;
     height: 5.2rem;
     padding: 1rem 1rem 0 1rem;
     position: relative;
 }
 
-.prize_img{
+.prize_img {
     position: absolute;
     left: 14%;
     width: 30%;
@@ -450,7 +468,7 @@ html,body{
     border-radius: 6px;
 }
 
-.prize_finish{
+.prize_finish {
     position: absolute;
     left: 14%;
     width: 30%;
@@ -459,42 +477,42 @@ html,body{
     display: none;
 }
 
-.prize_name{
+.prize_name {
     font-size: 1rem;
     font-family: "pop";
     position: absolute;
     left: 52%;
-    top:20%;
+    top: 20%;
 }
 
-.clear_button{
+.clear_button {
     background-color: #e0ddd5;
     color: #e13e3d;
     font-size: 1rem;
-    padding:0  1rem;
+    padding: 0 1rem;
     text-align: center;
     line-height: 2rem;
     border-radius: 0.4rem;
     position: absolute;
     left: 52%;
-    top:45%;
+    top: 45%;
     box-shadow: 3px 3px 3px #ceced3;
 }
 
-.prize_img_show{
+.prize_img_show {
     width: 60%;
     height: 55%;
     margin-top: 10%;
 }
 
-.prize_name_show{
+.prize_name_show {
     font-size: 1rem;
     font-family: "pop";
     margin-top: 1rem;
     padding: 1rem;
 }
 
-.box_group{
+.box_group {
     width: 70%;
     height: 7rem;
     left: 15%;
@@ -503,7 +521,7 @@ html,body{
     z-index: 2;
 }
 
-.merry_text{
+.merry_text {
     position: absolute;
     width: 80%;
     left: 10%;
@@ -512,20 +530,20 @@ html,body{
     z-index: 2;
 }
 
-.share_times{
+.share_times {
     position: absolute;
     left: 14%;
     width: 30%;
     height: 20%;
-    top:70%;
+    top: 70%;
     font-size: 1rem;
     color: #000;
     font-family: "pop";
-    background-color:rgba(100,100,100,0.6);
+    background-color: rgba(100, 100, 100, 0.6);
     border-radius: 0 0 6px 6px;
 }
 
-.unlock_button{
-    background-color:#EEEE00;
+.unlock_button {
+    background-color: #EEEE00;
     box-shadow: 3px 3px 3px #ceced3;
 }

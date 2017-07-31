@@ -1,6 +1,6 @@
 @font-face {
     font-family: "happy";
-    src:url("../fonts/happy.ttf");
+    src: url("../fonts/happy.ttf");
 }
 
 html, body {
@@ -17,12 +17,6 @@ html, body {
 }
 
 .main {
-    /*width: 100%;*/
-    /*height: 100%;*/
-    /*position: absolute;*/
-    /*left: 0;*/
-    /*top: 0;*/
-    /*text-align: center;*/
     position: relative;
     width: 100%;
     height: 100%;
@@ -61,8 +55,8 @@ html, body {
     transform-style: preserve-3d;
 }
 
-.page_current{
-    visibility: visible!important;
+.page_current {
+    visibility: visible !important;
     z-index: 1;
 }
 
@@ -320,15 +314,19 @@ html, body {
 @keyframes fade-in {
     0% {
         opacity: 0;
-    }/*初始状态 透明度为0*/
+    }
+    /*初始状态 透明度为0*/
     40% {
         opacity: 0;
-    }/*过渡状态 透明度为0*/
+    }
+    /*过渡状态 透明度为0*/
     100% {
         opacity: 1;
-    }/*结束状态 透明度为1*/
+    }
+    /*结束状态 透明度为1*/
 }
-@-webkit-keyframes fade-in {/*针对webkit内核*/
+
+@-webkit-keyframes fade-in { /*针对webkit内核*/
     0% {
         -webkit-opacity: 0;
     }
@@ -340,7 +338,7 @@ html, body {
     }
 }
 
-@-moz-keyframes fade-in {/*针对webkit内核*/
+@-moz-keyframes fade-in { /*针对webkit内核*/
     0% {
         -moz-opacity: 0;
     }
@@ -352,7 +350,7 @@ html, body {
     }
 }
 
-@-o-keyframes fade-in {/*针对webkit内核*/
+@-o-keyframes fade-in { /*针对webkit内核*/
     0% {
         -o-opacity: 0;
     }
@@ -367,15 +365,19 @@ html, body {
 @keyframes fade-out {
     0% {
         opacity: 1;
-    }/*初始状态 透明度为0*/
+    }
+    /*初始状态 透明度为0*/
     40% {
         opacity: 1;
-    }/*过渡状态 透明度为0*/
+    }
+    /*过渡状态 透明度为0*/
     100% {
         opacity: 0;
-    }/*结束状态 透明度为1*/
+    }
+    /*结束状态 透明度为1*/
 }
-@-webkit-keyframes fade-out {/*针对webkit内核*/
+
+@-webkit-keyframes fade-out { /*针对webkit内核*/
     0% {
         -webkit-opacity: 1;
     }
@@ -387,7 +389,7 @@ html, body {
     }
 }
 
-@-moz-keyframes fade-out {/*针对webkit内核*/
+@-moz-keyframes fade-out { /*针对webkit内核*/
     0% {
         -moz-opacity: 1;
     }
@@ -399,7 +401,7 @@ html, body {
     }
 }
 
-@-o-keyframes fade-out {/*针对webkit内核*/
+@-o-keyframes fade-out { /*针对webkit内核*/
     0% {
         -o-opacity: 1;
     }
@@ -441,39 +443,40 @@ html, body {
     height: 1.6rem;
     z-index: 6;
 }
+
 /*活动详情弹框*/
 /*首页*/
 
 /*福袋页面*/
-.page1,.page2,.page3,.page4{
+.page1, .page2, .page3, .page4 {
     background-image: url('../images/background_gift.png');
     background-size: 100% 100%;
     /*display: none;*/
 }
 
-.page_get,.page_got{
+.page_get, .page_got {
     width: 100%;
     height: 100%;
 }
 
-.head_img{
+.head_img {
     width: 3rem;
     height: 3rem;
     border-radius: 1.5rem;
     position: absolute;
     left: 1rem;
-    top:1rem;
-    z-index:2;
+    top: 1rem;
+    z-index: 2;
 }
 
-.bag_title{
+.bag_title {
     color: #fff33b;
     font-size: 1rem;
     position: relative;
     top: 14%;
 }
 
-.gift_bag{
+.gift_bag {
     position: absolute;
     top: 24%;
     left: 0;
@@ -482,7 +485,7 @@ html, body {
     z-index: 2;
 }
 
-.shine_circle{
+.shine_circle {
     position: absolute;
     top: 10%;
     left: 0;
@@ -490,18 +493,18 @@ html, body {
     height: 62%;
 }
 
-.progress{
+.progress {
     width: 10rem;
     margin: auto;
     position: relative;
-    top:62%;
+    top: 62%;
     height: 0.4rem;
     background-color: #fff;
     border-radius: 0.3rem;
     display: none;
 }
 
-.progressbar{
+.progressbar {
     width: 0%;
     height: 100%;
     background-color: #fff33b;
@@ -512,43 +515,44 @@ html, body {
     z-index: 2;
 }
 
-.bag_text{
+.bag_text {
     position: relative;
     top: 65%;
     color: #fff;
     font-size: 0.6rem;
 }
 
-.bag_number{
+.bag_number {
     margin-right: 0.8rem;
 }
 
-.number_circle{
+.number_circle {
     width: 2rem;
     height: 2rem;
     color: #5c3604;
     border-radius: 50%;
     position: absolute;
     background-color: #fff33b;
-    top:24%;
+    top: 24%;
     right: 20%;
     z-index: 1;
 }
 
-.number_circle span{
+.number_circle span {
     font-size: 0.5rem;
     display: block;
     font-weight: bold;
     margin-top: 0.2rem;
 }
 
-.number_circle .limit_number{
+.number_circle .limit_number {
     margin-top: 0.2rem;
 }
+
 /*福袋页面*/
 
 /*分享弹框*/
-.mask_share{
+.mask_share {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -560,7 +564,7 @@ html, body {
     display: none;
 }
 
-.share_text{
+.share_text {
     color: #fff;
     font-size: 1rem;
     top: 46%;
@@ -568,14 +572,15 @@ html, body {
     display: block;
     font-family: "happy";
 }
+
 /*分享弹框*/
 
 /*福袋领取页面*/
-.page_got{
+.page_got {
     display: none;
 }
 
-.page_got .gift_bag{
+.page_got .gift_bag {
     position: absolute;
     top: 24%;
     left: 0;
@@ -584,17 +589,19 @@ html, body {
     height: 34%;
     z-index: 2;
 }
-.gift_description{
+
+.gift_description {
     position: absolute;
     color: #fff;
     font-size: 0.8rem;
     padding: 0 1rem;
     top: 60%;
 }
+
 /*福袋领取页面*/
 
 /*翻页效果*/
-@keyframes turning{ /*透明度由0到1*/
+@keyframes turning { /*透明度由0到1*/
     0% {
         opacity: 0.1; /*透明度为0*/
     }
@@ -603,7 +610,7 @@ html, body {
     }
 }
 
-@-webkit-keyframes turning{ /*透明度由0到1*/
+@-webkit-keyframes turning { /*透明度由0到1*/
     0% {
         -webkit-opacity: 0.1; /*透明度为0*/
     }
@@ -612,7 +619,7 @@ html, body {
     }
 }
 
-@-moz-keyframes turning{ /*透明度由0到1*/
+@-moz-keyframes turning { /*透明度由0到1*/
     0% {
         -moz-opacity: 0.1; /*透明度为0*/
     }
@@ -621,7 +628,7 @@ html, body {
     }
 }
 
-@-o-keyframes turning{ /*透明度由0到1*/
+@-o-keyframes turning { /*透明度由0到1*/
     0% {
         -o-opacity: 0.1; /*透明度为0*/
     }
@@ -655,43 +662,75 @@ html, body {
 }
 
 @-webkit-keyframes moveToTop {
-    to { -webkit-transform: translateY(-100%); }
+    to {
+        -webkit-transform: translateY(-100%);
+    }
 }
+
 @-moz-keyframes moveToTop {
-    to { -moz-transform: translateY(-100%); }
+    to {
+        -moz-transform: translateY(-100%);
+    }
 }
+
 @keyframes moveToTop {
-    to { transform: translateY(-100%); }
+    to {
+        transform: translateY(-100%);
+    }
 }
 
 @-webkit-keyframes moveFromTop {
-    from { -webkit-transform: translateY(-100%); }
+    from {
+        -webkit-transform: translateY(-100%);
+    }
 }
+
 @-moz-keyframes moveFromTop {
-    from { -moz-transform: translateY(-100%); }
+    from {
+        -moz-transform: translateY(-100%);
+    }
 }
+
 @keyframes moveFromTop {
-    from { transform: translateY(-100%); }
+    from {
+        transform: translateY(-100%);
+    }
 }
 
 @-webkit-keyframes moveToBottom {
-    to { -webkit-transform: translateY(100%); }
+    to {
+        -webkit-transform: translateY(100%);
+    }
 }
+
 @-moz-keyframes moveToBottom {
-    to { -moz-transform: translateY(100%); }
+    to {
+        -moz-transform: translateY(100%);
+    }
 }
+
 @keyframes moveToBottom {
-    to { transform: translateY(100%); }
+    to {
+        transform: translateY(100%);
+    }
 }
 
 @-webkit-keyframes moveFromBottom {
-    from { -webkit-transform: translateY(100%); }
+    from {
+        -webkit-transform: translateY(100%);
+    }
 }
+
 @-moz-keyframes moveFromBottom {
-    from { -moz-transform: translateY(100%); }
+    from {
+        -moz-transform: translateY(100%);
+    }
 }
+
 @keyframes moveFromBottom {
-    from { transform: translateY(100%); }
+    from {
+        transform: translateY(100%);
+    }
 }
 
 /*翻页效果*/

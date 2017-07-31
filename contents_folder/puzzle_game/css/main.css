@@ -1,14 +1,14 @@
 @font-face {
     font-family: "pop";
-    src:url("../fonts/pop.ttf");
+    src: url("../fonts/pop.ttf");
 }
-.main_content{
+
+.main_content {
     width: 100%;
     height: 100%;
     padding-bottom: 2rem;
     position: relative;
     text-align: center;
-    /*background-color: #ff808a;*/
     background-image: url("../images/purple_background.png");
     background-size: 100% 100%;
     font-family: "pop";
@@ -16,7 +16,7 @@
 
 }
 
-.music_switch{
+.music_switch {
     position: absolute;
     top: 0.8rem;
     left: 11.4rem;
@@ -24,20 +24,20 @@
     font-size: 1.4rem;
 }
 
-.logo{
+.logo {
     width: 9rem;
     padding-top: 0.7rem;
     display: block;
 }
 
-.header_img{
+.header_img {
     width: 80%;
     margin: auto;
     height: 7rem;
     margin-top: 0.4rem;
 }
 
-.game_box{
+.game_box {
     margin: auto;
     width: 14.3rem;
     height: 14.3rem;
@@ -50,7 +50,7 @@
     margin-top: 3%;
 }
 
-.game_box_mask{
+.game_box_mask {
     width: 100%;
     height: 14.5rem;
     background-color: transparent;
@@ -60,21 +60,21 @@
     display: none;
 }
 
-.time_message{
+.time_message {
     text-align: center;
     font-size: 1.2rem;
     height: 2rem;
     line-height: 2rem;
     font-family: "pop";
-    color:#FFF;
+    color: #FFF;
     margin-top: 2%;
 }
 
-.time_message span{
+.time_message span {
     color: #F2E600;
 }
 
-.img_Cell{
+.img_Cell {
     width: 4.4rem;
     height: 4.4rem;
     margin: 0.1rem;
@@ -85,7 +85,7 @@
     display: none;
 }
 
-.btn_submit{
+.btn_submit {
     width: 6rem;
     height: 2rem;
     color: #5BE837;
@@ -97,19 +97,19 @@
     margin-top: 2rem;
 }
 
-.current{
+.current {
     border: 1px solid rgba(36, 255, 31, 0.7);
     box-shadow: 0.15rem 0.15rem 0.1rem rgba(36, 255, 31, 0.7);
 }
 
-.img_all{
+.img_all {
     width: 100%;
     height: 14rem;
     border-radius: 0.3rem;
     /*display: none;*/
 }
 
-.activity{
+.activity {
     width: 2rem;
     height: 2rem;
     position: absolute;
@@ -117,38 +117,42 @@
     right: 1rem;
 }
 
-.activity_rules{
+.activity_rules {
     width: 100%;
     height: 100%;
 }
 
-.rule-box{
+.rule-box {
     background-color: #ffffff;
     display: none;
     position: absolute;
-    top:calc(50% - 8rem);
+    top: calc(50% - 8rem);
     left: 15%;
     width: 11rem;
     border-radius: 17px;
     z-index: 999999;
     font-family: "pop";
 }
-.rule_header{
+
+.rule_header {
     width: 100%;
     height: 4rem;
     background-color: rgb(130, 52, 143);
-    border-top-left-radius:17px ;
+    border-top-left-radius: 17px;
     border-top-right-radius: 17px;
     text-align: center;
 }
-.rule_header img{
+
+.rule_header img {
     width: 80%;
     height: 100%;
 }
-.mid-center{
+
+.mid-center {
     text-align: center;
 }
-.rule-content{
+
+.rule-content {
     overflow-x: hidden;
     overflow-y: auto;
     height: 12rem;
@@ -159,13 +163,13 @@
     padding-bottom: 0.5rem;
 }
 
-.word{
+.word {
     margin: 0.5rem;
 }
 
-.start_game_word{
+.start_game_word {
     position: absolute;
-    top:11rem;
+    top: 11rem;
     text-align: center;
     font-size: 1.6rem;
     color: #FD746C;
@@ -174,7 +178,7 @@
     width: 100%;
 }
 
-.restart{
+.restart {
     width: 100%;
     color: #FFF;
     text-align: center;
@@ -183,20 +187,20 @@
     bottom: 0;
 }
 
-.last_chance{
+.last_chance {
     font-size: 0.9rem;
     position: absolute;
     left: 1rem;
     top: 1rem;
 }
 
-.restart_button{
+.restart_button {
     width: 3.6rem;
     height: 3.6rem;
     display: none;
 }
 
-.check_range{
+.check_range {
     font-size: 0.9rem;
     position: absolute;
     right: 1rem;
@@ -205,14 +209,14 @@
 
 }
 
-.success_mask{
+.success_mask {
     width: 80%;
     height: 14rem;
     background-image: url("../images/success.png");
     background-size: 100% 100%;
     margin: auto;
     position: fixed;
-    top:7rem;
+    top: 7rem;
     z-index: 10001;
     left: 10%;
     padding: 2.4rem 1.2rem;
@@ -220,23 +224,23 @@
     display: none;
 }
 
-.success_mask p{
+.success_mask p {
     font-family: "pop";
     font-size: 0.8rem;
     line-height: 1.5rem;
 }
 
-.success_mask span{
+.success_mask span {
     color: #FF4136;
     font-weight: bold;
 }
 
-.success_message{
+.success_message {
     width: 100%;
     height: 100%;
 }
 
-.click_wechat{
+.click_wechat {
     margin-top: 0.5rem;
     width: 5rem;
     height: 1.8rem;
@@ -245,7 +249,7 @@
     background-size: 100% 100%;
 }
 
-.share_friends{
+.share_friends {
     margin-top: 0.5rem;
     width: 5rem;
     height: 1.8rem;
@@ -254,34 +258,34 @@
     background-size: 100% 100%;
 }
 
-.mask_share{
+.mask_share {
     width: 100%;
     height: 100%;
     opacity: 0.9;
     position: fixed;
-    top:0;
+    top: 0;
     z-index: 1000;
     background-image: url("../images/share.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
-.follow_wechat{
+.follow_wechat {
     display: none;
     text-align: center;
     font-family: "pop";
 }
 
-.two_dimension_code{
+.two_dimension_code {
     width: 5rem;
     height: 5rem;
 }
 
-.follow_wechat p{
+.follow_wechat p {
     font-size: 0.8rem;
 }
 
-.rank_list{
+.rank_list {
     display: none;
     width: 90%;
     height: 17rem;
@@ -299,7 +303,7 @@
     font-size: 0.6rem;
 }
 
-.close_button{
+.close_button {
     position: absolute;
     top: -0.2rem;
     right: -0.4rem;
@@ -308,7 +312,7 @@
     z-index: 10000000;
 }
 
-.rank_header{
+.rank_header {
     width: 100%;
     height: 2rem;
     line-height: 2rem;
@@ -316,28 +320,28 @@
     font-size: 0.8rem;
 }
 
-.rank_content{
+.rank_content {
     width: 100%;
     height: 82%;
     overflow-y: auto;
 }
 
-.photo{
+.photo {
     position: absolute;
     left: 0.5rem;
 }
 
-.nick{
+.nick {
     position: absolute;
     left: 3rem;
 }
 
-.time{
+.time {
     position: absolute;
     right: 1rem;
 }
 
-.rank_item{
+.rank_item {
     width: 100%;
     height: 2.6rem;
     border: 2px solid #000;
@@ -345,34 +349,35 @@
     position: relative;
     margin-bottom: 0.4rem;
 }
-.img_photo{
+
+.img_photo {
     position: absolute;
     left: 0.5rem;
     width: 2rem;
     height: 2rem;
-    top:0.2rem;
+    top: 0.2rem;
     border-radius: 1rem;
 }
 
-.rank{
+.rank {
     position: absolute;
     left: 3rem;
-    top:0.3rem;
+    top: 0.3rem;
     color: #FF4136;
 }
 
-.name{
+.name {
     position: absolute;
     left: 3rem;
-    top:1.3rem;
+    top: 1.3rem;
 }
 
-.cost_time{
+.cost_time {
     position: absolute;
     right: 1rem;
     top: 0.8rem;
 }
 
-.ovf_hidden{
+.ovf_hidden {
     overflow-y: hidden;
 }

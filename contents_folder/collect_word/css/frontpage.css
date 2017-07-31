@@ -4,22 +4,26 @@ body {
     padding: 0 0;
 
 }
-.primary-vision{
+
+.primary-vision {
     width: 100%;
     padding-top: 1rem;
 
 }
-.join-in{
-    margin-top:2rem;
+
+.join-in {
+    margin-top: 2rem;
     font-size: 0.6rem;
     line-height: 1rem;
 
 }
-.back_home{
+
+.back_home {
     line-height: 2.8rem;
     padding-left: 0.7rem;
 }
-.btn-join-in{
+
+.btn-join-in {
     font-size: 0.8rem;
     background-color: #feffa7;
     color: #FD746C;
@@ -34,13 +38,15 @@ body {
     margin-top: 4rem;
     left: 25%;
 }
-.game-rules{
+
+.game-rules {
     color: #ffffff;
     position: fixed;
     bottom: 2rem;
     left: 41%;
     width: 18%;
 }
+
 .mask_black {
     position: fixed;
     top: 0;
@@ -52,6 +58,7 @@ body {
     z-index: 9998;
     display: none;
 }
+
 .rule_box {
     position: fixed;
     width: 14rem;
@@ -61,17 +68,20 @@ body {
     display: none;
     background-color: white;
 }
+
 .rule_header {
 
     height: 7.5rem;
     background-color: #FD746C;
 }
-.rule_header img{
+
+.rule_header img {
     width: 90%;
     height: 100%;
     margin-left: 5%;
 }
-.rule-content{
+
+.rule-content {
     overflow-x: hidden;
     overflow-y: auto;
     height: calc(83% - 4rem);
@@ -80,10 +90,12 @@ body {
     padding-top: 20px;
 
 }
-.rule-text{
+
+.rule-text {
     padding: 0.3rem 0;
 }
-.btn-help{
+
+.btn-help {
     font-size: 0.8rem;
     background-color: #feffa7;
     color: #FD746C;
@@ -99,7 +111,8 @@ body {
     float: left;
     margin-left: 1.2rem;
 }
-.btn-join{
+
+.btn-join {
     font-size: 0.8rem;
     background-color: #feffa7;
     color: #FD746C;
@@ -115,13 +128,15 @@ body {
     float: right;
     margin-right: 1.2rem;
 }
-.customer-info{
+
+.customer-info {
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
     border-bottom: 1px dotted #8B0000;
     height: 4rem;
     position: relative;
 }
+
 .clearfix:after {
     content: ".";
     display: block;
@@ -129,40 +144,47 @@ body {
     clear: both;
     visibility: hidden;
 }
-.portrait{
+
+.portrait {
     float: left;
     height: 2.8rem;
     border-radius: 50%;
     margin-left: 2rem;
 }
-.empty-block{
+
+.empty-block {
     width: 2rem;
     height: 2.8rem;
     border-left: 1px solid #8B0000;
     float: left;
     margin-left: 0.7rem;
 }
-.phone-number{
+
+.phone-number {
     float: left;
     color: #000000;
     padding-top: 1rem;
 }
-.go_back{
+
+.go_back {
     width: 2.5rem;
     position: absolute;
     top: 1rem;
     left: 1rem;
 }
-.prize-list{
+
+.prize-list {
     overflow-x: hidden;
     overflow-y: auto;
     height: calc(100% - 6.8rem);
 }
-.prize_word{
+
+.prize_word {
     display: inline;
-    margin:0 2px;
+    margin: 0 2px;
 }
-.prize-info{
+
+.prize-info {
     border-left: 1px solid #8B0000;
     border-right: 1px solid #8B0000;
     border-top: 1px solid #8B0000;
@@ -171,25 +193,30 @@ body {
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
 }
-.goods{
+
+.goods {
     width: 3.4rem;
     float: left;
     padding: 0.2rem;
 }
-.text-info{
+
+.text-info {
     float: left;
     padding: 0.7rem;
 }
-.not-ticket{
+
+.not-ticket {
     color: #ffffff;
     padding-top: 0.7rem;
 }
-.right-icon{
+
+.right-icon {
 
     line-height: 6rem;
     padding-left: 5rem;
 }
-.ticket-info{
+
+.ticket-info {
     border-bottom: 1px solid #8B0000;
     border-left: 1px solid #8B0000;
     border-right: 1px solid #8B0000;
@@ -201,36 +228,40 @@ body {
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
 }
-.not-award{
+
+.not-award {
     border-radius: 50%;
     background-color: #ffffff;
     color: #00a81c;
     font-size: 1rem;
     padding: 0.2rem;
 }
+
 .mask-box {
     position: relative;
     width: 100%;
     height: 100%;
 }
 
-.word_block{
+.word_block {
     position: absolute;
     left: calc(110px - 3.6rem);
     padding: 0.7rem;
-    background-color: rgb(255,75,43);
+    background-color: rgb(255, 75, 43);
 
 }
-.word_give{
+
+.word_give {
     display: block;
     width: 6.2rem;
     line-height: 6.2rem;
-    background-color: rgb(211,210,192);
+    background-color: rgb(211, 210, 192);
     color: black;
     text-align: center;
     font-size: 2.8rem;
 }
-.btn_give{
+
+.btn_give {
     position: absolute;
     top: 9rem;
     left: calc(110px - 3rem);

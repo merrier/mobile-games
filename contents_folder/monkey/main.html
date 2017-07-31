@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
     <title>贪婪的猴子</title>
-    <link href="css/monkey_animation.css" rel="stylesheet" />
-    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/monkey_animation.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
 </head>
 <body>
 <div class="container_monkey">
     <!--     整体的蒙板       -->
-   <div class="mask_game"></div>
+    <div class="mask_game"></div>
     <!--     游戏规则       -->
     <div class="game_rule_details">
         <p>游戏玩法</p>
@@ -28,71 +28,82 @@
         <p>6：排行榜３０分钟更新一次</p>
         <p>7：游戏设置12种不同奖励或惩罚的物品（分值如图），</p>
         <ul class="p_s_ul clearfix" style="padding: 10px 0">
-            <li class="p_s_box"><img src="images/p_10.png" class="img_responsive p_s_img"/><span class="p_s_span">10分</span></li>
-            <li class="p_s_box"><img src="images/p_10.png" class="img_responsive p_s_img"/><span class="p_s_span">10分</span></li>
-            <li class="p_s_box"><img src="images/p_10.png" class="img_responsive p_s_img"/><span class="p_s_span">10分</span></li>
-            <li class="p_s_box"><img src="images/p_10.png" class="img_responsive p_s_img"/><span class="p_s_span">10分</span></li>
-            <li class="p_s_box"><img src="images/p_10.png" class="img_responsive p_s_img"/><span class="p_s_span">10分</span></li>
-            <li class="p_s_box"><img src="images/p_10.png" class="img_responsive p_s_img"/><span class="p_s_span">10分</span></li>
-            <li class="p_s_box"><img src="images/p_10.png" class="img_responsive p_s_img"/><span class="p_s_span">10分</span></li>
-            <li class="p_s_box"><img src="images/p_10.png" class="img_responsive p_s_img"/><span class="p_s_span">10分</span></li>
-            <li class="p_s_box"><img src="images/p_10.png" class="img_responsive p_s_img"/><span class="p_s_span">10分</span></li>
-            <li class="p_s_box"><img src="images/p_10.png" class="img_responsive p_s_img"/><span class="p_s_span">10分</span></li>
+            <li class="p_s_box"><img src="images/p_10.png" class="img_responsive p_s_img"/><span
+                    class="p_s_span">10分</span></li>
+            <li class="p_s_box"><img src="images/p_10.png" class="img_responsive p_s_img"/><span
+                    class="p_s_span">10分</span></li>
+            <li class="p_s_box"><img src="images/p_10.png" class="img_responsive p_s_img"/><span
+                    class="p_s_span">10分</span></li>
+            <li class="p_s_box"><img src="images/p_10.png" class="img_responsive p_s_img"/><span
+                    class="p_s_span">10分</span></li>
+            <li class="p_s_box"><img src="images/p_10.png" class="img_responsive p_s_img"/><span
+                    class="p_s_span">10分</span></li>
+            <li class="p_s_box"><img src="images/p_10.png" class="img_responsive p_s_img"/><span
+                    class="p_s_span">10分</span></li>
+            <li class="p_s_box"><img src="images/p_10.png" class="img_responsive p_s_img"/><span
+                    class="p_s_span">10分</span></li>
+            <li class="p_s_box"><img src="images/p_10.png" class="img_responsive p_s_img"/><span
+                    class="p_s_span">10分</span></li>
+            <li class="p_s_box"><img src="images/p_10.png" class="img_responsive p_s_img"/><span
+                    class="p_s_span">10分</span></li>
+            <li class="p_s_box"><img src="images/p_10.png" class="img_responsive p_s_img"/><span
+                    class="p_s_span">10分</span></li>
         </ul>
 
     </div>
     <!--     活动结束       -->
     <div class="game_over">
-      <a href="index.html" id="go_start"><img src="images/come_over.png" class="img_responsive over_img"/></a>
+        <a href="index.html" id="go_start"><img src="images/come_over.png" class="img_responsive over_img"/></a>
     </div>
-   <div class="game_con">
-       <div class="game_con_header">
-           <div class="count_time_box">01：00</div>
-           <ul class="p_box clearfix">
-               <div class="line" style="left:13%; height:11%"></div>
-               <li class="p_li" style="left:3%; top:11%">
-                   <img src="images/p_j.png" class="img_responsive p_img"/>
-               </li>
-               <div class="line" style="left:32%; height:6%"></div>
-               <li class="p_li" style="left:22%; top:6%">
-                   <img src="images/p_80.png" class="img_responsive p_img"/>
-               </li>
-               <div class="line" style="left:50%; height:18%"></div>
-               <li class="p_li" style="left:40%; top:18%">
-                   <img src="images/p_j.png" class="img_responsive p_img"/>
-               </li>
-               <div class="line" style="left:68% ; height:10%"></div>
-               <li class="p_li" style="left:58% ; top:10%">
-                   <img src="images/p_10.png" class="img_responsive p_img"/>
-               </li>
-               <div class="line" style="left:88%; height:16%"></div>
-               <li class="p_li" style="left:78%; top:16%">
-                   <img src="images/p_40.png" class="img_responsive p_img"/>
-               </li>
-           </ul>
-       </div>
-       <div class="game_con_content">
-           <div class="count_down">
-               <img src="images/count_down_5.png" class="img_responsive count_down_img" id="count_img_5"/>
-               <img src="images/count_down_4.png" class="img_responsive count_down_img" id="count_img_4"/>
-               <img src="images/count_down_3.png" class="img_responsive count_down_img" id="count_img_3"/>
-               <img src="images/count_down_2.png" class="img_responsive count_down_img" id="count_img_2"/>
-               <img src="images/count_down_1.png" class="img_responsive count_down_img" id="count_img_1"/>
-           </div>
-           <div class="p_score_box">
-               <img src="images/score1.png" class="img_responsive p_img_socre"/>
-           </div>
-       </div>
-       <div class="game_con_footer">
-           <!--                               猴子                              -->
-           <img src="images/monkey0.png" class="img_responsive" id="protagonist"/>
-          <!-- <img src="images/stone.png" class="img_responsive stone" id="p_stone"/>-->
-       </div>
-   </div>
+    <div class="game_con">
+        <div class="game_con_header">
+            <div class="count_time_box">01：00</div>
+            <ul class="p_box clearfix">
+                <div class="line" style="left:13%; height:11%"></div>
+                <li class="p_li" style="left:3%; top:11%">
+                    <img src="images/p_j.png" class="img_responsive p_img"/>
+                </li>
+                <div class="line" style="left:32%; height:6%"></div>
+                <li class="p_li" style="left:22%; top:6%">
+                    <img src="images/p_80.png" class="img_responsive p_img"/>
+                </li>
+                <div class="line" style="left:50%; height:18%"></div>
+                <li class="p_li" style="left:40%; top:18%">
+                    <img src="images/p_j.png" class="img_responsive p_img"/>
+                </li>
+                <div class="line" style="left:68% ; height:10%"></div>
+                <li class="p_li" style="left:58% ; top:10%">
+                    <img src="images/p_10.png" class="img_responsive p_img"/>
+                </li>
+                <div class="line" style="left:88%; height:16%"></div>
+                <li class="p_li" style="left:78%; top:16%">
+                    <img src="images/p_40.png" class="img_responsive p_img"/>
+                </li>
+            </ul>
+        </div>
+        <div class="game_con_content">
+            <div class="count_down">
+                <img src="images/count_down_5.png" class="img_responsive count_down_img" id="count_img_5"/>
+                <img src="images/count_down_4.png" class="img_responsive count_down_img" id="count_img_4"/>
+                <img src="images/count_down_3.png" class="img_responsive count_down_img" id="count_img_3"/>
+                <img src="images/count_down_2.png" class="img_responsive count_down_img" id="count_img_2"/>
+                <img src="images/count_down_1.png" class="img_responsive count_down_img" id="count_img_1"/>
+            </div>
+            <div class="p_score_box">
+                <img src="images/score1.png" class="img_responsive p_img_socre"/>
+            </div>
+        </div>
+        <div class="game_con_footer">
+            <!--                               猴子                              -->
+            <img src="images/monkey0.png" class="img_responsive" id="protagonist"/>
+            <!-- <img src="images/stone.png" class="img_responsive stone" id="p_stone"/>-->
+        </div>
+    </div>
     <div class="footer .clearfix">
         <div class="footer_left l">
             <p class="score_box mess_p"><span style="font-weight: bold">分数：</span><span class="score">900</span></p>
-            <p class="life_v_box mess_p"><span style="font-weight: bold">当前生命：</span><span class="life_v">1200</span></p>
+            <p class="life_v_box mess_p"><span style="font-weight: bold">当前生命：</span><span class="life_v">1200</span>
+            </p>
         </div>
         <div class="footer_right r">
             <div id="start_btn" class="game_btn"><img src="images/img13.png" class="img_responsive"/></div>
