@@ -53,7 +53,7 @@
 > 又是一个摇一摇游戏，玩家在指定时间内摇的次数越多，获得的砸金蛋的次数越多，越有可能获得大奖，同时该游戏分为移动端和PC端，PC端用来提示用户游戏的开始时间和公示奖励。
 
 | 页面(Page) |                                           链接(Link)                                        |                    二维码(QR Code)               |
-|:---------:|:---------------------------------------------------------------------------------------- --:|:----------------------------------------------:|
+|:---------:|:------------------------------------------------------------------------------------------:|:-----------------------------------------------:|
 |   移动端   | [mobile.html](http://merrier.github.io/Mobile-games/contents_folder/golden_egg/mobile.html) | ![移动端](./qrcode_folder/golden_egg/mobile.png) |
 |   PC端    | [pc.html](http://merrier.github.io/Mobile-games/contents_folder/golden_egg/pc.html)         | ![PC端](./qrcode_folder/golden_egg/pc.png)      |
 
